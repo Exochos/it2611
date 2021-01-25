@@ -42,8 +42,8 @@
     <!-- Sub Wrapper -->
     <div class="main">
         <menu>
-            <script>Weekly class Exercises
-                Week 2</script>
+            <li>Weekly class Exercises</li>
+                <li>Week 2</li>
                 <ul class="second">
                     <li><a href="var.php">var.php</a></li>
                     <li><a href="heredoc.php">heredoc.php</a></li>
@@ -51,7 +51,7 @@
                     <li><a href="currency-logic.php">currency-logic.php</a><br></li>
                     <li></li>
                 </ul>
-                Week 3
+                <li>Week 3</li>
                 <ul class="second">
                     <li><a href="data-types.php">data-types.php</a></li>
                     <li><a href="weeks/week3/switch.txt">switch.php</a></li>
@@ -59,19 +59,19 @@
                     <li><a href="#"></a><br></li>
                     <li></li>
                 </ul>
-                Week 4
+                <li>Week 4</li>
                 <ul class="second">
                 </ul>
-                Week 5
+                <li>Week 5</li>
                 <ul class="second">
                 </ul>
-                Week 6
+                <li>Week 6</li>
                 <ul class="second">
                 </ul>
-                Week 7
+                <li>Week 7</li>
                 <ul class="second">
                 </ul>
-                Week 8
+                <li>Week 8</li>
                 <ul class="second">
                 </ul>
         </menu>
