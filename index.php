@@ -85,5 +85,13 @@
                 <a href="http://jigsaw.w3.org/css-validator/validator?uri=<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" rel="nofollow" title="Validate as CSS3">CSS3</a>
 </footer>
 </div><!-- End wrapper for the the whole thing-->
+<script>
+    $(document).ready(function(){
+      $("nav").click(function(){
+      $("menu").toggle(1000);
+        });
+    });
+</script>
 </body>
+
 </html>
