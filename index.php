@@ -42,7 +42,7 @@
     <!-- Sub Wrapper -->
     <div class="main">
         <menu>
-            <h3>Weekly class Exercises</h3><br>
+            <p>Weekly class Exercises</p>
                 Week 2
                 <ul class="second">
                     <li><a href="var.php">var.php</a></li>
