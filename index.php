@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-<span class='wrapper'><!-- Wrapper for the the whole thing-->
+<div class='wrapper'><!-- Wrapper for the the whole thing-->
 
     <!-- Header -->
     <header class='header'>
@@ -100,7 +100,7 @@
                 <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">HTML5</a>
                 <a href="http://jigsaw.w3.org/css-validator/validator?uri=<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" rel="nofollow" title="Validate as CSS3">CSS3</a>
 </footer>
-</span><!-- End wrapper for the the whole thing-->
+</div><!-- End wrapper for the the whole thing-->
 </body>
 <script>
     $(document).ready(function(){
