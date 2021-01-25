@@ -1,9 +1,11 @@
-<?php ?>
+<?php 
+    $title = 'Portal Page';
+?>
 <!doctype html>
 <html lang="en">
 <head>
     <!-- -->
-    <title></title>
+    <title><?= $title ?></title>
     <meta charset="utf-8">
     <!-- Viewport so we can change depending on device size -->
     <meta name='viewport' content='width=device-width,initial-scale=1'>
