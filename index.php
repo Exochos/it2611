@@ -86,11 +86,4 @@
 </footer>
 </div><!-- End wrapper for the the whole thing-->
 </body>
-<script>
-    $(document).ready(function(){
-      $("nav").click(function(){
-      $("menu").toggle(1000);
-        });
-    });
-</script>
 </html>
