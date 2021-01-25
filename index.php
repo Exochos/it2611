@@ -49,7 +49,6 @@
                     <li><a href="heredoc.php">heredoc.php</a></li>
                     <li><a href="currency.php">currency.php</a></li>
                     <li><a href="currency-logic.php">currency-logic.php</a><br></li>
-                    <li></li>
                 </ul>
                 <li>Week 3</li>
                 <ul class="second">
@@ -84,7 +83,7 @@
            <img src="images/jeremydisplayerrors.png" alt="error2">
         </main>
         <aside>
-            <img src="images/Jeremy-Profile2.png" style="width:50%;float:right;">
+            <img src="images/Jeremy-Profile2.png" style="width:50%;float:right;" alt="Picture of Jeremy Ward">
             <p>
             <h2>About Me:</h2>
             Hi! My name is Jeremy Ward I grew up in California and moved up to the greater Seattle area when I was 9 and have lived here ever since.
