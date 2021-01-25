@@ -28,7 +28,7 @@
         </a>
         <div class="right">
             <a href="index.php">home</a>
-            <a href="switch.php">hw3 switch</a>
+            <a href="website/switch.php">HW3 Switch</a>
             <a href="troubleshoot.php">hw4 troubleshoot</a>
             <a href="calculator.php">hw5 calculator</a>
             <a href="email.php">hw6 email</a>
@@ -52,7 +52,7 @@
                 Week 3
                 <ul class="second">
                     <li><a href="data-types.php">data-types.php</a></li>
-                    <li><a href="#"></a></li>
+                    <li><a href="weeks/week3/switch.txt">switch.php</a></li>
                     <li><a href="#"></a></li>
                     <li><a href="#"></a><br></li>
                     <li></li>
