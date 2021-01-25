@@ -42,8 +42,8 @@
     <!-- Sub Wrapper -->
     <div class="main">
         <menu>
-            <p>Weekly class Exercises</p>
-                Week 2
+            <script>Weekly class Exercises
+                Week 2</script>
                 <ul class="second">
                     <li><a href="var.php">var.php</a></li>
                     <li><a href="heredoc.php">heredoc.php</a></li>
