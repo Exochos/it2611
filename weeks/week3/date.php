@@ -3,9 +3,11 @@
 
 echo date('Y');
 echo '<br>';
-echo date('H:i A');
+echo date('H:i A'); // 24 hour clock
 echo '<br>';
+
 date_default_timezone_set('America/Los_Angeles');
+echo date('H:i A'); // 24 hour clock
 echo '<br>';
 
 $todayDate = ('H:i A');
