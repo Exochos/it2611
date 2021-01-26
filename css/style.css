@@ -138,6 +138,10 @@ IMG {
     margin-left: auto;
     margin-right: auto;
 }
+.jeremy {
+    width:50%;
+    float:right; 
+}
 
 @media screen and (max-width: 600px) {
     menu {

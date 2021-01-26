@@ -75,7 +75,7 @@
         <aside>
         <h2>About Me:</h2>
         <p>
-            <img src="images/Jeremy-Profile2.png" style="width:50%;float:right;" alt="Picture of Jeremy Ward">
+            <img src="images/Jeremy-Profile2.png" class='jeremy' alt="Picture of Jeremy Ward">
             Hi! My name is Jeremy Ward I grew up in California and moved up to the greater Seattle area when I was 9 and have lived here ever since.
             I initially went to College at Shoreline CC back in 2000 for Computer Science but dropped out cause my mother moved and never got back into it.
             Its only been in the last couple of years that I have had the fortitude to get myself back into Computer Science. Now that I'm back into it however I
