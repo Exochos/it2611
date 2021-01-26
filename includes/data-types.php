@@ -4,7 +4,7 @@
 $temp1 = '60';
 $temp2 = '40';
 $total = $temp1 + $temp2;
-$echo $total;
+echo $total;
 echo '<br>';
 
 $name = 'Olga';     // String
