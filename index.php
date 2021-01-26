@@ -6,7 +6,7 @@
 <head>
     <!-- -->
     <title><?= $title ?></title>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!-- Viewport so we can change depending on device size -->
     <meta name='viewport' content='width=device-width,initial-scale=1'>
     <!-- Style sheet & JS lives here -->
