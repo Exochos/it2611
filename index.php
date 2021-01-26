@@ -31,16 +31,19 @@
         <div class="right">
             <a href="index.php">home</a>
             <a href="website/switch.php">HW3 Switch</a>
-            <a href="troubleshoot.php">hw4 troubleshoot</a>
-            <a href="calculator.php">hw5 calculator</a>
-            <a href="email.php">hw6 email</a>
-            <a href="gallery.php">hw7 gallery</a>
-            <a href="database.php">hw8 database</a>
+            <a href="website/troubleshoot.php">hw4 troubleshoot</a>
+            <a href="website/calculator.php">hw5 calculator</a>
+            <a href="website/email.php">hw6 email</a>
+            <a href="website/gallery.php">hw7 gallery</a>
+            <a href="website/database.php">hw8 database</a>
         </div>
     </nav>
     <!-- End Nav -->
+
     <!-- Sub Wrapper -->
     <div class="main">
+
+        <!-- Menu Tab Left -->
         <menu>
             <li>Weekly class Exercises</li>
                 <li>Week 2</li>
@@ -59,6 +62,8 @@
                     <li></li>
                 </ul>
         </menu>
+        <!-- End Menu Tab Left -->
+
         <main class='centerA'>
            <h1>My Homework Assignments:</h1><br>
            <h3>MAMP homework</h3><br>
