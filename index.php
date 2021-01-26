@@ -29,13 +29,13 @@
             <i class="fa fa-bars"></i>
         </a>
         <div class="right">
-            <a href="index.php">home</a>
+            <a href="index.php">Home</a>
             <a href="website/switch.php">HW3 Switch</a>
-            <a href="website/troubleshoot.php">hw4 troubleshoot</a>
-            <a href="website/calculator.php">hw5 calculator</a>
-            <a href="website/email.php">hw6 email</a>
-            <a href="website/gallery.php">hw7 gallery</a>
-            <a href="website/database.php">hw8 database</a>
+            <a href="website/troubleshoot.php">HW4 Troubleshoot</a>
+            <a href="website/calculator.php">HW5 Calculator</a>
+            <a href="website/email.php">HW6 Email</a>
+            <a href="website/gallery.php">HW7 Gallery</a>
+            <a href="website/database.php">HW8 Database</a>
         </div>
     </nav>
     <!-- End Nav -->
