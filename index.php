@@ -55,9 +55,10 @@
                 </ul></li>
                 <li>Week 3
                 <ul class="second">
-                    <li><a href="includes/data-types.php">data-types.php</a></li>
+                    <li><a href="weeks/week3/date.php">date.php</a></li>
+                    <li><a href="weeks/week3/data-types.php">data-types.php</a></li>
                     <li><a href="weeks/week3/switch.txt">switch.php</a></li>
-                    <li><a href="#"></a></li>
+                    
                     <li><a href="#"></a><br></li>
                     <li></li>
                 </ul>
