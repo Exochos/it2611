@@ -48,7 +48,7 @@
                     <li><a href="var.php">var.php</a></li>
                     <li><a href="heredoc.php">heredoc.php</a></li>
                     <li><a href="currency.php">currency.php</a></li>
-                    <li><a href="currency-logic.php">currency-logic.php</a><br></li>
+                    <li><a href="currency-logic.php">currency-logic.php</a></li>
                 </ul></li>
                 <li>Week 3
                 <ul class="second">
