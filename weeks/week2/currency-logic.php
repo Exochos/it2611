@@ -60,7 +60,7 @@
         </tr>
         <tr>
             <td> Euros </td>
-            <td><?php echo '$'.$yenFriendly.''; ?></td>
+            <td><?php echo '$'.$euroFriendly.''; ?></td>
         </tr>
         <tr>
             <td> Yen </td>
