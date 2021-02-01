@@ -99,14 +99,14 @@ menu {
 }
 footer {
     position: fixed;
-    top: calc(100vh - 25px);
+    top: calc(100vh - 30px);
     left: 0;
     width: 100%;
     padding: 5px;
     background-color: white;
     text-align: center;
     font-size: 1.5em;
-    height: 15px;
+    height: 20px;
 }
 .second {
     text-indent: 2em;
