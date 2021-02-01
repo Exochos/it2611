@@ -7,10 +7,14 @@
     $sterling *= 1.28;
     $sterlingFriendly = number_format($sterling,2);
     $canada = 5000;
-    $canada *= 1.28;
+    $canada *= .79;
     $canadaFriendly = number_format($canada,2);
     $euros = 1200;
+    $euros *= 1.18;
+    $eurosFriendly = number_format($euros);
     $yen = 2000;
+    $yen *= 0.0094;
+    $yenFriendly = number_format($yen);
 
 ?>
 
@@ -56,11 +60,11 @@
         </tr>
         <tr>
             <td> Euros </td>
-            <td><?php echo $euros; ?></td>
+            <td><td><?php echo '$'.$yenFriendly.''; ?></td></td>
         </tr>
         <tr>
             <td> Yen </td>
-            <td><?php echo $yen; ?></td>
+            <td><td><?php echo '$'.$yenFriendly.''; ?></td></td>
         </tr>
         </table>
         </body>
