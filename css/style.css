@@ -98,15 +98,15 @@ menu {
     color:black;
 }
 footer {
-    position: absolute;;
-    bottom: 0;
+    position: fixed;
+    top: calc(100vh - 15px);
     left: 0;
     width: 100%;
     padding: 5px;
     background-color: white;
     text-align: center;
     font-size: 1.5em;
-    height: 10px;
+    height: 15px;
 }
 .second {
     text-indent: 2em;
