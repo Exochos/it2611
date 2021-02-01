@@ -158,17 +158,6 @@ img {
     Source: Wiki
   </div>
 </span>
-<aside>
-<h2>Random Dog of the day for: <?php echo $day2 ?></h2>
-
-<div class="card" style="width:600px;background-color: <?php echo $color2 ?>;">
-  <img src="<?php echo 'images/' . $pic2 ?>" alt="" style="width:100%">
-  <div class="container">
-    <h2><b><?php echo $alt2 ?></b></h2> 
-    <p><?php echo $p2 ?></p> 
-    Source: Wiki
-  </div>
-</aside>
 </main>
 </div>
 <?php include('includes/footer.php');?>
