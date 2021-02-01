@@ -16,7 +16,7 @@
             table {
                 width:300px;
                 margin: 0 auto;
-                border: 1px; solid red;
+                border: 2px solid red;
                 border-collapse: collapse;
             }
 
