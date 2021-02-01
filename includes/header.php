@@ -26,7 +26,7 @@
         </a>
         <div class="right">
             <a href="index.php">Home</a>
-            <a href="website/switch.php">HW3 Switch</a>
+            <a href="switch.php">HW3 Switch</a>
             <a href="website/troubleshoot.php">HW4 Troubleshoot</a>
             <a href="website/calculator.php">HW5 Calculator</a>
             <a href="website/email.php">HW6 Email</a>
