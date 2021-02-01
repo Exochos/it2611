@@ -40,7 +40,7 @@
         </tr>
         <tr>
             <td> Rubles </td>
-            <td><?php echo $rubleFriendly; ?></td>
+            <td><?php echo '$'.$rubleFriendly.''; ?></td>
         </tr>
         <tr>
             <td> Sterling </td>
