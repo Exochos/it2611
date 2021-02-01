@@ -38,15 +38,23 @@
         </tr>
         <tr>
             <td> Rubles </td>
-            <td><?php echo $ruble;     ?></td>
+            <td><?php echo $ruble; ?></td>
         </tr>
         <tr>
             <td> Sterling </td>
-            <td></td>
+            <td><?php echo $sterling; ?></td>
         </tr>
         <tr>
             <td> Canada </td>
-            <td></td>
+            <td><?php echo $canada; ?></td>
+        </tr>
+        <tr>
+            <td> Euros </td>
+            <td><?php echo $euros; ?></td>
+        </tr>
+        <tr>
+            <td> Yen </td>
+            <td><?php echo $yen; ?></td>
         </tr>
         </table>
         </body>
