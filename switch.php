@@ -139,6 +139,7 @@ img {
 .middle {
     position: relative;
     top: 5%;
+    left:10%;
 }
 </style>
 </head>
