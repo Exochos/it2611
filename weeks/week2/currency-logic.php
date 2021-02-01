@@ -5,10 +5,10 @@
 
     $sterling = 500;
     $sterling *= 1.28;
-    $sterlingFriendly = number_format($sterlingFriendly,2);
+    $sterlingFriendly = number_format($sterling,2);
     $canada = 5000;
     $canada *= 1.28;
-    $canadaFriendly = number_format($canadaFriendly,2);
+    $canadaFriendly = number_format($canada,2);
     $euros = 1200;
     $yen = 2000;
 
