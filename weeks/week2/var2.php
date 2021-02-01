@@ -1,5 +1,6 @@
 <?php 
 // Assignments Week 2
+echo 'Week 2 Assignment Var';
 $money = 100;
 $money /= 7;
 $moneyFriendly = floor($money);
