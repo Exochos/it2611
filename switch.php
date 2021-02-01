@@ -150,7 +150,6 @@ img {
 <main class='centerA'>
 <span class="middle">
 <h2>Dog of the day for: <?php echo $day ?></h2>
-
 <div class="card" style="width:600px;background-color: <?php echo $color ?>;">
   <img src="<?php echo 'images/' . $pic ?>" alt="" style="width:100%">
   <div class="container">
@@ -158,6 +157,7 @@ img {
     <p><?php echo $p ?></p> 
     Source: Wiki
   </div>
+</span>
 <aside>
 <h2>Random Dog of the day for: <?php echo $day2 ?></h2>
 
