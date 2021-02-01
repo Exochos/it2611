@@ -4,7 +4,11 @@
     $rubleFriendly = number_format($ruble,2);
 
     $sterling = 500;
+    $sterling *= 1.28;
+    $sterlingFriendly = number_format($sterlingFriendly,2);
     $canada = 5000;
+    $canada *= 1.28;
+    $canadaFriendly = number_format($canadaFriendly,2);
     $euros = 1200;
     $yen = 2000;
 
@@ -44,11 +48,11 @@
         </tr>
         <tr>
             <td> Sterling </td>
-            <td><?php echo $sterling; ?></td>
+            <td><?php echo '$'.$sterlingFriendly.''; ?></td>
         </tr>
         <tr>
             <td> Canada </td>
-            <td><?php echo $canada; ?></td>
+            <td><?php echo '$'.$canadaFriendly.''; ?></td>
         </tr>
         <tr>
             <td> Euros </td>
