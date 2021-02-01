@@ -1,6 +1,8 @@
 <?php
     $ruble = 10007;
     $ruble *= 0.013;
+    $rubleFriendly = number_format($ruble,2);
+
     $sterling = 500;
     $canada = 5000;
     $euros = 1200;
@@ -38,7 +40,7 @@
         </tr>
         <tr>
             <td> Rubles </td>
-            <td><?php echo $ruble; ?></td>
+            <td><?php echo $rubleFriendly; ?></td>
         </tr>
         <tr>
             <td> Sterling </td>
