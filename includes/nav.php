@@ -3,7 +3,7 @@
             <li>Weekly class Exercises</li>
                 <li>Week 2</li>
                 <li><ul class="second">
-                    <li><a href="weeks/week2/var.php">var.php</a></li>
+                    <li><a href="weeks/week2/var2.php">var.php</a></li>
                     <li><a href="weeks/week2/heredoc.php">heredoc.php</a></li>
                     <li><a href="currency.php">currency.php</a></li>
                     <li><a href="currency-logic.php">currency-logic.php</a></li>
