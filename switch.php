@@ -96,8 +96,6 @@ img {
 }
 .middle {
     position: relative;
-    left: 400px;
-    height: 800px;
 }
 </style>
 </head>
