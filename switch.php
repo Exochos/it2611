@@ -102,7 +102,7 @@ img {
 
 <main class='centerA'>
 <span class="middle">
-<h2 class="header">Dog of the day for: <?php echo $day ?></h2>
+<h2>Dog of the day for: <?php echo $day ?></h2>
 
 <div class="card" style="width:600px;background-color: <?php echo $color ?>;">
   <img src="<?php echo 'images/' . $pic ?>" alt="" style="width:100%">
