@@ -89,13 +89,9 @@ img {
     font-size: 36px;
     text-shadow: 2px 2px 4px #d3d3d3;
 }
-.left {
-    position: relative;
-    left: 200px;
-    height: 800px;
-}
 .middle {
     position: relative;
+    top: 600px;
 }
 </style>
 </head>
