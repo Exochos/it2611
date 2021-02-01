@@ -169,6 +169,7 @@ img {
     Source: Wiki
   </div>
 </aside>
+</main>
 </div>
 <?php include('includes/footer.php');?>
 </body>
