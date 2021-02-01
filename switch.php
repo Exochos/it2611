@@ -106,8 +106,7 @@ img {
     <div class="main">
     <?php include('includes/nav.php'); ?>
 
-
-<span class="left">&nbsp;</span>
+<main class='centerA'>
 <span class="middle">
 <h2 class="header">Dog of the day for: <?php echo $day ?></h2>
 
