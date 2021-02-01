@@ -1,12 +1,8 @@
-<?php 
-    $title = 'Portal Page';
-?>
+<?php $title = 'Portal Page'; ?>
 <?php include('includes/header.php'); ?>
     <!-- Sub Wrapper -->
     <div class="main">
     <?php include('includes/nav.php'); ?>
-
-
         <main class='centerA'>
            <h1>My Homework Assignments:</h1><br>
            <h3>MAMP homework</h3><br>
