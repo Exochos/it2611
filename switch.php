@@ -109,7 +109,7 @@ img {
 <h2 class="header">Dog of the day for: <?php echo $day ?></h2>
 
 <div class="card" style="width:600px;background-color: <?php echo $color ?>;">
-  <img src="<?php echo $pic ?>" alt="" style="width:100%">
+  <img src="<?php echo 'images/' . $pic ?>" alt="" style="width:100%">
   <div class="container">
     <h2><b><?php echo $alt ?></b></h2> 
     <p><?php echo $p ?></p> 
