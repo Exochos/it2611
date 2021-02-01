@@ -6,10 +6,6 @@
     $euros = 1200;
     $yen = 2000;
 
-
-
-
-
 ?>
 
 <!doctype html>
@@ -35,6 +31,7 @@
         </style>
     </head>
     <body>
+        <table>
         <tr> 
             <th> Money </th>
             <th> Dollars </th>
@@ -51,5 +48,6 @@
             <td> Canada </td>
             <td></td>
         </tr>
+        </table>
         </body>
         </html>
