@@ -97,11 +97,6 @@ img {
     left: 200px;
     height: 800px;
 }
-.middle {
-    position: relative;
-    left: 400px;
-    height: 800px;
-}
 </style>
 </head>
 <?php include('../includes/header.php'); ?>
