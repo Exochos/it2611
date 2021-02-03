@@ -29,14 +29,6 @@ if(isset($_POST['num1'], $_POST['num2'])) {
     echo '<b>' . $myTotal .'</b>!</p>';
     echo'<p><a href="">Reset page</a>';
 }
-else {
-    echo $num1;
-    echo $num2;
-}
-  #  
-   
-  # 
-
 ?>
 </div>
 </main>
