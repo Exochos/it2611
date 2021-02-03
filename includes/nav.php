@@ -14,6 +14,13 @@
                     <li><a href="weeks/week3/switch.txt">switch.php</a></li>
                     <li><a href="#"></a><br></li>
                     <li></li>
+                    <li>Week 4
+                <ul class="second">
+                    <li><a href="http://jeremyward.me/it2611/weeks/week4/celcius.php">celcius</a></li>
+                    <li><a href="weeks/week3/data-types.php">data-types.php</a></li>
+                    <li><a href="weeks/week3/switch.txt">switch.php</a></li>
+                    <li><a href="#"></a><br></li>
+                    <li></li>
                 </ul>
         </menu>
         <!-- End Menu Tab Left -->
