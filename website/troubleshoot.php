@@ -4,6 +4,7 @@
 <style>
    form {
        width: 80%;
+       left: 20px;
    }
    b {
     color: red;
