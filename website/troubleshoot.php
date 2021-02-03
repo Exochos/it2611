@@ -5,6 +5,9 @@
    form {
        width: 80%;
    }
+   b {
+    color: red;
+   }
 </style>
 </head>
 <?php include('../includes/header.php'); ?>
@@ -25,7 +28,7 @@ if(isset($_POST['num1'], $_POST['num2'])) {
 	$num2 = $_POST['num2'];
 	$myTotal = $num1 + $num2; 
     echo "<h2>You added " . $num1 . " and " . $num2;
-    echo "<p> and the answer is <br>";
+    echo "<p> and the answer is ";
     echo '<b>' . $myTotal .'</b>!</p>';
     echo'<p><a href="">Reset page</a>';
 }
