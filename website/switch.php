@@ -103,7 +103,6 @@ img {
 <?php include('../includes/nav.php'); ?>
 <main class='centerA'>
 <h2 class="headerDog">Dog of the day for: <?php echo $day ?></h2>
-
 <div class="card" style="width:600px;background-color: <?php echo $color ?>;">
   <img src="<?php echo $pic ?>" alt="" style="width:100%">
   <div class="container">
@@ -113,6 +112,7 @@ img {
     <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">HTML5</a>
                 <a href="http://jigsaw.w3.org/css-validator/validator?uri=<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" rel="nofollow" title="Validate as CSS3">CSS3</a>
   </div>
+  <?php include('includes/aside.php'); ?>
 </div>
 </main>
 <?php include('../includes/footer.php');?>
