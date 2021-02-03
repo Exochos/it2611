@@ -11,7 +11,7 @@ $weekday['5'] = 'Thursday';
 $weekday['6'] = 'Friday';
 $weekday['7'] = 'Saturday';
 $day2 = $weekday[rand(1,7)]; */
-
+$title = "Switch";
 $day = date("l");
 
 switch ($day) {
