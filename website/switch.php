@@ -99,8 +99,8 @@ img {
     <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">HTML5</a>
                 <a href="http://jigsaw.w3.org/css-validator/validator?uri=<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" rel="nofollow" title="Validate as CSS3">CSS3</a>
   </div>
-  <?php include('../includes/aside.php'); ?>
 </div>
+<?php include('../includes/aside.php'); ?>
 </main>
 <?php include('../includes/footer.php');?>
 </body>
