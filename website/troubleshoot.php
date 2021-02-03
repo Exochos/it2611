@@ -15,7 +15,7 @@
             if(isset($_POST['num1'], $_POST['num2'])) {
                 $num1 = $_POST['num1'];
 	            $num2 = $_POST['num2'];
-	            $myTotal = $num1 + $Num2; 
+	            $myTotal = $num1 + $num2; 
                 echo "<h2>You added " . $num1 . " and " . $num2 . "";
             }
         ?>
