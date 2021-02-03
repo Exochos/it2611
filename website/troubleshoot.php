@@ -20,7 +20,7 @@
     <h1>Adder.php</h1>
     <label>Enter the first number:</label><input type="text" name="num1"><br>
     <label>Enter the second number:</label><input type="text" name="num2"><br>
-    <input type="submit" value="Add Em!!"> 
+    <input type="submit" value=" Add Em!! "> 
 </form>
 <?php
 if(isset($_POST['num1'], $_POST['num2'])) {
