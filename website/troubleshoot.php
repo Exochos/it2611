@@ -19,13 +19,9 @@
 
 <?php
 if(isset($_POST['num1'], $_POST['num2'])) {
-{
-	$num2 = $_POST['num2'];
-	$myTotal = $num1 + $Num2; 
-    echo "<h2>You added " . $num1 . " and " . $num2;
-}
-  #  echo ' <p> and the answer is <br>';
-   # echo '<style="color:red;">" $myTotal ."!</p>""';
-   # echo'<p><a href="">Reset page</a>'
-
+        $num1 = $_POST['num1'];
+	    $num2 = $_POST['num2'];
+	    $myTotal = $num1 + $Num2; 
+        echo "<h2>You added " . $num1 . " and " . $num2 . "";
+    }
 ?>
