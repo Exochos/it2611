@@ -1,6 +1,11 @@
 <?php $title = "Troubleshoot" ?>
 <head>
 <link rel="stylesheet" href="../css/style.css"> 
+<style>
+   form {
+       width: 80%;
+   }
+</style>
 </head>
 <?php include('../includes/header.php'); ?>
 <div class="main">
