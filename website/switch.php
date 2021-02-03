@@ -87,6 +87,7 @@ img {
 <link rel="stylesheet" href="../css/style.css"> 
 </head>
 <?php include('../includes/header.php'); ?>
+<div class="main">
 <?php include('../includes/nav.php'); ?>
 <main class='centerA'>
 <h2 class="headerDog">Dog of the day for: <?php echo $day ?></h2>
@@ -101,6 +102,7 @@ img {
   </div>
 </div>
 </main>
+</div>
 <?php include('../includes/footer.php');?>
 </body>
 </html> 
