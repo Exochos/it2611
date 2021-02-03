@@ -62,16 +62,7 @@ default:
     echo "Something Bad Happened";
 }
 ?>
-
-<!doctype html>
-<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Switch</title>
-  <meta name="description" content="Switch Project for IT261">
-  <meta name="author" content="Jeremy Ward">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/style.css"> 
 <style>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -93,6 +84,7 @@ img {
     text-shadow: 2px 2px 4px #d3d3d3;
 }
 </style>
+<link rel="stylesheet" href="../css/style.css"> 
 </head>
 <?php include('../includes/header.php'); ?>
 <?php include('../includes/nav.php'); ?>
