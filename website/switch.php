@@ -92,11 +92,6 @@ img {
     font-size: 36px;
     text-shadow: 2px 2px 4px #d3d3d3;
 }
-.left {
-    position: relative;
-    left: 200px;
-    height: 800px;
-}
 </style>
 </head>
 <?php include('../includes/header.php'); ?>
@@ -108,11 +103,11 @@ img {
   <div class="container">
     <h2><b><?php echo $alt ?></b></h2> 
     <p><?php echo $p ?></p> 
-    Source: Wiki
+    Source: Wikipedia
     <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">HTML5</a>
                 <a href="http://jigsaw.w3.org/css-validator/validator?uri=<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" rel="nofollow" title="Validate as CSS3">CSS3</a>
   </div>
-  <?php include('includes/aside.php'); ?>
+  <?php include('../includes/aside.php'); ?>
 </div>
 </main>
 <?php include('../includes/footer.php');?>
