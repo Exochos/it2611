@@ -26,8 +26,8 @@
             <i class="fa fa-bars"></i>
         </a>
         <div class="right">
-            <a href="jeremyward.me/it2611/index.php">Home</a>
-            <a href="jeremyward.me/it2611/website/switch.php">HW3 Switch</a>
+            <a href="http://jeremyward.me/it2611/index.php">Home</a>
+            <a href="http://jeremyward.me/it2611/website/switch.php">HW3 Switch</a>
             <a href="website/troubleshoot.php">HW4 Troubleshoot</a>
             <a href="website/calculator.php">HW5 Calculator</a>
             <a href="website/email.php">HW6 Email</a>
