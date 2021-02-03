@@ -7,7 +7,7 @@
 <?php include('../includes/nav.php'); ?>
 <main class='centerA'>
     <form><h1>Adder.php</h1> </form action="post">
-        <label>Enter the first number:</label><input type="text" name="Num1"><br>
+        <label>Enter the first number:</label><input type="text" name="num1"><br>
         <label>Enter the second number:</label><input type="text" name="num2"><br>
         <input type="submit" value="Add Em!!"> 
         </form>
