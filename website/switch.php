@@ -1,3 +1,5 @@
+
+
 <?php
 // Switch //
 /* $weekday = array();
@@ -69,6 +71,7 @@ default:
   <meta name="description" content="Switch Project for IT261">
   <meta name="author" content="Jeremy Ward">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css"> 
 <style>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -101,7 +104,8 @@ img {
 }
 </style>
 </head>
-
+<?php include('includes/header.php'); ?>
+<?php include('includes/nav.php'); ?>
 <body>
 <span class="left">&nbsp;</span>
 <span class="middle">
@@ -117,6 +121,6 @@ img {
                 <a href="http://jigsaw.w3.org/css-validator/validator?uri=<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" rel="nofollow" title="Validate as CSS3">CSS3</a>
   </div>
 </div>
-
+<?php include('../includes/footer.php');?>
 </body>
 </html> 
