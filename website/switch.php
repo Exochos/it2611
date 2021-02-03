@@ -106,8 +106,7 @@ img {
 </head>
 <?php include('../includes/header.php'); ?>
 <?php include('../includes/nav.php'); ?>
-<body>
-<span class="left">&nbsp;</span>
+<main class='centerA'>
 <span class="middle">
 <h2 class="header">Dog of the day for: <?php echo $day ?></h2>
 
@@ -121,6 +120,8 @@ img {
                 <a href="http://jigsaw.w3.org/css-validator/validator?uri=<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" rel="nofollow" title="Validate as CSS3">CSS3</a>
   </div>
 </div>
+</span>
+</main>
 <?php include('../includes/footer.php');?>
 </body>
 </html> 
