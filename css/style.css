@@ -101,9 +101,9 @@ menu {
 }
 footer {
     position: fixed;
-    top: calc(100vh - 30px);
-    left: 1%;
-    width: 98%;
+    top: calc(100vh - 42px);
+    left: 20%;
+    width: 60%;
     padding: 2px;
     background-color: white;
     text-align: center;
@@ -136,15 +136,18 @@ aside {
 p {
     margin:2em;
 }
+
 .right {
     padding-right: 1em;
     
 }
+
 IMG {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .jeremy {
     width:50%;
     float:right; 
