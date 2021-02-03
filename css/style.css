@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-size: 1vh;
-    border: 1px solid;
+    
     }
 
 .wrapper {
@@ -23,6 +23,7 @@
     flex-direction: row;
 }
 .header {
+    border: 1px solid;
     position: fixed;
     display: flex;
     height: 60px;
