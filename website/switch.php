@@ -104,8 +104,8 @@ img {
 }
 </style>
 </head>
-<?php include('includes/header.php'); ?>
-<?php include('includes/nav.php'); ?>
+<?php include('../includes/header.php'); ?>
+<?php include('../includes/nav.php'); ?>
 <body>
 <span class="left">&nbsp;</span>
 <span class="middle">
