@@ -1,3 +1,4 @@
+<?php $title = "Troubleshoot" ?>
 <head>
 <link rel="stylesheet" href="../css/style.css"> 
 </head>
