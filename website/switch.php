@@ -88,7 +88,7 @@ img {
 .container {
     padding: 2px 16px;
 }
-.header {
+.headerDog {
     font-size: 36px;
     text-shadow: 2px 2px 4px #d3d3d3;
 }
@@ -103,7 +103,7 @@ img {
 <?php include('../includes/nav.php'); ?>
 <main class='centerA'>
 <span class="middle">
-<h2 class="header">Dog of the day for: <?php echo $day ?></h2>
+<h2 class="headerDog">Dog of the day for: <?php echo $day ?></h2>
 
 <div class="card" style="width:600px;background-color: <?php echo $color ?>;">
   <img src="<?php echo $pic ?>" alt="" style="width:100%">
