@@ -18,8 +18,8 @@
 </html> 
 
 <?php
-if (isset($_POST['num1']),($_POST['num2'])) {
-
+if(isset($_POST['num1'], $_POST['num2'])) {
+{
 	$num2 = $_POST['num2'];
 	$myTotal = $num1 + $Num2; 
     echo "<h2>You added " . $num1 . " and " . $num2;
