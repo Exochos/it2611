@@ -17,9 +17,8 @@
                     <li>Week 4
                 <ul class="second">
                     <li><a href="http://jeremyward.me/it2611/weeks/week4/celcius.php">celcius</a></li>
-                    <li><a href="weeks/week3/data-types.php">data-types.php</a></li>
-                    <li><a href="weeks/week3/switch.txt">switch.php</a></li>
-                    <li><a href="#"></a><br></li>
+                    <li><a href="http://jeremyward.me/it2611/weeks/week4/form1.php">form1</a></li>
+                    <li><a href="http://jeremyward.me/it2611/weeks/week4/form2.php">form2</a></li>
                     <li></li>
                 </ul>
         </menu>
