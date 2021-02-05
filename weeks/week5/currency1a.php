@@ -23,6 +23,7 @@
       form {
           width: 300px;
           border: 1px solid;
+          padding: 4px;
       }
       label input {
           display: block;
@@ -40,7 +41,7 @@
 
      <label for="cash1">How much Money do you have?</label>
      <input type="text" name="cash" id="cash1"><br>
-     
+
      <input type="radio" id="age1" name="age" value="30">
      <label for="age1">0 - 30</label><br>
      <input type="radio" id="age2" name="age" value="60">
