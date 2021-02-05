@@ -41,13 +41,19 @@
 
      <label for="cash1">How much Money do you have?</label>
      <input type="text" name="cash" id="cash1"><br>
-
-     <input type="radio" id="age1" name="age" value="30">
-     <label for="age1">0 - 30</label><br>
-     <input type="radio" id="age2" name="age" value="60">
-     <label for="age2">31 - 60</label><br>  
-     <input type="radio" id="age3" name="age" value="100">
-     <label for="age3">61 - 100</label><br><br>
+      <ul>
+        <li>
+            <label for="rub">Rubles</label>
+            <input type="radio" id="rub" name="rubles"></li><br>
+     
+        <li>
+            <label for="cad">Canadian Dollars</label>
+            <input type="radio" id="cad" name="candollars"></li><br>
+             
+        <li>
+            <label for="pound">Pounds</label>
+            <input type="radio" id="pounds" name="pounds"></li><br>
+      </ul>
      <input type="submit" value="Convert it!">
      <p><a href="">Reset me</a></p>
     </fieldset>
