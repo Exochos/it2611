@@ -24,7 +24,7 @@
           width: 300px;
           border: 1px solid;
       }
-      fieldset {
+      label input {
           display: block;
       }
   </style>
