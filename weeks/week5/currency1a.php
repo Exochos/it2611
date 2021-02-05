@@ -23,10 +23,9 @@
       form {
           width: 300px;
           border: 1px solid;
-          padding: 4px;
       }
       label input {
-          display: block;
+          padding: 5px;
       }
   </style>
 </head>
