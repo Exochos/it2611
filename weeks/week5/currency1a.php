@@ -24,6 +24,9 @@
           width: 300px;
           border: 1px solid;
       }
+      fieldset {
+          display: block;
+      }
   </style>
 </head>
 
