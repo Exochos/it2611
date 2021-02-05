@@ -44,15 +44,15 @@
       <ul>
         <li>
             <label for="rub">Rubles</label>
-            <input type="radio" id="rub" name="rubles"></li><br>
+            <input type="radio" id="rub" name="type"></li>
      
         <li>
             <label for="cad">Canadian Dollars</label>
-            <input type="radio" id="cad" name="candollars"></li><br>
+            <input type="radio" id="cad" name="type"></li>
              
         <li>
             <label for="pound">Pounds</label>
-            <input type="radio" id="pounds" name="pounds"></li><br>
+            <input type="radio" id="pounds" name="type"></li>
       </ul>
      <input type="submit" value="Convert it!">
      <p><a href="">Reset me</a></p>
