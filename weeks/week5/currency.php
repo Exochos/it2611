@@ -50,17 +50,18 @@
         <li>
             <input type="radio" id="cad" name="type">
             <label for="cad">Canadian Dollars</label>
-        </li>
-             
+        </li> 
         <li>
+            <input type="radio" id="pounds" name="type">
             <label for="pound">Pounds</label>
-            <input type="radio" id="pounds" name="type"></li>
+        </li>
         <li>
-            <label for="euro">Euros</label>
-            <input type="radio" id="euro" name="type"></li>
+            <input type="radio" id="euro" name="type">
+            <label for="euro">Euros</label></li>
         <li>
+            <input type="radio" id="yen" name="type">
             <label for="yen">Yen</label>
-            <input type="radio" id="yen" name="type"></li>
+        </li>
       </ul>
      <input type="submit" value="Convert it!">
      <p><a href="">Reset me</a></p>
