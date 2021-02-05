@@ -26,6 +26,7 @@
       }
       label, input {
           padding: 5px;
+          margin: 5px;
       }
   </style>
 </head>
