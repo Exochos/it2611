@@ -24,7 +24,7 @@
           width: 300px;
           border: 1px solid;
       }
-      label input {
+      label, input {
           padding: 5px;
       }
   </style>
