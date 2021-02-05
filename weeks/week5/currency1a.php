@@ -53,6 +53,12 @@
         <li>
             <label for="pound">Pounds</label>
             <input type="radio" id="pounds" name="type"></li>
+        <li>
+            <label for="euro">Euros</label>
+            <input type="radio" id="euro" name="type"></li>
+        <li>
+            <label for="yen">Yen</label>
+            <input type="radio" id="yen" name="type"></li>
       </ul>
      <input type="submit" value="Convert it!">
      <p><a href="">Reset me</a></p>
