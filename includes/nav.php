@@ -18,12 +18,14 @@
                     <li><a href="http://jeremyward.me/it2611/weeks/week4/celcius.php">celcius</a></li>
                     <li><a href="http://jeremyward.me/it2611/weeks/week4/form1.php">form1</a></li>
                     <li><a href="http://jeremyward.me/it2611/weeks/week4/form2.php">form2</a></li>
+                    </ul>
                 <li>Week 5
                 <ul class="second">
                     <li><a href="http://jeremyward.me/it2611/weeks/week5/currency.php">currency</a></li>
                     <li><a href="http://jeremyward.me/it2611/weeks/week5/currency1a.php">currency1a</a></li>
                     <li><a href="http://jeremyward.me/it2611/weeks/week5/currency2.php">currency2</a></li>
                     <li><a href="http://jeremyward.me/it2611/weeks/week5/currency3.php">currency3</a></li>
+                    </ul>
                 </ul>
         </menu>
         <!-- End Menu Tab Left -->
