@@ -12,8 +12,10 @@
                     <li><a href="http://jeremyward.me/it2611/weeks/week3/date.php">date.php</a></li>
                     <li><a href="http://jeremyward.me/it2611/weeks/week3/data-types.php">data-types.php</a></li>
                     <li><a href="http://jeremyward.me/it2611/weeks/week3/switch.txt">switch.php</a></li>
-                    <li>Week 4
                     </ul>
+                    
+                    <li>Week 4
+                    
                 <ul class="second">
                     <li><a href="http://jeremyward.me/it2611/weeks/week4/celcius.php">celcius</a></li>
                     <li><a href="http://jeremyward.me/it2611/weeks/week4/form1.php">form1</a></li>
