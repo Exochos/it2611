@@ -33,11 +33,14 @@
 <form action="" method="post">
     <fieldset>
      <label for="name1">Name</label>
-     <input type="text" name="name" id="name1">
+     <input type="text" name="name" id="name1"><br>
+
      <label for="email1">Email</label>
-     <input type="email" name="email" id="email1">
-     <label for=>How much Money do you have?</label>
-     <input type="text" name="cash">
+     <input type="email" name="email" id="email1"><br>
+
+     <label for="cash1">How much Money do you have?</label>
+     <input type="text" name="cash" id="cash1"><br>
+     
      <input type="radio" id="age1" name="age" value="30">
      <label for="age1">0 - 30</label><br>
      <input type="radio" id="age2" name="age" value="60">
