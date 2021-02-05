@@ -43,12 +43,14 @@
      <input type="text" name="cash" id="cash1"><br>
       <ul>
         <li>
+            <input type="radio" id="rub" name="type">
             <label for="rub">Rubles</label>
-            <input type="radio" id="rub" name="type"></li>
-     
+        </li>
+      
         <li>
+            <input type="radio" id="cad" name="type">
             <label for="cad">Canadian Dollars</label>
-            <input type="radio" id="cad" name="type"></li>
+        </li>
              
         <li>
             <label for="pound">Pounds</label>
