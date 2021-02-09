@@ -25,13 +25,13 @@
     <fieldset>
 
      <label for="name1">Name</label>
-     <input type="text" name="name" id="name1"><br>
+     <input type="text" name="name1" id="name1"><br>
 
      <label for="email1">Email</label>
-     <input type="email" name="email" id="email1"><br>
+     <input type="email" name="email1" id="email1"><br>
 
      <label for="cash1">How much Money do you have?</label>
-     <input type="text" name="cash" id="cash1"><br>
+     <input type="text" name="cash1" id="cash1"><br>
 
       <ul><p><b>Choose your Currency:</b></p>
         <li><input type="radio" id="currency" name="currency" value="0.013">Rubles</li>
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(empty($_POST['cash1'])) {
         echo "Please enter cash amount<br>";
     }
-    
+
 }
 
 
