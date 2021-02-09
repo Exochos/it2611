@@ -12,7 +12,7 @@
       div {
         background-color: beige;
         border: 1px solid;
-        margin-left: 10px;
+        padding-left: 10px;
       }
       form {
           width: 300px;
