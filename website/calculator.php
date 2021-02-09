@@ -92,8 +92,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
         echo '<div class="box">';
-        echo '<h4>You have driven: '. $miles .' miles</h4>'; 
-        echo '<h4>Your Vehicle has an efficiency rating of '. $fe .' miles per gallon</h4>'; 
+        echo '<p>You have driven: '. $miles .' miles'; 
+        echo 'Your Vehicle has an efficiency rating of '. $fe .' miles per gallon'; 
         echo "<h3>Your total cost for gas will be $" .$total . " dollars</h3>";
         echo '</div>';
     }
