@@ -12,6 +12,11 @@
     .contain {
         display: block;
         max-width: 600px;
+        width: 600px;
+        background-color: beige;
+        border: 1px solid;
+        padding-left: 10px;
+        padding-bottom:5px;
     }
     h1 {
         text-align:center;
@@ -25,7 +30,6 @@
       form {
           width: 300px;
           border: 1px solid;
-          background-color: beige;
       }
       label, input {
           padding: 5px;
