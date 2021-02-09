@@ -68,6 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $amount = $_POST['cash1'];
         $currency = $_POST['currency'];
         $total = $amount + $currency;
+        echo "Your total is: " .$total . "";
                 }
 
 }
