@@ -1,15 +1,4 @@
-<?php
 
-
-
-
-
-
-
-
-
-
-?>
 <!doctype html>
 
 <html lang="en">
@@ -30,6 +19,7 @@
       }
   </style>
 </head>
+<body>
 
 <form action="" method="post">
     <fieldset>
@@ -66,7 +56,14 @@
      <input type="submit" value="Convert it!">
      <p><a href="">Reset me</a></p>
     </fieldset>
-<body>
-  
+
+<?php
+
+
+if(isset($_POST['num1'], $_POST['num2'])) {
+
+
+
+?>
 </body>
 </html>
