@@ -82,7 +82,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
 
-    if (isset($_POST['miles'],$_POST['ppg'],$_POST['efficiency']) && is_numeric($_POST['miles']) {
+    if (isset($_POST['miles'],$_POST['ppg'],$_POST['efficiency']) && is_numeric($_POST['miles'])) {
+
         $miles = $_POST['miles'];
         $ppg = $_POST['ppg'];
         $fe = $_POST['efficiency'];
