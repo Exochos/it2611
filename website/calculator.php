@@ -9,6 +9,10 @@
   <meta name="description" content="Gas Calculator Form for IT162">
   <meta name="author" content="Jeremy Ward">
   <style>
+    .contain {
+        display: block;
+        max-width: 600px;
+    }
     h1 {
         text-align:center;
     }
@@ -31,7 +35,7 @@
 </head>
 <body>
 <!-- Form below -->
-<div class="">
+<div class="contain">
 <h1> Our Calculator </h1>
 <form action="" method="post">
     <fieldset>
