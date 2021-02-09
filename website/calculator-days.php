@@ -84,8 +84,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
 
-    if (isset($_POST['miles'],$_POST['ppg'],$_POST['efficiency']) && is_numeric($_POST['miles'])) {
-
+    else {
+        $name = $_POST['name'];
         $miles = abs($_POST['miles']);
         $ppg = $_POST['ppg'];
         $fe = $_POST['efficiency'];
@@ -93,9 +93,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
         echo '<div class="box">';
-        echo '<p>You have driven: '. $miles .' miles<br>'; 
-        echo 'Your Vehicle has an efficiency rating of '. $fe .' miles per gallon'; 
-        echo "<h3>Your total cost for gas will be $" .$total . " dollars</h3>";
+        echo '<p>'. $name .'You will be driving <b>'. $miles .' miles</b><br>'; 
+        echo 'Your Vehicle has an efficiency rating of '. $fe .' miles per gallon<br>'; 
+        echo "Your total cost for gas will be<b> $" .$total . " dollars</b><br>";
+        echo 'your driving total of <b>' . $tHours . ' hours equating to -- days.</p>';
         echo '</div>';
     }
 
