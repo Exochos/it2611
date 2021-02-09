@@ -59,7 +59,7 @@
           <option value="1.8">amazing</option>
     </select><br>
 
-     <input type="submit" value="Convert it!"><input type="submit" value="Reset">
+     <input type="submit" value="Convert it!"><input type="reset" value="Reset">
 
     </fieldset>
 </div>
