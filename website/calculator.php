@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (isset($_POST['miles'],$_POST['ppg'],$_POST['efficiency']) && is_numeric($_POST['miles'])) {
 
-        $miles = $_POST['miles'];
+        $miles = abs($_POST['miles']);
         $ppg = $_POST['ppg'];
         $fe = $_POST['efficiency'];
         $total = ceil( ($miles / $fe) * $ppg );
