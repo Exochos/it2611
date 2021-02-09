@@ -58,9 +58,15 @@
     </fieldset>
 
 <?php
-
-
-if(isset($_POST['num1'], $_POST['num2'])) {}
+// If fields are full
+// then calculate 
+// Otherwise throw an error
+if(isset($_POST['name1'], $_POST['email1'], $_POST['cash1'])) {}
+else {
+    if(isset($_POST['name1'])!= True) {
+        echo "Please enter your name";
+    }
+}
 
 
 
