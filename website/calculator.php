@@ -52,11 +52,11 @@
       </ul>
       <label for="efficiency"><b>Fuel Efficiency</b></label>
       <select name="efficiency" id="eff">
-          <option value=".5">terrible</option>
-          <option value=".8">bad</option>
-          <option value="1">neutral</option>
-          <option value="1.5">good</option>
-          <option value="1.8">amazing</option>
+          <option value="30">terrible</option>
+          <option value="35">bad</option>
+          <option value="40">neutral</option>
+          <option value="45">good</option>
+          <option value="50">amazing</option>
     </select><br>
 
      <input type="submit" value="Convert it!"><input type="reset" value="Reset">
@@ -72,13 +72,13 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (empty($_POST['miles'])) {
-        echo "Please enter the number of miles<br>";
+        echo "Please enter the number of miles ";
     }
     if(empty($_POST['ppg'])) {
-        echo "Please select a price per gallon<br>";
+        echo "Please select a price per gallon ";
     }
     if(empty($_POST['efficiency'])) {
-        echo "Please select your fuel efficiency<br>";
+        echo "Please select your fuel efficiency ";
     }
 
 
@@ -91,9 +91,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
         echo '<div class="box">';
-        echo '<h2>Hello '. $miles .'</h2>'; 
-        echo '<h2>Hello '. $ppg .'</h2>'; 
-        echo "Your new total is: $" .$total . "";
+        echo '<h2>You have driven: '. $miles .' miles</h2>'; 
+        echo '<h2>Your Vehicle has an efficiency rating of'. $ppg .' miles per gallon</h2>'; 
+        echo "Your total cost for gas will be $" .$total . " dollars";
         echo '</div>';
     }
 
