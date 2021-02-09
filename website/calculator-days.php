@@ -87,6 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     else {
         $name = $_POST['name'];
         $miles = abs($_POST['miles']);
+        $hours = $_POST['hours'];
         $ppg = $_POST['ppg'];
         $fe = $_POST['efficiency'];
         $total = ceil( ($miles / $fe) * $ppg );
