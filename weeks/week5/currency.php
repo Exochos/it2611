@@ -60,7 +60,7 @@
 <?php
 
 
-if(isset($_POST['num1'], $_POST['num2'])) {
+if(isset($_POST['num1'], $_POST['num2'])) {}
 
 
 
