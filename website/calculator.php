@@ -17,6 +17,8 @@
         border: 1px solid;
         padding-left: 5px;
         padding-bottom:2px;
+    }
+    ul {
         list-style-type: none;
     }
     form, fieldset {
