@@ -28,7 +28,8 @@
         width: 400px;
         background-color: ivory;
         border: 1px solid;
-        padding-left: 10px;
+        padding-top: 10px;
+        padding-left: 5px;
         padding-bottom:5px;
       }
       label, input {
