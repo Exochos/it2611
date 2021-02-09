@@ -47,8 +47,8 @@
     
       <ul><p><b>Price per gallon:</b></p>
         <li><input type="radio" id="" name="ppg" value="3.00">$3.00</li>
-        <li><input type="radio" id="currency" name="ppg" value="3.50">$3.50</li> 
-        <li><input type="radio" id="currency" name="ppg" value="4.00">$4.00</li>
+        <li><input type="radio" id="" name="ppg" value="3.50">$3.50</li> 
+        <li><input type="radio" id="" name="ppg" value="4.00">$4.00</li>
       </ul>
       <label for="efficiency"><b>Fuel Efficiency</b></label>
       <select name="efficiency" id="eff">
@@ -71,18 +71,16 @@
 */
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    if (empty($_POST['name1'])) {
-        echo "Please enter your name<br>";
+    if (empty($_POST['miles'])) {
+        echo "Please enter the number of miles<br>";
     }
-    if(empty($_POST['email1'])) {
-        echo "Please enter your email<br>";
+    if(empty($_POST['ppg'])) {
+        echo "Please select a price per gallon<br>";
     }
-    if(empty($_POST['cash1'])) {
-        echo "Please enter cash amount<br>";
+    if(empty($_POST['efficiency'])) {
+        echo "Please select your fuel efficiency<br>";
     }
-    if(empty($_POST['currency'])) {
-        echo "Please select a currency<br>";
-    }
+
 
     if (isset($_POST['name1'],$_POST['email1'],$_POST['cash1'],$_POST['currency']) && is_numeric($_POST['cash1']) && is_numeric($_POST['currency']))  {
         $name = $_POST['name1'];
