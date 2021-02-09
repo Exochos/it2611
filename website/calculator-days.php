@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo '<div class="box">';
         echo '<h1 style="color:red">Error!</h1>';
         echo 'Please fill out the form completely';
-        echo '</div>'
+        echo '</div>';
     }
 
 
