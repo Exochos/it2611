@@ -36,12 +36,12 @@
 <body>
 <!-- Form below -->
 <div class="contain">
-<h1> Our Calculator </h1>
+<h1> Our Calculator</h1>
 <form action="" method="post">
     <fieldset>
-     <label for="miles"><h2><b>How many miles will you be driving</b></h2></label>
+     
      <input type="text" name="miles"><br>
-    
+     <label for="miles"><h2><b>How many miles will you be driving</b></h2></label>
       <ul><p><b>Price per gallon:</b></p>
         <li><input type="radio" id="" name="ppg" value="3.00">$3.00</li>
         <li><input type="radio" id="currency" name="ppg" value="3.50">$3.50</li> 
