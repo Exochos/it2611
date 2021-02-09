@@ -31,26 +31,20 @@
 
      <label for="cash1">How much Money do you have?</label>
      <input type="text" name="cash" id="cash1"><br>
-      <ul>
+      <ul><p>Choose your Currency</p>
         <li>
-            <input type="radio" id="rub" name="type">
-            <label for="rub">Rubles</label>
+            <input type="radio" id="currency" name="currency" value="0.013">Rubles
         </li>
-      
         <li>
-            <input type="radio" id="cad" name="type">
-            <label for="cad">Canadian Dollars</label>
+            <input type="radio" id="currency" name="currency" value="0.76">Canadian Dollars
         </li> 
         <li>
-            <input type="radio" id="pounds" name="type">
-            <label for="pound">Pounds</label>
+            <input type="radio" id="currency" name="currency" value="1.28">Pounds
         </li>
         <li>
-            <input type="radio" id="euro" name="type">
-            <label for="euro">Euros</label></li>
+            <input type="radio" id="currency" name="currency" value="1.18">Euros
         <li>
-            <input type="radio" id="yen" name="type">
-            <label for="yen">Yen</label>
+            <input type="radio" id="currency" name="currency" value="0.0094">Yen
         </li>
       </ul>
      <input type="submit" value="Convert it!">
@@ -62,7 +56,7 @@
 // then calculate 
 // Otherwise throw an error
 if(isset($_POST['name1'], $_POST['email1'], $_POST['cash1'])) {
-    
+
 }
 else {
     if(isset($_POST['name1'])!= True) {
