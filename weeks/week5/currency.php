@@ -61,10 +61,18 @@
 // If fields are full
 // then calculate 
 // Otherwise throw an error
-if(isset($_POST['name1'], $_POST['email1'], $_POST['cash1'])) {}
+if(isset($_POST['name1'], $_POST['email1'], $_POST['cash1'])) {
+    
+}
 else {
     if(isset($_POST['name1'])!= True) {
-        echo "Please enter your name";
+        echo "Please enter your name<br>";
+    }
+    if(isset($_POST['email1'])!= True) {
+        echo "Please enter your email<br>";
+    }
+    if(isset($_POST['cash1'])!= True) {
+        echo "Please enter cash amount<br>";
     }
 }
 
