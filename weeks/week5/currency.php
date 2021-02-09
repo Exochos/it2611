@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['name1'],$_POST['email1'],$_POST['cash1'],$_POST['currency']) && is_numeric($_POST['cash1']) && is_numeric($_POST['currency']))  {
         $amount = $_POST['cash1'];
         $currency = $_POST['currency'];
-        $total = $amount + $currency;
+        $total = $amount * $currency;
         echo "Your total is: " .$total . "";
                 }
 
