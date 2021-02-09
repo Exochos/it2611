@@ -20,9 +20,10 @@
   </style>
 </head>
 <body>
-
+<!-- Form below -->
 <form action="" method="post">
     <fieldset>
+
      <label for="name1">Name</label>
      <input type="text" name="name" id="name1"><br>
 
@@ -31,24 +32,17 @@
 
      <label for="cash1">How much Money do you have?</label>
      <input type="text" name="cash" id="cash1"><br>
-      <ul><p>Choose your Currency</p>
-        <li>
-            <input type="radio" id="currency" name="currency" value="0.013">Rubles
-        </li>
-        <li>
-            <input type="radio" id="currency" name="currency" value="0.76">Canadian Dollars
-        </li> 
-        <li>
-            <input type="radio" id="currency" name="currency" value="1.28">Pounds
-        </li>
-        <li>
-            <input type="radio" id="currency" name="currency" value="1.18">Euros
-        <li>
-            <input type="radio" id="currency" name="currency" value="0.0094">Yen
-        </li>
+
+      <ul><p><b>Choose your Currency:</b></p>
+        <li><input type="radio" id="currency" name="currency" value="0.013">Rubles</li>
+        <li><input type="radio" id="currency" name="currency" value="0.76">Canadian Dollars</li> 
+        <li><input type="radio" id="currency" name="currency" value="1.28">Pounds</li>
+        <li><input type="radio" id="currency" name="currency" value="1.18">Euros</li>
+        <li><input type="radio" id="currency" name="currency" value="0.0094">Yen</li>
       </ul>
      <input type="submit" value="Convert it!">
      <p><a href="">Reset me</a></p>
+
     </fieldset>
 
 <?php
