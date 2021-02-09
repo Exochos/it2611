@@ -15,8 +15,8 @@
         width: 600px;
         background-color: beige;
         border: 1px solid;
-        padding-left: 10px;
-        padding-bottom:5px;
+        padding-left: 5px;
+        padding-bottom:2px;
     }
     form, fieldset {
         border: none;
@@ -39,9 +39,9 @@
 <h1> Our Calculator</h1>
 <form action="" method="post">
     <fieldset>
-     
-     <input type="text" name="miles"><br>
      <label for="miles"><h2><b>How many miles will you be driving</b></h2></label>
+     <input type="text" name="miles"><br>
+    
       <ul><p><b>Price per gallon:</b></p>
         <li><input type="radio" id="" name="ppg" value="3.00">$3.00</li>
         <li><input type="radio" id="currency" name="ppg" value="3.50">$3.50</li> 
