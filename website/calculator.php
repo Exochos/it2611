@@ -18,6 +18,9 @@
         padding-left: 10px;
         padding-bottom:5px;
     }
+    form {
+        border: none;
+    }
     .box {
         background-color: beige;
         border: 1px solid;
