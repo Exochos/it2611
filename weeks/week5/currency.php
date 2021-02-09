@@ -64,6 +64,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Please select a currency<br>";
     }
 
+    if (isset($_POST['name1'],$_POST['email1'],$_POST['cash1'],$_POST['currency']) && is_numeric($_POST['cash1']) && is_numeric($_POST['currency']))  {
+                    echo "got here<br>";
+                }
+
 }
 
 
