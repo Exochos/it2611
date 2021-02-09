@@ -11,12 +11,13 @@
   <style>
     .contain {
         display: block;
-        max-width: 600px;
-        width: 600px;
+        max-width: 400px;
+        width: 400px;
         background-color: beige;
         border: 1px solid;
         padding-left: 5px;
         padding-bottom:2px;
+        list-style-type: none;
     }
     form, fieldset {
         border: none;
