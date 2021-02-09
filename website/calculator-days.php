@@ -77,7 +77,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (empty($_POST['miles']) || empty($_POST['name']) || empty($_POST['hours']) || empty($_POST['ppg'])) {
-        echo '<div class="box">';
+        echo '<br><div class="box">';
         echo '<h1 style="color:red">Error!</h1>';
         echo 'Please fill out the form completely';
         echo '</div>';
