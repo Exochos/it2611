@@ -52,11 +52,11 @@
       </ul>
       <label for="efficiency"><b>Fuel Efficiency</b></label>
       <select name="efficiency" id="eff">
-          <option value="terrible">terrible</option>
-          <option value="bad">bad</option>
-          <option value="neutral">neutral</option>
-          <option value="good">good</option>
-          <option value="amazing">amazing</option>
+          <option value=".5">terrible</option>
+          <option value=".8">bad</option>
+          <option value="1">neutral</option>
+          <option value="1.5">good</option>
+          <option value="1.8">amazing</option>
     </select><br>
 
      <input type="submit" value="Convert it!"><input type="submit" value="Reset">
@@ -92,6 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         echo '<div class="box">';
         echo '<h2>Hello '. $miles .'</h2>'; 
+        echo '<h2>Hello '. $ppg .'</h2>'; 
         echo "Your new total is: $" .$total . "";
         echo '</div>';
     }
