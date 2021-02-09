@@ -45,12 +45,12 @@
       </ul>
       <label for="efficiency"><b>Fuel Efficiency</b></label>
       <select name="efficiency" id="eff">
-          <option value="terrible">
-          <option value="bad">
-          <option value="neutral">
-          <option value="good">
-          <option value="amazing">
-    </select>
+          <option value="terrible">terrible</option>
+          <option value="bad">bad</option>
+          <option value="neutral">neutral</option>
+          <option value="good">good</option>
+          <option value="amazing">amazing</option>
+    </select><br>
 
      <input type="submit" value="Convert it!"><input type="submit" value="Reset">
 
