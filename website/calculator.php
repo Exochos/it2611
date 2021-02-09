@@ -82,15 +82,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
 
-    if (isset($_POST['name1'],$_POST['email1'],$_POST['cash1'],$_POST['currency']) && is_numeric($_POST['cash1']) && is_numeric($_POST['currency']))  {
-        $name = $_POST['name1'];
-        $amount = $_POST['cash1'];
-        $currency = $_POST['currency'];
-        $total = $amount * $currency;
+    if (isset($_POST['miles'],$_POST['ppg'],$_POST['efficiency']) && is_numeric($_POST['miles']) {
+        $miles = $_POST['miles'];
+        $ppg = $_POST['ppg'];
+        $fe = $_POST['efficiency'];
+        $total = $miles * $ppg * $fe;
 
 
         echo '<div class="box">';
-        echo '<h2>Hello '. $name .'</h2>'; 
+        echo '<h2>Hello '. $miles .'</h2>'; 
         echo "Your new total is: $" .$total . "";
         echo '</div>';
     }
