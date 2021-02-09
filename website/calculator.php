@@ -35,14 +35,22 @@
 <h1> Our Calculator </h1>
 <form action="" method="post">
     <fieldset>
-     <label for="miles">How many miles will you be driving</label>
+     <label for="miles"><b>How many miles will you be driving</b></label>
      <input type="text" name="miles"><br>
     
-      <ul><p><b>Price per gallon:</b></p><br>
-        <li><input type="radio" id="currency" name="currency" value="3.00">$3.00</li>
-        <li><input type="radio" id="currency" name="currency" value="3.50">$3.50</li> 
-        <li><input type="radio" id="currency" name="currency" value="4.00">$4.00</li>
+      <ul><p><b>Price per gallon:</b></p>
+        <li><input type="radio" id="" name="ppg" value="3.00">$3.00</li>
+        <li><input type="radio" id="currency" name="ppg" value="3.50">$3.50</li> 
+        <li><input type="radio" id="currency" name="ppg" value="4.00">$4.00</li>
       </ul>
+      <label for="efficiency"><b>Fuel Efficiency</b></label>
+      <select name="efficiency" id="eff">
+          <option value="terrible">
+          <option value="bad">
+          <option value="neutral">
+          <option value="good">
+          <option value="amazing">
+    </select>
 
      <input type="submit" value="Convert it!"><input type="submit" value="Reset">
 
