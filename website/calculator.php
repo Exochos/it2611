@@ -35,7 +35,7 @@
 <h1> Our Calculator </h1>
 <form action="" method="post">
     <fieldset>
-     <label for="miles"><b>How many miles will you be driving</b></label>
+     <label for="miles"><h2><b>How many miles will you be driving</b></h2></label>
      <input type="text" name="miles"><br>
     
       <ul><p><b>Price per gallon:</b></p>
