@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Gas Calculator</title>
+  <title>Our Trip Calculator</title>
   <meta name="description" content="Gas Calculator Form for IT162">
   <meta name="author" content="Jeremy Ward">
   <style>
@@ -41,13 +41,14 @@
 <!-- Form below -->
 <div class="contain">
 <form action="" method="post">
-<h1> Our Calculator</h1>
+<h1> Our Trip Calculator</h1>
     <fieldset>
      <label for="name"><h2><b>Your name</b></h2></label>
      <input type="text" name="name"><br>
      <label for="miles"><h2><b>How many miles will you be driving</b></h2></label>
      <input type="text" name="miles"><br>
-    
+     <label for="hours"><h2><b>How many hours per day would you like to be driving?</b></h2></label>
+     <input type="text" name="hours"><br>
       <ul><p><b>Price per gallon:</b></p>
         <li><input type="radio" id="" name="ppg" value="3.00">$3.00</li>
         <li><input type="radio" id="" name="ppg" value="3.50">$3.50</li> 
@@ -74,14 +75,11 @@
 */
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    if (empty($_POST['miles'])) {
-        echo "Please enter the number of miles ";
-    }
-    if(empty($_POST['ppg'])) {
-        echo "Please select a price per gallon ";
-    }
-    if(empty($_POST['efficiency'])) {
-        echo "Please select your fuel efficiency ";
+    if (empty($_POST['miles']) || empty($_POST['name']) || empty($_POST['hours']) || empty($_POST['ppg'])) {
+        echo '<div class="box">';
+        echo '<h1 style="color:red">Error!</h1>';
+        echo 'Please fill out the form completely';
+        echo '</div>'
     }
 
 
