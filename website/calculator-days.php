@@ -93,10 +93,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
         echo '<div class="box">';
-        echo '<p>'. $name .'You will be driving <b>'. $miles .' miles</b><br>'; 
-        echo 'Your Vehicle has an efficiency rating of '. $fe .' miles per gallon<br>'; 
+        echo '<p>'. $name .', You will be driving <b>'. $miles .' miles</b><br>'; 
+        echo 'Your Vehicle has an efficiency rating of <b>'. $fe .' miles per gallon</b><br>'; 
         echo "Your total cost for gas will be<b> $" .$total . " dollars</b><br>";
-        echo 'your driving total of <b>' . $tHours . ' hours equating to -- days.</p>';
+        echo 'your driving total of <b> ' . $tHours . ' hours equating to -- days.</p>';
         echo '</div>';
     }
 
