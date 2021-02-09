@@ -25,7 +25,8 @@
         border: none;
     }
     .box {
-        background-color: beige;
+        width: 400px;
+        background-color: ivory;
         border: 1px solid;
         padding-left: 10px;
         padding-bottom:5px;
