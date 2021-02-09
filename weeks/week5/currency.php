@@ -9,6 +9,10 @@
   <meta name="description" content="Currency Form for IT162">
   <meta name="author" content="Jeremy Ward">
   <style>
+      div {
+        background-color: beige;
+        border: 1px solid;
+      }
       form {
           width: 300px;
           border: 1px solid;
@@ -46,9 +50,11 @@
     </fieldset>
 
 <?php
-// If fields are full
-// then calculate 
-// Otherwise throw an error
+/*
+    If fields are full
+    then calculate 
+    Otherwise throw an error relevent to the error.
+*/
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (empty($_POST['name1'])) {
@@ -65,11 +71,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     if (isset($_POST['name1'],$_POST['email1'],$_POST['cash1'],$_POST['currency']) && is_numeric($_POST['cash1']) && is_numeric($_POST['currency']))  {
+        
         $amount = $_POST['cash1'];
         $currency = $_POST['currency'];
         $total = $amount * $currency;
-        echo "Your total is: " .$total . "";
-                }
+
+
+        echo '<div class="box">';
+        echo '<h2>Hello '. $name1 .'</h2>'; 
+        echo "Your new total is: $" .$total . "";
+        echo '</div>';
+    }
 
 }
 
