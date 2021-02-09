@@ -9,10 +9,11 @@
   <meta name="description" content="Currency Form for IT162">
   <meta name="author" content="Jeremy Ward">
   <style>
-      div {
+    .box {
         background-color: beige;
         border: 1px solid;
         padding-left: 10px;
+        padding-bottom:5px;
       }
       form {
           width: 300px;
