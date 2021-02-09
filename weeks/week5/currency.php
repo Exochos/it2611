@@ -60,6 +60,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(empty($_POST['cash1'])) {
         echo "Please enter cash amount<br>";
     }
+    if(empty($_POST['currenct'])) {
+        echo "Please select a currency<br>";
+    }
 
 }
 
