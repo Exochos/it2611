@@ -18,9 +18,6 @@
         padding-left: 10px;
         padding-bottom:5px;
     }
-    h1 {
-        text-align:center;
-    }
     .box {
         background-color: beige;
         border: 1px solid;
@@ -28,8 +25,6 @@
         padding-bottom:5px;
       }
       form {
-          width: 300px;
-          border: 1px solid;
       }
       label, input {
           padding: 5px;
