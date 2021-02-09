@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
         echo '<div class="box">';
-        echo '<h2>Hello '. $name1 .'</h2>'; 
+        echo '<h2>Hello '. $name .'</h2>'; 
         echo "Your new total is: $" .$total . "";
         echo '</div>';
     }
