@@ -18,7 +18,7 @@
         padding-left: 10px;
         padding-bottom:5px;
     }
-    form {
+    form, fieldset {
         border: none;
     }
     .box {
