@@ -24,8 +24,6 @@
         padding-left: 10px;
         padding-bottom:5px;
       }
-      form {
-      }
       label, input {
           padding: 5px;
           margin: 5px;
