@@ -27,6 +27,10 @@
                     <li><a href="http://jeremyward.me/it2611/weeks/week5/currency-days.php">currency1a</a></li>
                     <li><a href="http://jeremyward.me/it2611/weeks/week5/currency-days-errors.php">currency2</a></li>
                     <li><a href="http://jeremyward.me/it2611/weeks/week5/currency-errors-sticky.php">currency3</a></li>
+                    <li><a href="http://jeremyward.me/it2611/website/calculator.php">calculator</a></li>
+                    <li><a href="http://jeremyward.me/it2611/website/calculator-days.php">calculator-days</a></li>
+                    <li><a href="http://jeremyward.me/it2611/website/calculator-days-error.php">calculator-days-error</a></li>
+                    <li><a href="http://jeremyward.me/it2611/website/calculator-days-error-stick.php">calculator-days-error-sticky</a></li>
                     </ul>
                 </ul>
         </menu>
