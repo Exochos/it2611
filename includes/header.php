@@ -29,7 +29,7 @@
             <a href="http://jeremyward.me/it2611/index.php">Home</a>
             <a href="http://jeremyward.me/it2611/website/switch.php">HW3 Switch</a>
             <a href="http://jeremyward.me/it2611/website/troubleshoot.php">HW4 Troubleshoot</a>
-            <a href="http://jeremyward.me/it2611/website/calculator-days-errors.php">HW5 Calculator</a>
+            <a href="http://jeremyward.me/it2611/website/calculator-days-errors-sticky.php">HW5 Calculator</a>
             <a href="website/email.php">HW6 Email</a>
             <a href="website/gallery.php">HW7 Gallery</a>
             <a href="website/database.php">HW8 Database</a>
