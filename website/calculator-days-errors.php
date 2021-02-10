@@ -58,7 +58,7 @@
       </ul>
       <label for="efficiency"><b>Fuel Efficiency</b></label>
       <select name="efficiency" id="eff">
-          <option value="null" selected>Please Select an option</option>
+          <option value="NULL" selected>Please Select an option</option>
           <option value="30">terrible</option>
           <option value="35">bad</option>
           <option value="40">neutral</option>
