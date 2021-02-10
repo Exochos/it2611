@@ -47,10 +47,13 @@
     <fieldset>
      <label for="name"><h2><b>Your name</b></h2></label>
      <input type="text" name="name" value="<?php if (isset($_POST['name'])) echo htmlspecialchars($_POST['name']);?>"><br>
+
      <label for="miles"><h2><b>How many miles will you be driving</b></h2></label>
      <input type="text" name="miles" value="<?php if (isset($_POST['miles'])) echo htmlspecialchars($_POST['miles']);?>"><br>
+
      <label for="hours"><h2><b>How many hours per day would you like to be driving?</b></h2></label>
      <input type="text" name="hours" value="<?php if (isset($_POST['hours'])) echo htmlspecialchars($_POST['hours']);?>"><br>
+     
       <ul><p><b>Price per gallon:</b></p>
         <li><input type="radio" id="" name="ppg" value="3.00">$3.00</li>
         <li><input type="radio" id="" name="ppg" value="3.50">$3.50</li> 
