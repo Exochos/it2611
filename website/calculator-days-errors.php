@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         foreach($_POST as $key => $value) {
             if ($_POST[$key] == NULL) {
                 echo '<div class="box"><h2 style="color:red">';
-                echo "Please fill out the '$key'";
+                echo "Please fill out the $key";
                 echo '</h2></div>';
             }
         }
