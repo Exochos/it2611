@@ -78,8 +78,8 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (empty($_POST['miles']) || empty($_POST['name']) || empty($_POST['hours']) || empty($_POST['ppg'])) {
-        for ($i=0; ($i < count($_POST)); $i++) {
-            echo ($_POST['$i']);
+        foreach($_POST as $key => $value) {
+            echo "Post parameter '$key' has '$value'";
         }
     }
 
