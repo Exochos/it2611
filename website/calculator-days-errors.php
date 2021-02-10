@@ -81,15 +81,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($_POST['miles']) || empty($_POST['name']) || empty($_POST['hours']) || empty($_POST['ppg'])) {
         foreach($_POST as $key => $value) {
             if ($_POST[$key] == NULL) {
-                if (($_POST['efficiency'])  == 0) {
-                    echo '<div class="box"><h2 style="color:red">';
-                    echo "Please select a fuel efficiency";
-                    echo '</h2></div>';    
-                }
                 echo '<div class="box"><h2 style="color:red">';
                 echo "Please fill out the $key";
                 echo '</h2></div>';
             }
+        }
+        if (($_POST['efficiency'])  == 0) {
+            echo '<div class="box"><h2 style="color:red">';
+            echo "Please select a fuel efficiency";
+            echo '</h2></div>';    
         }
     }
 
