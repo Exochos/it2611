@@ -53,7 +53,7 @@
 
      <label for="hours"><h2><b>How many hours per day would you like to be driving?</b></h2></label>
      <input type="text" name="hours" value="<?php if (isset($_POST['hours'])) echo htmlspecialchars($_POST['hours']);?>"><br>
-     
+
       <ul><p><b>Price per gallon:</b></p>
         <li><input type="radio" id="" name="ppg" value="3.00">$3.00</li>
         <li><input type="radio" id="" name="ppg" value="3.50">$3.50</li> 
@@ -62,11 +62,11 @@
       <label for="efficiency"><b>Fuel Efficiency</b></label>
       <select name="efficiency" id="eff">
           <option value='0' selected>Please Select an option</option>
-          <option value="30">terrible</option>
-          <option value="35">bad</option>
-          <option value="40">neutral</option>
-          <option value="45">good</option>
-          <option value="50">amazing</option>
+          <option value="30">terrible @30MPG</option>
+          <option value="35">bad @35MPG</option>
+          <option value="40">neutral @40MPG</option>
+          <option value="45">good @45MPG</option>
+          <option value="50">amazing @50MPG</option>
     </select><br>
 
      <input type="submit" value="Convert it!"><input type="reset" value="Reset">
