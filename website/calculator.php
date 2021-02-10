@@ -40,8 +40,9 @@
 <body>
 <!-- Form below -->
 <div class="contain">
+<h1 style="margin-bottom: 2px;"> Our Calculator</h1>
 <form action="" method="post">
-<h1> Our Calculator</h1>
+
     <fieldset>
      <label for="miles"><h2><b>How many miles will you be driving</b></h2></label>
      <input type="text" name="miles"><br>
