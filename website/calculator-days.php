@@ -41,8 +41,9 @@
 <body>
 <!-- Form below -->
 <div class="contain">
-<form action="" method="post">
 <h1> Our Trip Calculator</h1>
+<form action="" method="post">
+
     <fieldset>
      <label for="name"><h2><b>Your name</b></h2></label>
      <input type="text" name="name"><br>

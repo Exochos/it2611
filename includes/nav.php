@@ -13,7 +13,7 @@
                     <li><a href="http://jeremyward.me/it2611/weeks/week3/data-types.php">data-types.php</a></li>
                     <li><a href="http://jeremyward.me/it2611/weeks/week3/switch.txt">switch.php</a></li>
                     </ul>
-                    
+
                     <li>Week 4
                     
                 <ul class="second">
@@ -24,9 +24,9 @@
                 <li>Week 5
                 <ul class="second">
                     <li><a href="http://jeremyward.me/it2611/weeks/week5/currency.php">currency</a></li>
-                    <li><a href="http://jeremyward.me/it2611/weeks/week5/currency1a.php">currency1a</a></li>
-                    <li><a href="http://jeremyward.me/it2611/weeks/week5/currency2.php">currency2</a></li>
-                    <li><a href="http://jeremyward.me/it2611/weeks/week5/currency3.php">currency3</a></li>
+                    <li><a href="http://jeremyward.me/it2611/weeks/week5/currency-days.php">currency1a</a></li>
+                    <li><a href="http://jeremyward.me/it2611/weeks/week5/currency-days-errors.php">currency2</a></li>
+                    <li><a href="http://jeremyward.me/it2611/weeks/week5/currency-errors-sticky.php">currency3</a></li>
                     </ul>
                 </ul>
         </menu>
