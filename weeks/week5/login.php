@@ -24,7 +24,7 @@
           margin: 5px;
       }
       .box {
-          width: 400px;
+          width: 396px;
           border: 1px solid black;
           background-color: white;
           color: red;
