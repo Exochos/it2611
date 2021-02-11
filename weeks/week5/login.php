@@ -52,10 +52,10 @@
 
 
     if(isempty($_POST['name'])) {
-        echo '<div class="box">Please Enter your name</div>'
+        echo '<div class="box">Please Enter your name</div>';
     }
     if(isempty($_POST['name'])) {
-        echo '<div class="box">Please Enter your password</div>'
+        echo '<div class="box">Please Enter your password</div>';
     }
 
 
