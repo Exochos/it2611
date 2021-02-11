@@ -25,10 +25,11 @@
       }
       .box {
           width: 400px;
-          border: 1px solid;
+          border: 1px solid black;
           background-color: white;
           color: red;
           margin: 2px;
+          padding: 2px;
       }
   </style>
 </head>
