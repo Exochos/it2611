@@ -17,6 +17,7 @@
       form {
           width: 400px;
           border: 1px solid;
+          background-color: AliceBlue;
       }
       label, input {
           padding: 5px;
@@ -25,10 +26,11 @@
   </style>
 </head>
 
-<form action="" method="post">
+<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);  ?>" method="post">
     <fieldset>
-     <label for="name1">Name</label>
-     <input type="text" name="name" id="name1"><br>
+
+     <label for="name">Name</label>
+     <input type="text" name="name" id="name"><br>
 
      <label for="pass">Password</label>
      <input type="text" name="password" id="pass"><br>
@@ -39,6 +41,17 @@
      <input type="submit" value="Submit">
      <input type="reset" value="Reset">
     </fieldset>
+</form>
+<?php 
+
+
+      if() {
+
+      }
+
+
+
+?>
 <body>
   
 </body>
