@@ -23,6 +23,12 @@
           padding: 5px;
           margin: 5px;
       }
+      .box {
+          width: 400px;
+          border: 1px solid;
+          background-color: AliceBlue;
+          color: red;
+      }
   </style>
 </head>
 
@@ -45,9 +51,12 @@
 <?php 
 
 
-      if(True) {
-
-      }
+    if(isempty($_POST['name'])) {
+        echo '<div class="box">Please Enter your name</div>'
+    }
+    if(isempty($_POST['name'])) {
+        echo '<div class="box">Please Enter your password</div>'
+    }
 
 
 
