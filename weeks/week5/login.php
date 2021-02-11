@@ -44,9 +44,8 @@
 
      <b>Are you a member?</b><input type="radio" id="yes" name="member">Yes<input type="radio" id="no" name="member">No<br>
 
-
-     <input type="submit" value="Submit">
-     <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+    <form action="href=''"><input type="submit" value="Reset" /></form>
     </fieldset>
 </form>
 <?php 
