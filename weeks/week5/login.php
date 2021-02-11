@@ -33,10 +33,10 @@
      <label for="pass">Password</label>
      <input type="text" name="password" id="pass"><br>
 
-     <b>Are you a member?</b><input type="radio" id="yes" name="member">Yes<input type="radio" id="no" name="member">No
+     <b>Are you a member?</b><input type="radio" id="yes" name="member">Yes<input type="radio" id="no" name="member">No<br>
 
-     
-     <input type="submit" value="Convert it!">
+
+     <input type="submit" value="Submit">
      <input type="reset" value="Reset">
     </fieldset>
 <body>
