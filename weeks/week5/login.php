@@ -15,7 +15,7 @@
   <meta name="author" content="Jeremy Ward">
   <style>
       form {
-          width: 300px;
+          width: 400px;
           border: 1px solid;
       }
       label, input {
@@ -34,15 +34,8 @@
      <input type="text" name="password" id="pass"><br>
 
       <ul>
-        <li>
-            <input type="radio" id="yes" name="member">
-            <label for="yes">Yes</label>
-        </li>
-      
-        <li>
-            <input type="radio" id="no" name="member">
-            <label for="no">No</label>
-        </li>
+        <li><input type="radio" id="yes" name="member">Yes</li>
+        <li><input type="radio" id="no" name="member">No</li>
       </ul>
      <input type="submit" value="Convert it!">
      <input type="reset" value="Reset">
