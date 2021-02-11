@@ -55,7 +55,7 @@
     if(empty($_POST['name'])) {
         echo '<div class="box">Please Enter your name</div>';
     }
-    if(empty($_POST['name'])) {
+    if(empty($_POST['pass'])) {
         echo '<div class="box">Please Enter your password</div>';
     }
     if(empty($_POST['member'])) {
