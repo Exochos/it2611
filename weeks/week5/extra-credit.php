@@ -16,6 +16,7 @@
   .container {
     display: flex;
     align-items: center;
+    margin-left: 20px;
   }
     .box {
         background-color: lightblue;
