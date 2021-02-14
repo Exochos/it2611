@@ -11,7 +11,7 @@
   <style>
   .container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
   }
     .box {
         background-color: lightblue;
@@ -43,7 +43,7 @@
      <label for="email1">Email</label>
      <input type="email" name="email1" id="email1"><br>
 
-     <label for="cash1">How much Money do you have?</label>
+     <label for="cash1">How much Money do you have?</label><br>
      <input type="text" name="cash1" id="cash1"><br>
 
       <ul><p><b>Choose your Currency:</b></p>
