@@ -10,7 +10,8 @@
   <meta name="author" content="Jeremy Ward">
   <style>
   * {
-      text-align: center;
+    display: flex;
+    align-items: flex-start;
   }
     .box {
         background-color: lightblue;
