@@ -61,7 +61,7 @@
       </ul>
       <label for="efficiency"><b>Fuel Efficiency</b></label>
       <select name="efficiency" id="eff">
-          <option value='NULL' selected>Please Select an option</option>
+          <option value='NULL'>Please Select an option</option>
           <option value="30" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '30') echo 'checked="checked"'; ?>>terrible @30MPG</option>
           <option value="35" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '35') echo 'checked="checked"'; ?>>bad @35MPG</option>
           <option value="40" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '40') echo 'checked="checked"'; ?>>neutral @40MPG</option>
