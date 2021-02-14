@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo '<p>'. $name .', you will be driving <b>'. $miles .' miles</b><br>'; 
         echo 'Your Vehicle has an efficiency rating of <b>'. $fe .' miles per gallon</b><br>'; 
         echo "Your total cost for gas will be<b> $" .$total . " dollars</b><br>";
-        echo 'your driving total of <b> ' . $totalHours . ' hours equating to '. floor($totalHours / 24) . ' days.</p>';
+        echo 'your driving total of <b> ' . $totalHours . ' hours equating to '. floor($totalHours / $hours) . ' days.</p>';
         echo '</div>';
     }
 
