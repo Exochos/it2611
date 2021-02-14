@@ -66,7 +66,7 @@
           <option value="35" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '35') echo 'selected'; ?>>bad @35MPG</option>
           <option value="40" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '40') echo 'selected'; ?>>neutral @40MPG</option>
           <option value="45" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '45') echo 'selected'; ?>>good @45MPG</option>
-          <option value="50" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '45') echo 'selected'; ?>>amazing @50MPG</option>
+          <option value="50" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '50') echo 'selected'; ?>>amazing @50MPG</option>
     </select><br>
 
      <input type="submit" value="Convert it!"><input type="reset" value="Reset">
