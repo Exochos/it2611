@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     margin-left: 20px;
+    padding-left: 20px;
   }
     .box {
         background-color: lightblue;
@@ -39,17 +40,14 @@
 
 <!-- Form below -->
 <form action="" method="post">
-<h1> Extra Credit Currency Assignment </h1><br><br>
+<h1> Extra Credit Currency Assignment </h1><br>
     <fieldset>
 
-     <label for="name1">Name</label>
-     <input type="text" name="name1" id="name1"><br>
+     <label for="name1">Name:</label><input type="text" name="name1" id="name1"><br>
 
-     <label for="email1">Email</label>
-     <input type="email" name="email1" id="email1"><br>
+     <label for="email1">Email</label><input type="email" name="email1" id="email1"><br>
 
-     <label for="cash1">How much Money do you have?</label><br>
-     <input type="text" name="cash1" id="cash1"><br>
+     <label for="cash1">How much Money do you have?</label><input type="text" name="cash1" id="cash1"><br>
 
       <ul><p><b>Choose your Currency:</b></p>
         <li><input type="radio" id="currency" name="currency" value="0.013">Rubles</li>
