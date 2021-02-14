@@ -16,6 +16,7 @@
   .container {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 20px;
     padding-left: 20px;
   }
@@ -56,8 +57,14 @@
         <li><input type="radio" id="currency" name="currency" value="1.18">Euros</li>
         <li><input type="radio" id="currency" name="currency" value="0.0094">Yen</li>
       </ul>
-      <select>
-      </select>
+      <select name="bank" id="eff">
+          <option value='NULL'>Please Select an option</option>
+          <option value="1" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '30') echo 'selected'; ?>>terrible @30MPG</option>
+          <option value="2" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '35') echo 'selected'; ?>>bad @35MPG</option>
+          <option value="3" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '40') echo 'selected'; ?>>neutral @40MPG</option>
+          <option value="4" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '45') echo 'selected'; ?>>good @45MPG</option>
+          <option value="5" <?php if (isset($_POST['efficiency']) && $_POST['efficiency'] == '50') echo 'selected'; ?>>amazing @50MPG</option>
+    </select><br>
      <input type="submit" value="Convert it!">
      <p><a href="">Reset me</a></p>
 
