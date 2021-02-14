@@ -5,18 +5,21 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Currency</title>
+  <title>Extra Credit</title>
   <meta name="description" content="Currency Form for IT162">
   <meta name="author" content="Jeremy Ward">
   <style>
+  * {
+      text-align: center;
+  }
     .box {
-        background-color: beige;
+        background-color: lightblue;
         border: 1px solid;
         padding-left: 10px;
         padding-bottom:5px;
       }
       form {
-          width: 300px;
+          width: 600px;
           border: 1px solid;
       }
       label, input {
@@ -26,6 +29,7 @@
   </style>
 </head>
 <body>
+<h1> Extra Credit Currency Assignment </h1>
 <!-- Form below -->
 <form action="" method="post">
     <fieldset>
@@ -46,6 +50,8 @@
         <li><input type="radio" id="currency" name="currency" value="1.18">Euros</li>
         <li><input type="radio" id="currency" name="currency" value="0.0094">Yen</li>
       </ul>
+      <select>
+      </select>
      <input type="submit" value="Convert it!">
      <p><a href="">Reset me</a></p>
 
@@ -89,5 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 ?>
+<a href="">HTML VALID</a><br>
+<a href="">CSS VALID</a>
 </body>
 </html>
