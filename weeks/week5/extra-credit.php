@@ -9,6 +9,10 @@
   <meta name="description" content="Currency Form for IT162">
   <meta name="author" content="Jeremy Ward">
   <style>
+  body {
+    display: flex;
+    align-items: flex-start;
+  }
   .container {
     display: flex;
     align-items: center;
