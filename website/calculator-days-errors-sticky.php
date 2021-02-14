@@ -55,9 +55,9 @@
      <input type="text" name="hours" value="<?php if (isset($_POST['hours'])) echo htmlspecialchars($_POST['hours']);?>"><br>
 
       <ul><p><b>Price per gallon:</b></p>
-        <li><input type="radio" id="" name="ppg" value="3.00">$3.00</li>
-        <li><input type="radio" id="" name="ppg" value="3.50">$3.50</li> 
-        <li><input type="radio" id="" name="ppg" value="4.00">$4.00</li>
+        <li><input type="radio" id="" name="ppg" value="3.00" <?php if (isset($_POST['ppg']) && $_POST['ppg'] == '3.00') ?>>$3.00</li>
+        <li><input type="radio" id="" name="ppg" value="3.50"<?php if (isset($_POST['ppg']) && $_POST['ppg'] == '3.50') ?>>$3.50</li> 
+        <li><input type="radio" id="" name="ppg" value="4.00"<?php if (isset($_POST['ppg']) && $_POST['ppg'] == '4.00') ?>>$4.00</li>
       </ul>
       <label for="efficiency"><b>Fuel Efficiency</b></label>
       <select name="efficiency" id="eff">
