@@ -31,10 +31,10 @@
 </head>
 <body>
 <div class="container">
-<p>
-<h1> Extra Credit Currency Assignment </h1><br><br></p>
+
 <!-- Form below -->
 <form action="" method="post">
+<h1> Extra Credit Currency Assignment </h1><br><br>
     <fieldset>
 
      <label for="name1">Name</label>
