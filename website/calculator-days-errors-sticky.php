@@ -104,6 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $ppg = $_POST['ppg'];
         $fe = $_POST['efficiency'];
         $total = ceil( ($miles / $fe) * $ppg );
+        $totalHours = floor($miles / $hours);
 
 
         echo '<div class="box">';
@@ -111,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo '<p>'. $name .', you will be driving <b>'. $miles .' miles</b><br>'; 
         echo 'Your Vehicle has an efficiency rating of <b>'. $fe .' miles per gallon</b><br>'; 
         echo "Your total cost for gas will be<b> $" .$total . " dollars</b><br>";
-        echo 'your driving total of <b> ' . $hours . ' hours equating to '. floor(($miles / $hours)/60) . ' days.</p>';
+        echo 'your driving total of <b> ' . $totalHours . ' hours equating to '. floor($totalHours / 24) . ' days.</p>';
         echo '</div>';
     }
 
