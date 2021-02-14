@@ -9,7 +9,7 @@
   <meta name="description" content="Currency Form for IT162">
   <meta name="author" content="Jeremy Ward">
   <style>
-  * {
+  .container {
     display: flex;
     align-items: flex-start;
   }
@@ -30,6 +30,7 @@
   </style>
 </head>
 <body>
+<div class="container">
 <h1> Extra Credit Currency Assignment </h1>
 <!-- Form below -->
 <form action="" method="post">
@@ -98,5 +99,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 <a href="">HTML VALID</a><br>
 <a href="">CSS VALID</a>
+</div>
 </body>
 </html>
