@@ -95,7 +95,7 @@
      <a href="" class="button">Reset me</a>
 
     </fieldset>
-
+    </form>
 <?php
 /*
     If fields are full
