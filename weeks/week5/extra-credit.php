@@ -60,7 +60,7 @@
 <body>
 <div class="container">
 
-<!-- Form below --><h1> Extra Credit Currency Assignment </h1><br>
+<!-- Form below --><h2> Extra Credit Currency Assignment </h2><br>
 <form action="" method="post">
 
     <fieldset>
@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $currency = $_POST['currency'];
         $total = $money * $currency;
         if (($money * $currency) < 200) {
-            echo "<br><br><div class='box' style='background-color: grey;padding-top:20px;'><br>";
+            echo "<br><br><div class='box' style='background-color: grey;padding-top:5px;'><br>";
             echo "I am a sad Panda, I have $$total American Dollars and I am going to look at kitten videos<br><br>";
             echo '
                     <iframe width="90%" height="70%"
@@ -129,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "</div>";
         }
         else {
-            echo "<br><br><div class='box' style='background-color: yellow;padding-top:20px;'><br>";
+            echo "<br><br><div class='box' style='background-color: yellow;padding-top:5px;'><br>";
             echo "I am a happy camper, I have $$total American Dollars and I am going to buy a red panda<br><br>";
             echo '
                     <iframe width="90%" height="70%"
