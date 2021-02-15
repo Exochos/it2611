@@ -65,8 +65,10 @@
 
     <fieldset>
 
-     <label for="name">Name</label>
-     <input type="text" name="name" value="<?php if (isset($_POST['name'])) echo htmlspecialchars($_POST['name']);?>"><br>
+     <label>Name
+        <input type="text" name="name" value="<?php if (isset($_POST['name'])) echo htmlspecialchars($_POST['name']);?>"><br>
+     </label>
+     
 
      <label for="email">Email</label>
      <input type="email" name="email" id="email" value="<?php if (isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>"><br>
