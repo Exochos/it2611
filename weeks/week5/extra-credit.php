@@ -130,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         else {
             echo "<br><br><div class='box' style='background-color: yellow;padding-top:20px;'><br>";
-            echo "I am a happy camper, I have $total American Dollars and I am going to buy a red panda<br><br>";
+            echo "I am a happy camper, I have $ $total American Dollars and I am going to buy a red panda<br><br>";
             echo '
                     <iframe width="90%" height="70%"
                         src="https://www.youtube.com/embed/Qu59cLEA4HQ">
