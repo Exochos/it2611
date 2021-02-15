@@ -104,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $ppg = $_POST['ppg'];
         $fe = $_POST['efficiency'];
         $total = ceil( ($miles / $fe) * $ppg );
-        $totalHours = floor($miles / 60);
+        $totalHours = floor($miles / 65);
 
 
         echo '<div class="box">';
