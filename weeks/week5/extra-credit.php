@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "I am a sad Panda, I have $total American Dollars and I am going to look at kitten videos<br><br>";
             echo '
                     <iframe width="90%" height="70%"
-                        src="https://www.youtube.com/watch?v=oL4z_qRS8cM">
+                        src="https://www.youtube.com/embed/oL4z_qRS8cM">
                     </iframe>
             ';
             echo "</div>";
@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "I am a happy camper, I have $total American Dollars and I am going to buy a red panda<br><br>";
             echo '
                     <iframe width="90%" height="70%"
-                        src="https://www.youtube.com/watch?v=Qu59cLEA4HQ">
+                        src="https://www.youtube.com/embed/Qu59cLEA4HQ">
                     </iframe>
             ';
             echo "</div>";
