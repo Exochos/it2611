@@ -148,8 +148,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 ?>
-<a href="">HTML VALID</a><br>
-<a href="">CSS VALID</a>
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=http://jeremyward.me/it2611/weeks/week5/extra-credit.php">HTML VALID</a><br>
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fjeremyward.me%2Fit2611%2Fweeks%2Fweek5%2Fextra-credit.php&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">CSS VALID</a>
 </div>
 </body>
 </html>
