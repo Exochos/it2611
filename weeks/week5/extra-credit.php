@@ -76,7 +76,8 @@
      <label for="money">How much Money do you have?</label>
      <input type="text" name="money" id="money" value="<?php if (isset($_POST['money'])) echo htmlspecialchars($_POST['money']);?>"><br>
 
-      <ul><b>Choose your Currency:</b>
+      <ul>
+        <li><b>Choose your Currency:</b></li>
         <li><input type="radio" name="currency" value="0.013" <?php if (isset($_POST['currency']) && $_POST['currency'] == '0.013') echo 'checked="checked"'; ?>>Rubles</li>
         <li><input type="radio" name="currency" value="0.76" <?php if (isset($_POST['currency']) && $_POST['currency'] == '0.76') echo 'checked="checked"'; ?>>Canadian Dollars</li> 
         <li><input type="radio" name="currency" value="1.28" <?php if (isset($_POST['currency']) && $_POST['currency'] == '1.28') echo 'checked="checked"'; ?>>Pounds</li>
