@@ -61,7 +61,7 @@
 <div class="container">
 
 <!-- Form below --><h2> Extra Credit Currency Assignment </h2><br>
-<form action="" method="post">
+<form method="post">
 
     <fieldset>
 
@@ -74,12 +74,12 @@
      <label for="money">How much Money do you have?</label>
      <input type="text" name="money" id="money" value="<?php if (isset($_POST['money'])) echo htmlspecialchars($_POST['money']);?>"><br>
 
-      <ul><p><b>Choose your Currency:</b></p>
-        <li><input type="radio" id="currency" name="currency" value="0.013" <?php if (isset($_POST['currency']) && $_POST['currency'] == '0.013') echo 'checked="checked"'; ?>>Rubles</li>
-        <li><input type="radio" id="currency" name="currency" value="0.76" <?php if (isset($_POST['currency']) && $_POST['currency'] == '0.76') echo 'checked="checked"'; ?>>Canadian Dollars</li> 
-        <li><input type="radio" id="currency" name="currency" value="1.28" <?php if (isset($_POST['currency']) && $_POST['currency'] == '1.28') echo 'checked="checked"'; ?>>Pounds</li>
-        <li><input type="radio" id="currency" name="currency" value="1.18" <?php if (isset($_POST['currency']) && $_POST['currency'] == '1.18') echo 'checked="checked"'; ?>>Euros</li>
-        <li><input type="radio" id="currency" name="currency" value="0.0094" <?php if (isset($_POST['currency']) && $_POST['currency'] == '0.0094') echo 'checked="checked"'; ?>>Yen</li>
+      <ul><b>Choose your Currency:</b>
+        <li><input type="radio" name="currency" value="0.013" <?php if (isset($_POST['currency']) && $_POST['currency'] == '0.013') echo 'checked="checked"'; ?>>Rubles</li>
+        <li><input type="radio" name="currency" value="0.76" <?php if (isset($_POST['currency']) && $_POST['currency'] == '0.76') echo 'checked="checked"'; ?>>Canadian Dollars</li> 
+        <li><input type="radio" name="currency" value="1.28" <?php if (isset($_POST['currency']) && $_POST['currency'] == '1.28') echo 'checked="checked"'; ?>>Pounds</li>
+        <li><input type="radio" name="currency" value="1.18" <?php if (isset($_POST['currency']) && $_POST['currency'] == '1.18') echo 'checked="checked"'; ?>>Euros</li>
+        <li><input type="radio" name="currency" value="0.0094" <?php if (isset($_POST['currency']) && $_POST['currency'] == '0.0094') echo 'checked="checked"'; ?>>Yen</li>
       </ul>
       <select name="bank" id="bank">
           <option value="0">Please Select a Bank</option>
