@@ -45,14 +45,19 @@ function makeLinks($nav) {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Index Function test with NAV</title>
   <meta name="description" content="Function Test">
   <meta name="author" content="Jeremy">
   <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .active {
+        color:red;
+    }
+  </style>
 </head>
 
 <body>
+    <h1>Testing my index page with a function for my nav! </h1>
 <nav>
     <ul>
         <?php echo makeLinks($nav); ?>
