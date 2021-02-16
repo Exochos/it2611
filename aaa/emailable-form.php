@@ -10,11 +10,15 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Extra Credit</title>
-  <meta name="description" content="Currency Form for IT162">
+  <title>My Emailable Form</title>
+  <meta name="description" content="Emailable form for ITC 261">
   <meta name="author" content="Jeremy Ward">
   <style>
-
+    * {
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+    }
   .container {
     width: 100%;
     display: flex;
@@ -27,7 +31,7 @@
     list-style-type: none;
     }
     .box {
-        background-color: lightblue;
+        background-color: white;
         border: 1px solid;
         padding-left: 10px;
         padding-bottom:5px;
@@ -37,7 +41,7 @@
       form {
           width: 600px;
           border: 1px solid;
-          background-color: lightblue;
+          background-color: white;
 
       }
       label, input {
@@ -46,9 +50,12 @@
       }
       ul {
         list-style-type: none;
+      }
+    fieldset {
+        padding-left: 10px;
     }
       .button {
-            background-color: white;
+            background-color: lightblue;
             border: none;
             color: black;
             padding: 15px 20px;
@@ -65,96 +72,132 @@
 <body>
 <div class="container">
 
-<!-- Form below --><h2> Extra Credit Currency Assignment </h2><br>
+<!-- Form below --><h1>My Emailable form newest  </h1><br>
 <form method="post">
 
     <fieldset>
 
-     <label>Name
-        <input type="text" name="name" value="<?php if (isset($_POST['name'])) echo htmlspecialchars($_POST['name']);?>"><br>
-     </label>
-     
+     <label><b>First Name
+        <input type="text" name="fname" value="<?php if (isset($_POST['fname'])) echo htmlspecialchars($_POST['fname']);?>"><br>
+        <?php 
+            if (empty($_POST['fname'])) {
+                echo '<div style="color:red;">Please fill out your First Name</div>';
+        }
+        ?>
+    </b></label>
+    <label><b>Last Name
+        <input type="text" name="lname" value="<?php if (isset($_POST['lname'])) echo htmlspecialchars($_POST['lname']);?>"><br>
+        <?php 
+            if (empty($_POST['lname'])) {
+                echo '<div style="color:red;">Please fill out your Last Name</div>';
+        }
+        ?>
+     </b></label>
 
-     <label for="email">Email</label>
-     <input type="email" name="email" id="email" value="<?php if (isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>"><br>
-
-     <label for="money">How much Money do you have?</label>
-     <input type="text" name="money" id="money" value="<?php if (isset($_POST['money'])) echo htmlspecialchars($_POST['money']);?>"><br>
+    <label><b>Email
+    <input type="email" name="email" id="email" value="<?php if (isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>"><br>
+        <?php 
+            if (empty($_POST['email'])) {
+                echo '<div style="color:red;">Please enter your email address</div>';
+        }
+        ?>
+    </b></label>
 
       <ul>
-        <li><b>Choose your Currency:</b></li>
-        <li><input type="radio" name="currency" value="0.013" <?php if (isset($_POST['currency']) && $_POST['currency'] == '0.013') echo 'checked="checked"'; ?>>Rubles</li>
-        <li><input type="radio" name="currency" value="0.76" <?php if (isset($_POST['currency']) && $_POST['currency'] == '0.76') echo 'checked="checked"'; ?>>Canadian Dollars</li> 
-        <li><input type="radio" name="currency" value="1.28" <?php if (isset($_POST['currency']) && $_POST['currency'] == '1.28') echo 'checked="checked"'; ?>>Pounds</li>
-        <li><input type="radio" name="currency" value="1.18" <?php if (isset($_POST['currency']) && $_POST['currency'] == '1.18') echo 'checked="checked"'; ?>>Euros</li>
-        <li><input type="radio" name="currency" value="0.0094" <?php if (isset($_POST['currency']) && $_POST['currency'] == '0.0094') echo 'checked="checked"'; ?>>Yen</li>
+        <li><b>Gender</b></li>
+        <li><input type="radio" name="gender" value="female" <?php if (isset($_POST['gender']) && $_POST['gender'] == 'female') echo 'checked="checked"'; ?>>Female</li>
+        <li><input type="radio" name="gender" value="male" <?php if (isset($_POST['gender']) && $_POST['gender'] == 'male') echo 'checked="checked"'; ?>>Male</li>
+        <li><input type="radio" name="gender" value="other" <?php if (isset($_POST['gender']) && $_POST['gender'] == 'other') echo 'checked="checked"'; ?>>Other</li><br>
+        <?php 
+            if (empty($_POST['gender'])) {
+                echo '<div style="color:red;">Please select your gender</div><br>';
+        }
+        ?>
+
+
       </ul>
-      <select name="bank" id="bank">
-          <option value="0">Please Select a Bank</option>
-          <option value="1.01" <?php if (isset($_POST['bank']) && $_POST['bank'] == '1.01') echo 'selected'; ?>>Chase</option>
-          <option value="1.02" <?php if (isset($_POST['bank']) && $_POST['bank'] == '1.02') echo 'selected'; ?>>Bank Of America</option>
-          <option value="1.03" <?php if (isset($_POST['bank']) && $_POST['bank'] == '1.03') echo 'selected'; ?>>BECU</option>
-          <option value="1.05" <?php if (isset($_POST['bank']) && $_POST['bank'] == '1.05') echo 'selected'; ?>>Alaska Credit Union</option>
-    </select><br><br><br>
+      <label><b> Favorite Wines </b></label>
+      <ul>
+        <li><input type="checkbox" name="wines" value="cab" <?php if (isset($_POST['wines']) && $_POST['wines'] == 'cab') echo 'checked="checked"'; ?>>Cabernet</li>
+        <li><input type="checkbox" name="wines[]" value="merlot">Merlot</li>
+        <li><input type="checkbox" name="wines[]" value="syrah">Syrah</li>
+        <li><input type="checkbox" name="wines[]" value="malbec">Malbec</li>
+        <li><input type="checkbox" name="wines[]" value="shiraz">Shiraz</li>
+      </ul><br>
+    <?php 
+        if (empty($_POST['wines'])) {
+            echo '<div style="color:red;">Please select a favorite wine</div>';
+        }
+    ?><br>
+    <label><b>Select a Region:</b></label><br>
+      <select name="region">
+          <option value="NULL">Select One</option>
+          <option value="nw" <?php if (isset($_POST['region']) && $_POST['region'] == 'nw') echo 'selected'; ?>>Northwest</option>
+          <option value="sw" <?php if (isset($_POST['region']) && $_POST['region'] == 'sw') echo 'selected'; ?>>Southwest</option>
+          <option value="mw" <?php if (isset($_POST['region']) && $_POST['region'] == 'mw') echo 'selected'; ?>>Midwest</option>
+          <option value="ne" <?php if (isset($_POST['region']) && $_POST['region'] == 'ne') echo 'selected'; ?>>Northeast</option>
+          <option value="south" <?php if (isset($_POST['region']) && $_POST['region'] == 'south') echo 'selected'; ?>>South</option><br>
+          <?php 
+              if (empty($_POST['region'])) {
+                    echo '<div style="color:red;">Please select a region</div>';
+               }
+          ?><br>
+    </select><br><br>
+
+    <label><b>Comments</b><br>
+    <textarea name="comments"></textarea>
+    </label><br>    <?php 
+            if (empty($_POST['comments'])) {
+                echo '<div style="color:red;">Please Enter a comment</div><br>';
+        }
+    ?><br>
+
+    <label><b>Agree</b>
+        <ul><li><input type="radio" name="agree" value="agree">Agree</li></ul>
+    </label><br>
+    <?php 
+            if (empty($_POST['agree'])) {
+                echo '<div style="color:red;">Please Agree</div><br>';
+        }
+    ?>
+    <br>
+
      <input class="button" type="submit" value="Convert it!">
      <a href="" class="button">Reset me</a>
 
-    </fieldset>
-    </form>
-<?php
-/*
-    If fields are full
-    then calculate 
-    Otherwise throw an error relevent to the error.
-*/
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['money']) || empty($_POST['bank'])) {
-        foreach($_POST as $key => $value) {
-            if ($_POST[$key] == NULL) {
-                echo '<div class="box">';
-                echo "Please fill out $key <br>";
-                echo '</div>';
-            }
-        }
-        if ($_POST['bank'] == 0) {
-            echo '<div class="box">';
-            echo "Please select your Bank<br>";
-            echo '</div>';
-        }
-    }
-    else {
-        $money = $_POST['money'];
-        $currency = $_POST['currency'];
-        $total = $money * $currency;
-        if (($money * $currency) < 200) {
-            echo "<br><br><div class='box' style='background-color: grey;padding-top:5px;'><br>";
-            echo "I am a sad Panda, I have $$total American Dollars and I am going to look at kitten videos<br><br>";
-            echo '
-                    <iframe width="90%" height="500"
-                        src="https://www.youtube.com/embed/oL4z_qRS8cM">
-                    </iframe>
-            ';
-            echo "</div>";
-        }
-        else {
-            echo "<br><br><div class='box' style='background-color: yellow;padding-top:5px;'><br>";
-            echo "I am a happy camper, I have $$total American Dollars and I am going to buy a red panda<br><br>";
-            echo '
-                    <iframe width="90%" height="500"
-                        src="https://www.youtube.com/embed/Qu59cLEA4HQ">
-                    </iframe>
-            ';
-            echo "</div>";
-        }
-    }
 
 
-}
 
+
+     <?php
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            if (isset($_POST['fname'], $_POST['lname'], $_POST['email'], $_POST['gender'], $_POST['wines'], $_POST['region'], $_POST['comments'], $_POST['agree']))  {
+                $fname = $_POST['fname'];
+                $lname = $_POST['lname'];
+                $email = $_POST['email'];
+                $subject = $_POST['comments'];
+                $gender = $_POST['gender'];
+
+                $to = 'exochos@gmail.com';
+                $subject = 'Test email for my form 1 '.date('m/d/y').'';
+                $body  = 'Hello'.$fname. ' ' . $lname.'';
+                $body .= 'your email is:'.$email.'';
+                $body .= 'Your gender is: '.$gender.'';
+                $body .= 'Favorite Region: '.$region.'';
+
+                mail($to, $usbject, $body);
+                header('Location:thx.php');
+
+            }//end if
+        }// end more if
 
 ?>
-<a href="https://jigsaw.w3.org/css-validator/validator?uri=http://jeremyward.me/it2611/weeks/week5/extra-credit.php">HTML VALID</a><br>
-<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fjeremyward.me%2Fit2611%2Fweeks%2Fweek5%2Fextra-credit.php&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">CSS VALID</a>
+    </fieldset>
+    </form>
+
+<a href="">HTML VALID</a><br>
+<a href="">CSS VALID</a>
 </div>
 </body>
 </html>
