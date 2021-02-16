@@ -35,5 +35,11 @@
                     <li><a href="http://jeremyward.me/it2611/website/calculator-days-errors-sticky.php">calculator-days-error-sticky</a></li>
                     </ul>
                 </ul>
+                <li>Week 6
+                <ul class="second">
+                    <li><a href="http://jeremyward.me/it2611/weeks/week6/index.php">NAV function</a></li>
+                    <li><a href="http://jeremyward.me/it2611/aaa/emailable-form.php">Emailable Form</a></li>
+                    </ul>
+                </ul>
         </menu>
         <!-- End Menu Tab Left -->
