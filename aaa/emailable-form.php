@@ -176,7 +176,6 @@
                 $fname = $_POST['fname'];
                 $lname = $_POST['lname'];
                 $email = $_POST['email'];
-                $subject = $_POST['comments'];
                 $gender = $_POST['gender'];
 
                 $to = 'exochos@gmail.com';
@@ -186,7 +185,7 @@
                 $body .= 'Your gender is: '.$gender.'';
                 $body .= 'Favorite Region: '.$region.'';
 
-                mail($to, $usbject, $body);
+                mail($to, $subject, $body);
                 header('Location:thx.php');
 
             }//end if
