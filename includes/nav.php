@@ -41,5 +41,11 @@
                     <li><a href="http://jeremyward.me/it2611/aaa/emailable-form.php">Emailable Form</a></li>
                     </ul>
                 </ul>
+                <li>Week 7
+                <ul class="second">
+                    <li><a href="http://jeremyward.me/it2611/weeks/week7/random.php">random.php</a></li>
+                    <li><a href="http://jeremyward.me/it2611/weeks/week7/substring.php">substring.php</a></li>
+                    </ul>
+                </ul>
         </menu>
         <!-- End Menu Tab Left -->

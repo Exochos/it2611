@@ -28,6 +28,6 @@
     $i = rand(1,4);
     $selectedImage = 'images/'.$photos[$i].'.jpg';
 
-    echo '<img src="'.$selectedImage.'">';
+    echo '<img src="'.$selectedImage.'" alt="'.$selectedImage.'">';
 
 ?>

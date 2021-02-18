@@ -1,4 +1,5 @@
 <?php $title = 'Portal Page'; ?>
+<?php include('includes/config.php'); ?>
 <?php include('includes/header.php'); ?>
     <!-- Sub Wrapper -->
     <div class="main">
