@@ -14,7 +14,7 @@
     <body class="<?php echo $body; ?>">
     <div class="container"><!-- Begin Main -->
         <header>
-            <h1><?php echo $title; ?> Website</h1>
+            <h1>Jeremy's <?php echo $title; ?> Website</h1>
         </header>
         <nav id='menu'>
         <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
@@ -27,7 +27,7 @@
                 <div class="smoll">
                     <div class="small-left">
                                 <h2 class="headerDog">Dog of the day for: <?php echo $day ?></h2>
-                                <div class="card" style="width:500px;background-color: <?php echo $color ?>;">
+                                <div class="card" style="background-color:<?php echo $color ?>;">
                                 <img src="<?php echo "images/" . $pic; ?>" alt="" style="width:100%">
                                 <h2><b><?php echo $alt ?></b></h2> 
                                 <p><?php echo $p ?></p> 
