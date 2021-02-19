@@ -31,7 +31,7 @@
                                 <img src="<?php echo "images/" . $pic; ?>" alt="" style="width:100%">
                                 <h2><b><?php echo $alt ?></b></h2> 
                                 <p><?php echo $p ?></p> 
-                                Source: Wikipedia></div>
+                                Source: Wikipedia</div>
                     </div>
                     <aside>
                         <b>Want more dogs? Select another day Below!</b></br>
