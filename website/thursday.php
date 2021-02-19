@@ -1,6 +1,8 @@
 
-
+<?php include('config.php'); ?>
 <?php
+
+
 // Switch //
 /* $weekday = array();
 $weekday['1'] = 'Sunday';
@@ -12,7 +14,7 @@ $weekday['6'] = 'Friday';
 $weekday['7'] = 'Saturday';
 $day2 = $weekday[rand(1,7)]; */
 $title = "Switch";
-$day = date("l");
+$day = "Thursday";
 
 switch ($day) {
     case "Monday":
@@ -62,8 +64,16 @@ default:
     echo "Something Bad Happened";
 }
 ?>
-<head>
-<style>
+
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title><?php echo $title; ?></title>
+        <link href="css/styles.css?v=1.1.0" type="text/css" rel="stylesheet">
+        <style>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -76,33 +86,57 @@ default:
 img {
   border-radius: 25px 25px 0 0;
 }
-.container {
-    padding: 2px 16px;
-}
 .headerDog {
     font-size: 36px;
     text-shadow: 2px 2px 4px #d3d3d3;
 }
 </style>
-<link rel="stylesheet" href="../css/style.css"> 
-</head>
-<?php include('../includes/header.php'); ?>
-<div class="main">
-<?php include('../includes/nav.php'); ?>
-<main class='centerA'>
-<h2 class="headerDog">Dog of the day for: <?php echo $day ?></h2>
-<div class="card" style="width:600px;background-color: <?php echo $color ?>;">
-  <img src="<?php echo $pic ?>" alt="" style="width:100%">
-  <div class="container">
-    <h2><b><?php echo $alt ?></b></h2> 
-    <p><?php echo $p ?></p> 
-    Source: Wikipedia
-    <a href="http://validator.w3.org/check/referer" rel="nofollow" title="Validate as HTML5">HTML5</a>
-                <a href="http://jigsaw.w3.org/css-validator/validator?uri=<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" rel="nofollow" title="Validate as CSS3">CSS3</a>
-  </div>
+
+    </head>
+    <body class="<?php echo $body; ?>">
+    <div class="container">
+        <header>
+            <div class="header-title">header</div>
+            <h1>Jeremy's website index page</h1>
+        </header>
+        <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <?=makeLinks($nav)?>   
+        </nav>
+        <div class="main">
+            <div class="left"><div class="left-title">left</div></div>
+
+                <div class="submain">
+                <div class="main-title">main</div><br>
+                <div class="title"><h1>This is the content for my home page</h1><br></div>
+                <div class="smoll">
+                    <div class="small-left">
+                        <div class="small">Article</div>
+                                <h2 class="headerDog">Dog of the day for: <?php echo $day ?></h2>
+                                <div class="card" style="width:500px;background-color: <?php echo $color ?>;">
+                                <img src="<?php echo $pic ?>" alt="" style="width:100%">
+                                <h2><b><?php echo $alt ?></b></h2> 
+                                <p><?php echo $p ?></p> 
+                                Source: Wikipedia></div>
+                    </div>
+                    <aside>
+                        <div class="sub-aside">
+                            aside
+                        </div>
+                        <b>Want more dogs? Select another day Below!</b></br>
+                        <a href="monday.php">Monday</a><br>
+                        <a href="tuesday.php">Tuesday<a><br>
+                        <a href="wednesday.php">Wednesday<a><br>
+                        <a href="thursday.php">Thursday<a><br>
+                        <a href="friday.php">Friday<a><br>
+                        <a href="saturday.php">Saturday<a><br>
+                        <a href="sunday.php">Sunday<a><br>
+                    </aside>
+                </div>
+        </div><!-- end main -->
+            <div class="right"><div class="right-title">right</div></div>
+        </div>  
+<?php include('footer.php'); ?>
 </div>
-</main>
-</div>
-<?php include('../includes/footer.php');?>
-</body>
-</html> 
+    </body>
+</html>

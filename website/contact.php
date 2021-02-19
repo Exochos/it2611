@@ -1,76 +1,75 @@
-<?PHP
-
-
-
-?>
-
+<?php include('config.php'); ?>
 <!doctype html>
-
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+    <head>
+        <meta charset="UTF-8">
+        <title><?php echo $title; ?></title>
+        <link href="css/styles.css?v=1.1.0" type="text/css" rel="stylesheet">
+        <style>
+                        * {
+                            padding:0;
+                            margin:0;
+                            box-sizing:border-box;
+                        }
+                        .box {
+                            background-color: white;
+                            border: 1px solid;
+                            padding-left: 10px;
+                            padding-bottom:5px;
+                            font-size: 1.2em;
+                            margin: 5px;
+                        }
+                        form {
+                            width: 600px;
+                            border: 1px solid;
+                            background-color: white;
 
-  <title>My Emailable Form</title>
-  <meta name="description" content="Emailable form for ITC 261">
-  <meta name="author" content="Jeremy Ward">
-  <style>
-    * {
-        padding:0;
-        margin:0;
-        box-sizing:border-box;
-    }
-  .container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-    flex-direction: column;
-    border: none;
-    list-style-type: none;
-    }
-    .box {
-        background-color: white;
-        border: 1px solid;
-        padding-left: 10px;
-        padding-bottom:5px;
-        font-size: 1.2em;
-        margin: 5px;
-      }
-      form {
-          width: 600px;
-          border: 1px solid;
-          background-color: white;
+                        }
+                        label, input {
+                            padding: 5px;
+                            margin: 5px;
+                        }
+                        ul {
+                            list-style-type: none;
+                        }
+                        fieldset {
+                            padding-left: 10px;
+                        }
+                        .button {
+                                background-color: lightblue;
+                                border: none;
+                                color: black;
+                                padding: 15px 20px;
+                                text-align: center;
+                                text-decoration: none;
+                                display: inline-block;
+                                font-size: 14px;
+                                margin: 8px 8px;
+                                cursor: pointer;
+                                border-radius: 10px;
+                    }
+    </style>
+    </head>
+    <body class="<?php echo $body; ?>">
+    <div class="container">
+        <header>
+            <div class="header-title">header</div>
+            <h1>Jeremy's website index page</h1>
+        </header>
+        <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <?=makeLinks($nav)?>   
+        </nav>
+        <div class="main">
+            <div class="left"><div class="left-title">left</div></div>
 
-      }
-      label, input {
-          padding: 5px;
-          margin: 5px;
-      }
-      ul {
-        list-style-type: none;
-      }
-    fieldset {
-        padding-left: 10px;
-    }
-      .button {
-            background-color: lightblue;
-            border: none;
-            color: black;
-            padding: 15px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-            margin: 8px 8px;
-            cursor: pointer;
-            border-radius: 10px;
-}
-  </style>
-</head>
-<body>
-<div class="container">
+                <div class="submain">
+                <div class="main-title">main</div><br>
+                <div class="title"><h1>This is the content for my home page</h1><br></div>
+                <div class="smoll">
+                    <div class="small-left">
+                        <div class="small">Article</div>
+                        <div class="container">
 
 <!-- Form below --><h1>My Emailable form newest  </h1><br>
 <form method="post">
@@ -193,10 +192,19 @@
 
 ?>
     </fieldset>
-    </form>
+    </form></div>
 
-<a href="">HTML VALID</a><br>
-<a href="">CSS VALID</a>
+                    </div>
+                    <aside>
+                        <div class="sub-aside">
+                            aside
+                        </div>
+                    </aside>
+                </div>
+        </div><!-- end main -->
+            <div class="right"><div class="right-title">right</div></div>
+        </div>  
+<?php include('footer.php'); ?>
 </div>
-</body>
+    </body>
 </html>
