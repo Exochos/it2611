@@ -3,7 +3,7 @@
     define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
     date_default_timezone_set('America/Los_Angeles');
 
-    $nav['index.php'] = 'Home';
+    $nav['index.php'] = 'Index';
     $nav['about.php'] = 'About';
     $nav['daily.php'] = 'Daily';
     $nav['people.php'] = 'People';
@@ -25,15 +25,15 @@
         break;
         case 'daily.php' : 
             $title = "Daily page of our Website Project";
-            $body = 'home';
+            $body = 'daily';
         break;
         case 'people.php' : 
             $title = "People page of our Website Project";
-            $body = 'home';
+            $body = 'people';
         break;
         case 'contact.php' : 
             $title = "Contact page of our Website Project";
-            $body = 'home';
+            $body = 'contact';
         break;
         case 'gallery.php' : 
             $title = "Gallery page of our Website Project";
@@ -101,18 +101,18 @@ default:
     echo "Something Bad Happened";
 }
     
-    function makeLinks($linkArray) {
-        $myReturn = '';
-        foreach($linkArray as $url => $text) {
-            if($url == THIS_PAGE)
-            {//selected page - add class reference
-                $myReturn .= '<a class="active" href="' . $url . '">' . $text . '</a>' . PHP_EOL;
-            }else{
-                $myReturn .= '<a href="' . $url . '">' . $text . '</a>'  . PHP_EOL;
-            }    
-        }
-          
-        return $myReturn;    
+function makeLinks($linkArray, $logo) {
+    $myReturn = '';
+    foreach($linkArray as $url => $text) {
+        if($url == THIS_PAGE)
+        {//selected page - add class reference
+            $myReturn .= '<a class="nav-item nav-link active" href="' . $url . '"><i class="'.$logo.'" aria-hidden="true">&nbsp;</i>'.$text.'<span class="sr-only">(current)</span></a>' . PHP_EOL;
+    	}else{
+            $myReturn .= '<a class="nav-item nav-link" href="'. $url . '">' . $text . '</a>' . PHP_EOL;
+    	}    
     }
+      
+    return $myReturn;    
+}
     
     ?>      

@@ -1,212 +1,63 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background:white;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
+.footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-}
-header {
-    background: white;
-    width: 100%;
-    height: 60px;
-    text-align: right;
-    margin-right: 10px;
-    padding-right: 10px;
-    line-height: 60px;
-}
-.main {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 85%;
-}
-.title {
-    width: 100%;
-    height: 45px;
-    margin-bottom: 10px;
-}
-nav {
-    display: flex;
-    width: 100%;
-    height: 45px;
-    flex-direction: row;
-    border: 1px solid black;
-}
-.submain {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: white;
-    height: 85vh;
-}
-aside {
-    width: 20%;
-    float: right;
-    height: 60vh;
-}
-.left {
-    float: left;
-    height: 100%;
-    width: 15%;
-    background:lightskyblue;
-    
-}
-.right {
-    height: 100%;
-    width: 15%;
-    background:lightskyblue;
-    display: flex;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 25px;
-    width:500px;
-    height: 600px;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
   }
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+  
+    .fakeimg {
+      height: 200px;
+      background: yellow;
+    }
   img {
-    border-radius: 25px 25px 0 0;
+    max-width: 100%;
+    max-height: 100%;
   }
-  .headerDog {
-      font-size: 36px;
-      text-shadow: 2px 2px 4px #d3d3d3;
+  iframe {
+    border: 0;
   }
-.small-left {
-    width: 600px;
-    padding: 10px;
-}
-.smoll {
-    display: flex;
-    flex-direction: row;
-}
-footer {
-    top: calc(100% - 22px);
-    width: 100%;
-    height:20px;
-    position:fixed;
-    background: lightskyblue;
-    text-align: center;
-    line-height: 20px;
-}
-a.active {
-    background-color: slategrey;
-    color: white;
-    font-weight: bold;
-}
-
-#header {
-    width: 100%;
-    height: 60px;
-    border-radius: 10px;;
-  }
-  #menu {
-    background: #0099CC;
-    color: #000;
-    height: 45px;
-    padding-left: 18px;
-    border-radius: 10px;
-  }
-  #menu ul, #menu li {
-      margin: 0 auto;
-      padding: 0;
-      list-style: none
-  }
-  #menu ul {
-      width: 100%;
-  }
-  #menu li {
-      float: left;
-      display: inline;
-      position: relative;
-  }
-  #menu a {
-      display: block;
-      line-height: 45px;
-      padding: 0 14px;
-      text-decoration: none;
-      color: #FFFFFF;
-      font-size: 16px;
-  }
-  #menu a.dropdown-arrow:after {
-      content: "\25BE";
-      margin-left: 5px;
-  }
-  #menu li a:hover {
-      color: #0099CC;
-      background: #F2F2F2;
-  }
-  #menu input {
-      display: none;
-      margin: 0;
-      padding: 0;
-      height: 45px;
-      width: 100%;
-      opacity: 0;
-      cursor: pointer
-  }
-  #menu label {
-      display: none;
-      line-height: 45px;
-      text-align: center;
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+  } 
+    .embed-container iframe, .embed-container object, .embed-container embed { 
       position: absolute;
-      left: 35px
-  }
-  #menu label:before {
-      font-size: 1.6em;
-      content: "\2261"; 
-      margin-left: 20px;
-  }
-  #menu ul.sub-menus{
-      height: auto;
-      overflow: hidden;
-      width: 170px;
-      background: #444444;
-      position: absolute;
-      z-index: 99;
+      top: 0;
+      left: 0; 
+      width: 100%; 
+      height: 100%;
+    }
+  
+  .responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    }
+    
+    .responsive-iframe-container iframe,
+    .vresponsive-iframe-container object,
+    .vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+  .cal2 {
       display: none;
-  }
-  #menu ul.sub-menus li {
-      display: block;
-      width: 100%;
-  }
-  #menu ul.sub-menus a {
-      color: #FFFFFF;
-      font-size: 16px;
-  }
-  #menu li:hover ul.sub-menus {
-      display: block
-  }
-  #menu ul.sub-menus a:hover{
-      background: #F2F2F2;
-      color: #444444;
-  }
-  @media screen and (max-width: 800px){
-      #menu {position:relative}
-      #menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
-      #menu ul.sub-menus {width:100%;position:static;}
-      #menu ul.sub-menus a {padding-left:30px;}
-      #menu li {display:block;float:none;width:auto;}
-      #menu input, #menu label {position:absolute;top:0;left:0;display:block}
-      #menu input {z-index:4}
-      #menu input:checked + label {color:white}
-      #menu input:checked + label:before {content:"\00d7"}
-      #menu input:checked ~ ul {display:block}
-      .left {display:hidden;}
-      .right {display:hidden;}
-      .smoll {flex-direction: column;}
-      aside {margin:10px;}
-  }
+    }
+    @media only screen and (max-width: 600px) {
+      .cal {
+        display: none;
+      }
+      .cal2 {
+        display: block;
+      }
+    }
