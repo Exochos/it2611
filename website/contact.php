@@ -5,110 +5,148 @@
     <div class="container" style="margin-top:30px">
         <div class="row">
             <div class="col-sm-8">
-                <h3> My new contact form </h3>
+                <div class="form group">
+                <h3>Jeremy's Pupper Questionair</h3>
                 <form method="post">
                 <fieldset>
 
                 <!-- name -->
                 <label><b>First Name</b>
-                <input type="text" name="firstname" value="<?php if (isset($_POST['firstname'])) echo htmlspecialchars($_POST['firstname']);?>"><br>
+                <input class="form-control" type="text" name="firstname" value="<?php if (isset($_POST['firstname'])) echo htmlspecialchars($_POST['firstname']);?>"><br>
                 <?php 
                     if (empty($_POST['firstname'])) {
                         echo '<div style="color:red;">Please fill out your First Name</div>';
                     }?>
                 </label><br>
-                <label><b>Last Name</b>
-                <input type="text" name="lastname" value="<?php if (isset($_POST['lastname'])) echo htmlspecialchars($_POST['lastname']);?>"><br>
+                <label ><b>Last Name</b>
+                <input class="form-control" type="text" name="lastname" value="<?php if (isset($_POST['lastname'])) echo htmlspecialchars($_POST['lastname']);?>"><br>
                 <?php 
                     if (empty($_POST['lastname'])) {
                     echo '<div style="color:red;">Please fill out your Last Name</div>';
                     }?></label><br>
+
+                <!-- email -->
                 <label><b>Email</b>
-                    <input type="email" name="email" id="email" value="<?php if (isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>"><br>
+                    <input class="form-control" type="email" name="email" id="email" value="<?php if (isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>"><br>
                     <?php 
                         if (empty($_POST['email'])) {
                             echo '<div style="color:red;">Please enter your email address</div>'; }
                     ?>
                 </label><br>
+
+                <!-- Phone number -->
                 <label><b>Phone Number</b>
-                    <input type="phone" name="phone" value="<?php if (isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']);?>"><br>
+                    <input class="form-control" type="phone" name="phone" value="<?php if (isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']);?>"><br>
                     <?php if (empty($_POST['phone'])) { echo '<div style="color:red;">Please enter your phone number</div>'; }?>
                 </label><br><br>
 
+                <!-- Radio buttons -->
+                <b>Select your favorite dog!</b><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="dogRadio" id="goldenR" value="golden" <?php if (isset($_POST['dogRadio']) && $_POST['dogRadio'] == 'golden') echo 'checked'; ?>>
+                        <label class="form-check-label" for="GoldenR">Golden Retriever</label>
+                    </div>
 
-                <ul>
-                    <li><b>Select your favorite dog!</b></li>
-                    <li><input type="radio" name="doggos" value="" <?php if (isset($_POST['doggos']) && $_POST['doggos'] == 'golden') echo 'checked="checked"'; ?>>Golden</li>
-                    <li><input type="radio" name="doggos" value="" <?php if (isset($_POST['doggos']) && $_POST['doggos'] == 'lab') echo 'checked="checked"'; ?>>Lab</li>
-                    <li><input type="radio" name="doggos" value="" <?php if (isset($_POST['doggos']) && $_POST['doggos'] == 'doodle') echo 'checked="checked"'; ?>>Doodle</li>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="dogRadio" id="labR" value="lab" <?php if (isset($_POST['dogRadio']) && $_POST['dogRadio'] == 'lab') echo 'checked'; ?>>
+                        <label class="form-check-label" for="labR">Labrador</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="dogRadio" id="corgiR" value="corgie" <?php if (isset($_POST['dogRadio']) && $_POST['dogRadio'] == 'corgie') echo 'checked'; ?>>
+                        <label class="form-check-label" for="corgieR">Corgie</label>
+                    </div>
+
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dogRadio" id="dalmR" value="dalmation" <?php if (isset($_POST['dogRadio']) && $_POST['dogRadio'] == 'dalmation') echo 'checked'; ?>>
+                    <label class="form-check-label" for="dalR">Dalmation</label>
+                    </div>
+
                     <?php 
-                        if (empty($_POST['doggos'])) {
+                        if (empty($_POST['dogRadio'])) {
                         echo '<div style="color:red;">Please select your favorite doggos</div><br>';
                         }
-                    ?></ul>
+                    ?><br><!--End Radio -->
 
-                        <label><b></b></label>
-                        <ul>
-                        <li><input type="checkbox" name="dogs" value="Golden" <?php if (isset($_POST['dogs']) && $_POST['dogs'] == 'Golden') echo 'checked="checked"'; ?>> Golden</li>
-                        <li><input type="checkbox" name="dogs[]" value="Doodle" <?php if (isset($_POST['dogs']) && $_POST['dogs'] == 'Doodle') echo 'checked="checked"'; ?>>> Doodles</li>
-                        <li><input type="checkbox" name="dogs[]" value="Lab" <?php if (isset($_POST['dogs']) && $_POST['dogs'] == 'Lab') echo 'checked="checked"'; ?>>></li>
-                        <li><input type="checkbox" name="dogs[]" value="Corgie" <?php if (isset($_POST['dogs']) && $_POST['dogs'] == 'Corgie') echo 'checked="checked"'; ?>>></li>
-                        <li><input type="checkbox" name="dogs[]" value="Dalmation" <?php if (isset($_POST['dogs']) && $_POST['dogs'] == 'Dalmation') echo 'checked="checked"'; ?>>></li>
-                        </ul><br>
-                        <?php 
-                        if (empty($_POST['dogs'])) {
+                    <!-- begin checkbox -->
+                    <b>Please Select all of your favorite kinds of dogs!</b><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="goldenC" name="dogCheck" value="golden" <?php if (isset($_POST['dogCheck']) && $_POST['dogCheck'] == 'golden') echo 'checked="checked"'; ?>>
+                        <label class="form-check-label" for="GoldenC">
+                            Golden Retriever
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="labC" name="dogCheck[]" value="lab" <?php if (isset($_POST['dogCheck']) && $_POST['dogCheck'] == 'lab') echo 'checked'; ?>>
+                        <label class="form-check-label" for="labC">
+                            Labrador Retriever
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="doodleC" name="dogCheck[]" value="doodle" <?php if (isset($_POST['dogCheck']) && $_POST['dogCheck'] == 'doodle') echo 'checked'; ?>>
+                        <label class="form-check-label" for="doodleC">
+                            Doodle
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="corgieC" name="dogCheck[]" value="corgie" <?php if (isset($_POST['dogCheck']) && $_POST['dogCheck'] == 'corgie') echo 'checked'; ?>>
+                        <label class="form-check-label" for="corgieC">
+                            Corgie
+                        </label>
+                    </div>
+                    <?php 
+                        if (empty($_POST['dogCheck'])) {
                         echo '<div style="color:red;">Please select all of your favorite doggies!</div>';
                         }
                         ?><br>
-                <label><b>Select a Region:</b></label><br>
-                    <select name="region">
+
+
+                    <div class="formgroup">
+                    <label><b>Select a friendly doggo!:</b></label><br>
+                    <select name="fdoggo">
                     <option value="NULL">Select One</option>
-                    <option value="nw" <?php if (isset($_POST['region']) && $_POST['region'] == 'nw') echo 'selected'; ?>>Northwest</option>
-                    <option value="sw" <?php if (isset($_POST['region']) && $_POST['region'] == 'sw') echo 'selected'; ?>>Southwest</option>
-                    <option value="mw" <?php if (isset($_POST['region']) && $_POST['region'] == 'mw') echo 'selected'; ?>>Midwest</option>
-                    <option value="ne" <?php if (isset($_POST['region']) && $_POST['region'] == 'ne') echo 'selected'; ?>>Northeast</option>
-                    <option value="south" <?php if (isset($_POST['region']) && $_POST['region'] == 'south') echo 'selected'; ?>>South</option><br>
+                    <option value="golden" <?php if (isset($_POST['fdoggo']) && $_POST['fdoggo'] == 'golden') echo 'selected'; ?>>Golden</option>
+                    <option value="lab" <?php if (isset($_POST['fdoggo']) && $_POST['fdoggo'] == 'lab') echo 'selected'; ?>>Lab</option>
+                    <option value="doodle" <?php if (isset($_POST['fdoggo']) && $_POST['fdoggo'] == 'doodle') echo 'selected'; ?>>Doodle</option>
+                    <option value="corgi" <?php if (isset($_POST['fdoggo']) && $_POST['fdoggo'] == 'corgi') echo 'selected'; ?>>Corgie</option>
+                    <option value="dalmation" <?php if (isset($_POST['fdoggo']) && $_POST['fdoggo'] == 'dalmation') echo 'selected'; ?>>Dalmation</option><br>
                     <?php 
-                    if (empty($_POST['region'])) {
-                    echo '<div style="color:red;">Please select a region</div>';
+                    if (empty($_POST['fdoggo'])) {
+                    echo '<div style="color:red;">Please select a fdoggo</div>';
                     }
                     ?><br>
-                    </select><br><br>
+                    </select><br><br></div>
 
-                    <label><b>Comments</b><br>
-                    <textarea name="comments"></textarea>
-                    </label><br>    <?php 
-                    if (empty($_POST['comments'])) {
-                    echo '<div style="color:red;">Please Enter a comment</div><br>';
-                    }?><br>
-
-                    <label>
-                    <input type="radio" name="agree" value="agree"> Please Press to Accept the privacy policy
-                    </label><br>
-                    <?php 
+                <!-- Press to Agree -->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="agree" id="agreeR" <?php if (isset($_POST['agree'])) echo 'checked'; ?>>
+                    <label class="form-check-label" for="agreeR">Please Click to Agree</label>
+                </div>
+                <?php 
                     if (empty($_POST['agree'])) {
                         echo '<div style="color:red;">Please Agree</div><br>';
                     }
-                    ?>
+                ?>
                     <br>
-                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <input class="btn btn-primary" type="submit" value="Submit">&nbsp;
                     <a href="" class="btn btn-primary">Reset me</a><br><br><br>
-
+                    <!-- Parse the data and email -->
                     <?php
 
                     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                    if (isset($_POST['fname'], $_POST['lname'], $_POST['email'], $_POST['doggos'], $_POST['dogs'], $_POST['region'], $_POST['comments'], $_POST['agree']))  {
-                    $fname = $_POST['fname'];
-                    $lname = $_POST['lname'];
+                    if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['dogRadio'], $_POST['dogCheck'], $_POST['fdoggo'], $_POST['agree']))  {
+                    $name = $_POST['firstname'] . " " . $_POST['lastname'];
                     $email = $_POST['email'];
-                    $doggos = $_POST['doggos'];
 
                     $to = 'exochos@gmail.com';
-                    $subject = 'Test email for my form 1 '.date('m/d/y').'';
-                    $body  = 'Hello'.$fname. ' ' . $lname.'';
+                    $subject = 'Doggo Quiz email for my contact page '.date('m/d/y').'\n';
+                    $body  = 'Hello '. $name . ', thanks for taking our quiz';
                     $body .= 'your email is:'.$email.'';
                     $body .= 'Your doggos is: '.$doggos.'';
-                    $body .= 'Favorite Region: '.$region.'';
+                    $body .= 'Favorite fdoggo: '.$fdoggo.'';
 
                     mail($to, $subject, $body);
                     header('Location:thx.php');
@@ -118,9 +156,13 @@
 
                     ?>
                         </fieldset><br><br>
-            </div>
+            </div></div>
             <div class="col-sm-4">
                 <h3>Contact form</h3>
+                <p> 
+                    There is lots to learn about forms and bootstrap <br>
+                    I found lots of helpful stuff here: <a href="https://getbootstrap.com/docs/4.0/components/forms/">https://getbootstrap.com/docs/4.0/components/forms/</a>
+                </p>
             </div>
         </div>
     </div>
