@@ -159,7 +159,7 @@
                     $body .= 'Your Phone Number is: ' . $phone . "\n";
                     $body .= 'Your doggo Radio selection is: '.$dogR."\n";
                     $body .= 'Your dog checkbox selection is: ';
-                    $body .= print_r($_POST['dogCheck']);
+                    $body .= print_r($_POST['dogCheck[]']);
 
                     mail($to, $subject, $body);
                     header('Location:thx.php');
