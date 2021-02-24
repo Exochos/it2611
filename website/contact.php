@@ -150,8 +150,8 @@
                     $body  = 'Hello '. $name . ', thanks for taking our quiz' . "\n";
                     $body .= 'your email address is:'.$email."\n";
                     $body .= 'Your Phone Number is: ' . $phone . "\n";
-                    $body .= 'Your doggo Radio selection is: '.$dogRadio."\n";
-                    $body .= 'Your dog checkbox selection is: '.$dogCheck. "\n";
+                    $body .= 'Your doggo Radio selection is: '.$dogR."\n";
+                    $body .= 'Your dog checkbox selection is: '.$dogC. "\n";
                     $body .= 'Favorite Selected dog is: '.$fdoggo."\n";
 
                     mail($to, $subject, $body);
