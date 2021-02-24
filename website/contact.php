@@ -37,7 +37,14 @@
                 <!-- Phone number -->
                 <label><b>Phone Number</b>
                     <input class="form-control" type="phone" name="phone" value="<?php if (isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']);?>"><br>
-                    <?php if (empty($_POST['phone'])) { echo '<div style="color:red;">Please enter your phone number</div>'; }?>
+                    <?php 
+                        if (empty($_POST['phone'])) { echo '<div style="color:red;">Please enter your phone number</div>'; }
+                            // this is magic //
+                        elseif (!(preg_match('/(\+?\(?[0-9]{2,3}\)?)([ -]?[0-9]{2,4}){3}/', $_POST['phone']))) {
+                            echo "please enter a valid phone number";    
+                        }
+                        
+                        ?>
                 </label><br><br>
 
                 <!-- Radio buttons -->
@@ -151,7 +158,10 @@
                     $body .= 'your email address is:'.$email."\n";
                     $body .= 'Your Phone Number is: ' . $phone . "\n";
                     $body .= 'Your doggo Radio selection is: '.$dogR."\n";
-                    $body .= 'Your dog checkbox selection is: '. print_r($dogCheck). "\n";
+                    $body .= 'Your dog checkbox selection is: ';
+                    foreach($_POST['dogCheck'] as $value) {
+                        $body .= $_POST['dogCheck[$value]'];
+                    }
                     $body .= 'Favorite Selected dog is: '.$fdoggo."\n";
 
                     mail($to, $subject, $body);
