@@ -158,7 +158,7 @@
                     $body .= 'your email address is:'.$email."\n";
                     $body .= 'Your Phone Number is: ' . $phone . "\n";
                     $body .= 'Your doggo Radio selection is: '.$dogR."\n";
-                    $body .= 'Your dog checkbox selection is: '$dogC ."\n";
+                    $body .= 'Your dog checkbox selection is: '.$dogC ."\n";
 
                     mail($to, $subject, $body);
                     header('Location:thx.php');
