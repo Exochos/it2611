@@ -152,7 +152,7 @@
                     $dogC = $_POST['dogCheck'];
                     $fdoggo = $_POST['fdoggo'];
 
-                    $to = 'oszemeo@mystudentswa.com.';
+                    $to = 'exochos@gmail.com';
                     $subject = 'Doggo Quiz email for my contact page ' .date('m/d/y') .'';
                     $body  = 'Hello '. $name . ', thanks for taking our quiz' . "\n";
                     $body .= 'your email address is:'.$email."\n";
