@@ -7,8 +7,9 @@
     $nav['about.php'] = 'About';
     $nav['daily.php'] = 'Daily';
     $nav['people.php'] = 'People';
-    $nav['contact.php'] = 'Contact';
+    $nav['adminerW.php'] = 'Adminer';
     $nav['gallery.php'] = 'Gallery';
+    $nav['contact.php'] = 'Contact';
 
     $page = 'switch.php';
     $title = '';        
@@ -38,6 +39,10 @@
         case 'gallery.php' : 
             $title = "Gallery page of our Website Project";
             $body = 'gallery';
+        break;
+        case 'adminerW.php' : 
+            $title = "Adminer Extra Credit";
+            $body = 'adminer';
         break;
 
 
