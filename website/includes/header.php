@@ -24,7 +24,7 @@
 
 <!-- Header will be consistant -->
 <div class="jumbotron" style="margin-bottom:0">
-  <h1> wardsDesign: <?php echo $title; ?> </h1>
+  <h1> wardsDesign: <?php echo $body; ?> </h1>
 </div>
 
 <!-- Bootstrap navbar -->

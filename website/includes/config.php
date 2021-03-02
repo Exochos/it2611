@@ -11,7 +11,6 @@
     $nav['gallery.php'] = 'Gallery';
     $nav['contact.php'] = 'Contact';
 
-    $page = 'switch.php';
     $title = '';        
     
     switch(THIS_PAGE) {
@@ -55,8 +54,6 @@
         $day = date("l");
     }
 
-
-$title = "Switch";
 
 switch ($day) {
     case "Monday":
