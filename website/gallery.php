@@ -25,11 +25,11 @@ $gallery = array (
         for($i = 0; $i < count($gallery); $i++) {
             echo '<tr>';
             echo '<td>';
-            echo '<img src="images/'. $gallery[$i][0] . '.jpg" alt='.$gallery[$i][1].'></td>';
+            echo '<img src="images/'. $gallery[$i][0] . '.jpg" alt="'.$gallery[$i][1].'"></td>';
             echo '<td><p><b>' . $gallery[$i][1] . '</b></p></td>';
             echo '<td><p>' . $gallery[$i][2] . '</p></td>';
             echo '<td>';
-            echo '<img src="images/'. $gallery[$i][3] . '.jpg" alt='.$gallery[$i][1].'></td>';
+            echo '<img src="images/'. $gallery[$i][3] . '.jpg" alt="'.$gallery[$i][1].'"></td>';
             echo "</tr>";
         }
 
