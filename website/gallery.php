@@ -34,7 +34,6 @@ $gallery = array (
         }
 
     ?>
-    <br><br><br><br>
     </table><br><br>
     </div></div><div></div></div>
 </body>
