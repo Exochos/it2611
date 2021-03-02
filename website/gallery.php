@@ -36,7 +36,5 @@ $gallery = array (
     ?>
     </table><br><br>
     </div></div><div></div></div>
-</body>
-</html>
 <!-- Footer -->        
 <?php include('includes/footer.php'); ?>
