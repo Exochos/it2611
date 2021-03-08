@@ -19,8 +19,12 @@ try {
     die("Could not connect to the database $dbname :" . $e->getMessage());
 }
 ?>
-        
-            <h1>Dogs I have known</h1>
+<!-- Begin body content -->
+<div class="container" style="margin-top:30px">
+    <!-- row here -->
+    <div class="row">
+        <div class="col-sm-8">
+        <h1>Dogs I have known</h1>
             <table class="table table-bordered table-condensed">
                 <thead>
                     <tr>
@@ -42,6 +46,13 @@ try {
                     <?php endwhile; ?>
                 </tbody>
             </table>
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+</div>
+   
+            
 
 
 
