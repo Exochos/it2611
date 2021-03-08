@@ -7,6 +7,7 @@
     $nav['about.php'] = 'About';
     $nav['daily.php'] = 'Daily';
     $nav['people.php'] = 'People';
+    $nav['dogs.php'] = 'Dogs';
     $nav['adminerW.php'] = 'Adminer';
     $nav['gallery.php'] = 'Gallery';
     $nav['contact.php'] = 'Contact';
@@ -30,6 +31,10 @@
         case 'people.php' : 
             $title = "People page of our Website Project";
             $body = 'people';
+        break;
+        case 'dogs.php' : 
+            $title = "Database page of our Website Project";
+            $body = 'dogs';
         break;
         case 'contact.php' : 
             $title = "Contact page of our Website Project";
