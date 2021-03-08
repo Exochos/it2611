@@ -20,19 +20,18 @@ try {
 
 <?php include('includes/config.php'); ?>
 <?php include('includes/header.php'); ?>
+<table>
    <?php while ($row = $q->fetch()): ?>
     <tr>
-        
         <td><a href="view.php?id=<?php echo htmlspecialchars($row['dogID']); ?>"><?php echo htmlspecialchars($row['dogName']); ?><a></td>
         <td><?php echo htmlspecialchars($row['dogBreed']) ?></td>
         <td><?php echo htmlspecialchars($row['dogAge']); ?></td>
         <td><?php echo htmlspecialchars($row['dogImg']); ?></td>
         <td><?php echo htmlspecialchars($row['dogWeight']); ?></td>
         <td><?php echo htmlspecialchars($row['dogDesc']); ?></td>
-        <td><?php echo htmlspecialchars($row['dogDesc']); ?></td>
     </tr>
 <?php endwhile; ?>
-
+</table>
 
 <!-- Include -- Footer -->        
 <?php include('includes/footer.php'); ?>
