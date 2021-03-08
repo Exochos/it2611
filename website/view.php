@@ -26,7 +26,9 @@ try {
         <td><a href="view.php?id=<?php echo htmlspecialchars($row['dogID']); ?>"><?php echo htmlspecialchars($row['dogName']); ?><a></td>
         <td><?php echo htmlspecialchars($row['dogBreed']) ?></td>
         <td><?php echo htmlspecialchars($row['dogAge']); ?></td>
+        <td><?php echo htmlspecialchars($row['dogImg']); ?></td>
         <td><?php echo htmlspecialchars($row['dogWeight']); ?></td>
+        <td><?php echo htmlspecialchars($row['dogDesc']); ?></td>
         <td><?php echo htmlspecialchars($row['dogDesc']); ?></td>
     </tr>
 <?php endwhile; ?>
