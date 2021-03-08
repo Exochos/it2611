@@ -20,10 +20,15 @@ try {
 
 <?php include('includes/config.php'); ?>
 <?php include('includes/header.php'); ?>
-<?php 
-    echo $q;
-
-?>
+   <?php while ($row = $q->fetch()): ?>
+    <tr>
+        
+        <td><a href="view.php?id=<?php echo htmlspecialchars($row['dogID']); ?>"><?php echo htmlspecialchars($row['dogName']); ?><a></td>
+        <td><?php echo htmlspecialchars($row['dogBreed']) ?></td>
+        <td><?php echo htmlspecialchars($row['dogAge']); ?></td>
+        <td><?php echo htmlspecialchars($row['dogWeight']); ?></td>
+    </tr>
+<?php endwhile; ?>
 
 
 <!-- Include -- Footer -->        
