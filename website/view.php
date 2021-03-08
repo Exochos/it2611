@@ -7,7 +7,7 @@ try {
 
     $sql = 'SELECT *
                FROM dogs
-               WHERE dogID = "'.$id.'";'
+               WHERE dogID = "'.$id.'";';
 
     $q = $pdo->query($sql);
     $q->setFetchMode(PDO::FETCH_ASSOC);
