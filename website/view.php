@@ -7,8 +7,7 @@ try {
 
     $sql = 'SELECT *
                FROM dogs
-               WHERE dogID = '.$id.'
-              ORDER BY dogID';
+               WHERE dogID = "'.$id.'";'
 
     $q = $pdo->query($sql);
     $q->setFetchMode(PDO::FETCH_ASSOC);
