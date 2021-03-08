@@ -34,5 +34,4 @@ try {
 <?php endwhile; ?>
 </table>
 </container>
-<!-- Include -- Footer -->        
 <?php include('includes/footer.php'); ?>
