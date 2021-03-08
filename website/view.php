@@ -20,10 +20,11 @@ try {
 
 <?php include('includes/config.php'); ?>
 <?php include('includes/header.php'); ?>
+<div class="container" style="margin:0 auto;">
 <table>
    <?php while ($row = $q->fetch()): ?>
     <UL>
-        <li><a href="view.php?id=<?php echo htmlspecialchars($row['dogID']); ?>"><?php echo htmlspecialchars($row['dogName']); ?><a></li>
+        <li><h1>Dog Name<a href="view.php?id=<?php echo htmlspecialchars($row['dogID']); ?>"><?php echo htmlspecialchars($row['dogName']); ?><a></h1></li>
         <li><?php echo htmlspecialchars($row['dogBreed']) ?></li>
         <li><?php echo htmlspecialchars($row['dogAge']); ?></li>
         <li><?php echo htmlspecialchars($row['dogWeight']); ?></li>
@@ -32,6 +33,6 @@ try {
     </UL>
 <?php endwhile; ?>
 </table>
-
+</container>
 <!-- Include -- Footer -->        
 <?php include('includes/footer.php'); ?>
