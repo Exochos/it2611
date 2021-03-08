@@ -24,9 +24,9 @@ try {
 <table>
    <?php while ($row = $q->fetch()): ?>
     <UL>
-        <li><h1>Dog Name<a href="view.php?id=<?php echo htmlspecialchars($row['dogID']); ?>"><?php echo htmlspecialchars($row['dogName']); ?><a></h1></li>
-        <li><?php echo htmlspecialchars($row['dogBreed']) ?></li>
-        <li><?php echo htmlspecialchars($row['dogAge']); ?></li>
+        <li><h1>Dog Name: <?php echo htmlspecialchars($row['dogName']); ?></h1></li>
+        <li><h3>Dog Breed: <?php echo htmlspecialchars($row['dogBreed']) ?></h3></li>
+        <li><h3>Dog Age: <?php echo htmlspecialchars($row['dogAge']); ?></h3></li>
         <li><?php echo htmlspecialchars($row['dogWeight']); ?></li>
         <li><?php echo htmlspecialchars($row['dogDesc']); ?></li>
         <li><img src="images/<?php echo htmlspecialchars($row['dogImg']); ?>.jpg" alt=""></li>
