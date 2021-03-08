@@ -21,7 +21,7 @@ try {
 <?php include('includes/config.php'); ?>
 <?php include('includes/header.php'); ?>
 <?php 
-    echo $sql;
+    echo $q;
 
 ?>
 
