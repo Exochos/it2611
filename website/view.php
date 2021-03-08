@@ -22,14 +22,14 @@ try {
 <?php include('includes/header.php'); ?>
 <table>
    <?php while ($row = $q->fetch()): ?>
-    <tr>
-        <td><a href="view.php?id=<?php echo htmlspecialchars($row['dogID']); ?>"><?php echo htmlspecialchars($row['dogName']); ?><a></td>
-        <td><img src="images/<?php echo htmlspecialchars($row['dogImg']); ?>.jpg" alt=""></td>
-        <td><?php echo htmlspecialchars($row['dogBreed']) ?></td>
-        <td><?php echo htmlspecialchars($row['dogAge']); ?></td>
-        <td><?php echo htmlspecialchars($row['dogWeight']); ?></td>
-        <td><?php echo htmlspecialchars($row['dogDesc']); ?></td>
-    </tr>
+    <UL>
+        <li><a href="view.php?id=<?php echo htmlspecialchars($row['dogID']); ?>"><?php echo htmlspecialchars($row['dogName']); ?><a></li>
+        <li><?php echo htmlspecialchars($row['dogBreed']) ?></li>
+        <li><?php echo htmlspecialchars($row['dogAge']); ?></li>
+        <li><?php echo htmlspecialchars($row['dogWeight']); ?></li>
+        <li><?php echo htmlspecialchars($row['dogDesc']); ?></li>
+        <li><img src="images/<?php echo htmlspecialchars($row['dogImg']); ?>.jpg" alt=""></li>
+    </UL>
 <?php endwhile; ?>
 </table>
 
