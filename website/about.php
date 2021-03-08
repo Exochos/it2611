@@ -5,7 +5,7 @@
     <!-- row here -->
     <div class="row">
         <div class="col-sm-8">
-            <img src="table.png" alt="SQLtable">
+            <img src="images/table.png" alt="SQLtable">
         </div>
         <div class="col-sm-4">
         </div>
