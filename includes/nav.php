@@ -47,5 +47,10 @@
                     <li><a href="http://jeremyward.me/it2611/weeks/week7/substring.php">substring.php</a></li>
                     </ul>
                 </ul>
+                <li>Week 8
+                <ul class="second">
+                    <li><a href="http://jeremyward.me/it2611/weeks/week8/people.php">people.php</a></li>
+                    </ul>
+                </ul>
         </menu>
         <!-- End Menu Tab Left -->
