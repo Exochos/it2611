@@ -9,11 +9,9 @@ require_once '../../../dbconfig.php';
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
-    $sql = 'SELECT lastname,
-                    firstname,
-                    phone
-               FROM myTable
-              ORDER BY lastname';
+    $sql = 'SELECT *
+               FROM dogs
+              ORDER BY dogID';
 
     $q = $pdo->query($sql);
     $q->setFetchMode(PDO::FETCH_ASSOC);
@@ -34,9 +32,9 @@ try {
                 <tbody>
                     <?php while ($row = $q->fetch()): ?>
                         <tr>
-                            <td><?php echo htmlspecialchars($row['lastname']) ?></td>
-                            <td><?php echo htmlspecialchars($row['firstname']); ?></td>
-                            <td><?php echo htmlspecialchars($row['phone']); ?></td>
+                            <td><?php echo htmlspecialchars($row['dogBreed']) ?></td>
+                            <td><?php echo htmlspecialchars($row['dogName']); ?></td>
+                            <td><?php echo htmlspecialchars($row['dogWeight']); ?></td>
                         </tr>
                     <?php endwhile; ?>
                 </tbody>
