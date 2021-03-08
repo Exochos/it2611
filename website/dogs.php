@@ -27,13 +27,15 @@ try {
                         <th>Dog Name</th>
                         <th>Dog Breed</th>
                         <th>Dog Age</th>
+                        <th>Dog Weight</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php while ($row = $q->fetch()): ?>
                         <tr>
-                            <td><?php echo htmlspecialchars($row['dogBreed']) ?></td>
                             <td><?php echo htmlspecialchars($row['dogName']); ?></td>
+                            <td><?php echo htmlspecialchars($row['dogBreed']) ?></td>
+                            <td><?php echo htmlspecialchars($row['dogAge']); ?></td>
                             <td><?php echo htmlspecialchars($row['dogWeight']); ?></td>
                         </tr>
                     <?php endwhile; ?>
