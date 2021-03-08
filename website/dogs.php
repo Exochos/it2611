@@ -20,13 +20,13 @@ try {
 }
 ?>
         
-            <h1>People I barely know</h1>
+            <h1>Dogs I have known</h1>
             <table class="table table-bordered table-condensed">
                 <thead>
                     <tr>
-                        <th>Last Name</th>
-                        <th>First Name</th>
-                        <th>Job Title</th>
+                        <th>Dog Name</th>
+                        <th>Dog Breed</th>
+                        <th>Dog Age</th>
                     </tr>
                 </thead>
                 <tbody>
