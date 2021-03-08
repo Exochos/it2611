@@ -1,5 +1,8 @@
-<?php include('../../includes/config.php'); ?>
-<?php include('../../includes/header.php'); ?>
+<?php include('includes/config.php'); ?>
+<?php include('includes/header.php'); ?>
+    <!-- Sub Wrapper -->
+    <div class="main">
+    <?php include('includes/nav.php'); ?>
 
 
 <?php
