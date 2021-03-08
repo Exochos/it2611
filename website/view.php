@@ -27,6 +27,7 @@ try {
         <td><?php echo htmlspecialchars($row['dogBreed']) ?></td>
         <td><?php echo htmlspecialchars($row['dogAge']); ?></td>
         <td><?php echo htmlspecialchars($row['dogWeight']); ?></td>
+        <td><?php echo htmlspecialchars($row['dogDesc']); ?></td>
     </tr>
 <?php endwhile; ?>
 
