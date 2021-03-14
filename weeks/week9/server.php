@@ -16,8 +16,12 @@
     $succcess = 'You are not logged in!';
 
     // Connect to the database
-    //$db = mysqli_connect($DB_HOST, $DB_USER,$DB_PASSWORD,$DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
-
+    $db = mysqli_connect("localhost", $DB_USER,$DB_PASSWORD,$DB_NAME);
+// Check connection
+    if ($db->connect_error) {
+        die("Connection failed: " . $db->connect_error);
+    }
+    echo "Connected successfully";
 
     if (isset($_POST['reg_user'])) {
 
