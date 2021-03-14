@@ -17,11 +17,6 @@
 
     // Connect to the database
     $db = mysqli_connect("localhost", $DB_USER,$DB_PASSWORD,$DB_NAME);
-// Check connection
-    if ($db->connect_error) {
-        die("Connection failed: " . $db->connect_error);
-    }
-    echo "Connected successfully";
 
     if (isset($_POST['reg_user'])) {
 
