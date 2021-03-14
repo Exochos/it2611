@@ -18,6 +18,7 @@
     // Connect to the database
     echo "got here";
     $db = mysqli_connect($DB_HOST, $DB_USER,$DB_PASSWORD,$DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+    echo "error with db";
     echo $db;
 
 
