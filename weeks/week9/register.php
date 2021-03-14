@@ -2,10 +2,9 @@
 <?php
 //
 // Start the session //
+session_start(); // Grab Session variables.
 ob_start(); // Prevents header errors.
 define('DEBUG', 'TRUE'); // we want to see errors.
-session_start(); // Grab Session variables.
-
 //require_once '../../../dbconfig.php'; // Nothing to see here
 
 
@@ -19,14 +18,6 @@ include('server.php');
 // Lets declare some variables //
 $firstname = "";
 $lastname = "";
-
-
-
-
-
-
-
-
 
 
 ?>
@@ -114,9 +105,8 @@ $lastname = "";
                 <?php
                     include('includes/error.php');
                 ?>
-
                 <p>
-                    <a href="login.php">Already a Member</a>
+                    <a href="login.php">Already a Member? Click here!</a>
                 </p>
             </form>
             </fieldset>
