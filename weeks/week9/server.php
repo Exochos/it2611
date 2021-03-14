@@ -3,8 +3,8 @@
     // mysqli_real_escape_string --- //
     // md5()  
 
-    session_start();
-
+    //session_start();
+    include('config.php');
 
     //initialize
 
@@ -17,7 +17,7 @@
 
     // Connect to the database
 
-    $db = mysqli_connect(DB_HOST, DB_USER,DB_PASSWORD,DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+    $db = mysqli_connect($DB_HOST, $DB_USER,$DB_PASSWORD,$DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
 
     if (isset($_POST['reg_user'])) {
@@ -79,6 +79,4 @@
             header('Location:login.php');
         }
     } // End isset //
-
-
 ?>
