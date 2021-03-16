@@ -1,9 +1,14 @@
-<?php echo "got here"; ?>
-<?php if (count($errors) > 0) : ?>
-
+<?php 
+    echo "got here";
+    if (count($errors) > 0): 
+?>
 <div class="error">
-    <?php foreach($errors as $error): ?>
+
+
+<?php 
+    foreach($errors as $error): 
+?>
     <p><?php echo $error; ?></p>
-    <?php endforeach ?>
+<?php endforeach ?>
 </div>
 <?php endif ?>
