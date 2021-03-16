@@ -32,16 +32,16 @@
         // Array_push function //
         // array_push();  //
         if (empty($firstname)) {
-            array_push($errors,'Please enter your first name');
+            array_push($errors,'Please enter your First name');
         }
         if (empty($lastname)) {
-            array_push($errors,'Please enter your last name');
+            array_push($errors,'Please enter your Last name');
         }
         if (empty($email)) {
-            array_push($errors,'Please enter your email');
+            array_push($errors,'Please enter your Email');
         }
         if (empty($username)) {
-            array_push($errors,'Please enter your username');
+            array_push($errors,'Please enter your Username');
         }
         if (empty($password_1)) {
             array_push($errors,'Password is Required');
