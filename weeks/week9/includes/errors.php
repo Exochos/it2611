@@ -1,7 +1,5 @@
 <?php 
-    echo "got here";
-    if (count($errors) > 0): 
-?>
+    if (count($errors) > 0):?>
 <div class="error">
 
 
