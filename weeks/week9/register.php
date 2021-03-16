@@ -100,15 +100,17 @@ $lastname = "";
                     <li><button type="submit" class="button" name="reg_user">Register</button></li>
                     <!--  Submit -->
                     <li><button type="button" onclick="window.location.href='<?php  echo htmlspecialchars($_SERVER['PHP_SELF']);?>'"  class="button" style="background:red;">Reset</button></li>
-                    <?php
-                    print_r($errors); ?>
-                </ul>
-                <?php
+
+                                    <?php
                     include('includes/error.php');
                 ?>
+                </ul>
+
                 <p>
                     <a href="login.php">Already a Member? Click here!</a>
                 </p>
+                <?php
+                    print_r($errors); ?>
             </form>
             </fieldset>
 
