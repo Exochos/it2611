@@ -92,7 +92,7 @@
         $passwordlogin = mysqli_real_escape_string($db, $_POST['passwordlogin']);
 
         echo $_POST['login_user'];
-        echo $username;
+        echo $username[1];
         echo $passwordpasswordlogin;
 
         if (empty($username)) {
