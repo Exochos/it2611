@@ -85,15 +85,14 @@
 
 
     if (isset($_POST['login_user'])) {
-        echo "got to isset";
         // Get data //
 
         $username = mysqli_real_escape_string($db, $_POST['username']);
         $passwordlogin = mysqli_real_escape_string($db, $_POST['passwordlogin']);
 
-        echo $_POST['login_user'] .'\n';
-        echo $username . '\n';
-        echo $passwordpasswordlogin;
+        echo $_POST['login_user'] ."\n";
+        echo $username . "\n";
+        echo $passwordpasswordlogin . "\n";
 
         if (empty($username)) {
             array_push($errors,'Please enter your Username');
