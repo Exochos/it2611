@@ -105,9 +105,13 @@
 
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = $success;
-                
+
+                header('Location:index.php');
 
             } // End if mysqli
+            else {
+                array_push($error, 'Wrong username password combo');
+            } // End else
         }
     }
 
