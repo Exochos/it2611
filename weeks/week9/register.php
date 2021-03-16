@@ -62,6 +62,7 @@ $lastname = "";
         }
         .error {
             margin-top: 10px;
+            font-style: underline;
             padding-left: 10px;
             color: red;
             font-weight: bolder;
