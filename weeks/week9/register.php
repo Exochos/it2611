@@ -101,9 +101,7 @@ $lastname = "";
                     <!--  Submit -->
                     <li><button type="button" onclick="window.location.href='<?php  echo htmlspecialchars($_SERVER['PHP_SELF']);?>'"  class="button" style="background:red;">Reset</button></li>
 
-                                    <?php
-                    include('includes/error.php');
-                ?>
+                    <?php include('includes/errors.php'); ?>
                 </ul>
 
                 <p>
