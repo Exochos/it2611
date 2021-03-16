@@ -82,5 +82,38 @@
         }
     } // End isset //
 
+
+
+    if (isset($_POST['login_user'])) {
+
+        // Get data //
+
+        $username = mysqli_real_escape_string($db, $_POST['username']);
+        $password = mysqli_real_escape_string($db, $_POST['password']);
+
+        if (empty($username)) {
+            array_push($errors,'Please enter your Username');
+        }
+        if (empty($password)) {
+            array_push($errors,'Password is Required');
+        
+        if (count($errors) == 0) {
+            $password = md5($password);
+            $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'  ";
+            $results = mysqli_query($db, $query);
+            if (mysqli_num_rows($results) == 1) {
+
+                $_SESSION['username'] = $username;
+                $_SESSION['success'] = $success;
+                
+
+            } // End if mysqli
+        }
+    }
+
+
+
+    } // Close isset
+
 // End of PHP block //
 ?>
