@@ -1,4 +1,3 @@
 <?php
-    echo "Thanks!";
-    echo $_POST['username'];
+    echo "Thanks!" . $_SESSION['username'] . " Thanks for joining us!";
 ?>
