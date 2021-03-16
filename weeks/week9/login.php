@@ -48,6 +48,8 @@ include('server.php');
         }
     </style>
 </head>
+<body>
+    <div class="wrapper">
 <h1>
     Login
 </h1>
@@ -76,3 +78,5 @@ include('server.php');
     Haven't registered yet? <a href="register.php"> Register Here! </a>
 </p>
 </p>
+</div>
+</body>
