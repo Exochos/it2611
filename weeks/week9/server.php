@@ -44,7 +44,7 @@
             array_push($errors,'Password is Required');
         }
         if (empty($password_2)) {
-            array_push($errors,'Password is Required');
+            array_push($errors,'Password Confirmation is Required');
         }
         if ($password_1 != $password_2) {
             array_push($errors, 'Passwords must be the same');
@@ -65,6 +65,7 @@
                 array_push($errors, 'Cannot have duplicate usernames');
             }
         } // End ifs for username and email
+
         // If everything is okay and there is no errors, we need to now insert the data into the database //
         if (count($errors) == 0) {
             $password = md5($password_1);
@@ -77,4 +78,6 @@
             header('Location:login.php');
         }
     } // End isset //
+
+// End of PHP block //
 ?>

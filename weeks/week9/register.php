@@ -112,8 +112,6 @@ $lastname = "";
                 <p>
                     <a href="login.php">Already a Member? Click here!</a>
                 </p>
-                <?php
-                    print_r($errors); ?>
             </form>
             </fieldset>
 
