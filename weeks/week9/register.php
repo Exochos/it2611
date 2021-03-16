@@ -61,6 +61,8 @@ $lastname = "";
             font-size: 1.6em;
         }
         .error {
+            margin-top: 10px;
+            margin-left: 5px;
             color: red;
             font-weight: bolder;
             border: 1px solid red;
