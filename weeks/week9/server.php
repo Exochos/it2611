@@ -103,7 +103,7 @@
             $query = "SELECT * FROM users WHERE UserName = '$username2' AND Password = '$passwordlogin'";
             echo $query;
             echo "<br><br>";
-            //$results = mysqli_query($db,$query);
+            $results = mysqli_query($db,$query);
             echo $results;
             echo "<br><br>";
             echo $results[0];
