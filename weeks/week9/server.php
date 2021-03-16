@@ -98,14 +98,19 @@
             array_push($errors,'Password is Required');
         
         if (count($errors) == 0) {
+
             $passwordlogin = md5($passwordlogin);
+            echo "got to password querty";
+
             $query = "SELECT * FROM users WHERE username = '$username' AND password = '$passwordlogin'  ";
+
             $results = mysqli_query($db, $query);
+
             if (mysqli_num_rows($results) == 1) {
 
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = $success;
-
+                echo "got to success";
                 header('Location:index.php');
 
             } // End if mysqli
