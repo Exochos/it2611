@@ -87,11 +87,11 @@
     if (isset($_POST['login_user'])) {
         // Get data //
 
-        $username = mysqli_real_escape_string($db, $_POST['username']);
+        $username2 = mysqli_real_escape_string($db, $_POST['username']);
         $passwordlogin = mysqli_real_escape_string($db, $_POST['passwordlogin']);
 
         echo $_POST['login_user'] ."\n";
-        echo $username . "\n";
+        echo $username2 . "\n";
         echo $passwordpasswordlogin . "\n";
 
         if (empty($username)) {
