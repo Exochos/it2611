@@ -102,8 +102,8 @@
         if (count($errors) == 0) {
 
             $passwordlogin = md5($passwordlogin);
-            echo "got to password querty";
-            $query = "SELECT * FROM users WHERE username = '$username' AND password = '$passwordlogin'  ";
+            echo "got to password querty" . "\n";
+            $query = "SELECT * FROM users WHERE username = '$username2' AND password = '$passwordlogin'  ";
             echo $query;
             $results = mysqli_query($db, $query);
             echo $results;
