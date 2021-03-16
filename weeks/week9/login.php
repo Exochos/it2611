@@ -23,7 +23,7 @@ include('server.php');
     <label>
         Password
     </label>
-    <input type="password" name="password">
+    <input type="password" name="passwordlogin">
     <?php
         include('includes/errors.php');
     ?>

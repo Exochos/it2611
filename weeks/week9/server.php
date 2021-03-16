@@ -89,17 +89,17 @@
         // Get data //
 
         $username = mysqli_real_escape_string($db, $_POST['username']);
-        $password = mysqli_real_escape_string($db, $_POST['password']);
+        $passwordlogin = mysqli_real_escape_string($db, $_POST['passwordlogin']);
 
         if (empty($username)) {
             array_push($errors,'Please enter your Username');
         }
-        if (empty($password)) {
+        if (empty($passwordlogin)) {
             array_push($errors,'Password is Required');
         
         if (count($errors) == 0) {
-            $password = md5($password);
-            $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'  ";
+            $passwordlogin = md5($passwordlogin);
+            $query = "SELECT * FROM users WHERE username = '$username' AND password = '$passwordlogin'  ";
             $results = mysqli_query($db, $query);
             if (mysqli_num_rows($results) == 1) {
 
