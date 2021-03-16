@@ -40,6 +40,9 @@
         if (empty($email)) {
             array_push($errors,'Please enter your email');
         }
+        if (empty($username)) {
+            array_push($errors,'Please enter your username');
+        }
         if (empty($password_1)) {
             array_push($errors,'Password is Required');
         }
