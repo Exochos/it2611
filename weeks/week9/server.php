@@ -90,7 +90,7 @@
         $username2 = mysqli_real_escape_string($db, $_POST['username']);
         $passwordlogin = mysqli_real_escape_string($db, $_POST['passwordlogin']);
 
-        echo  $username2 ."\n";
+        echo  'Username' . $username2 ."\n";
 
 
         if (empty($username2)) {
@@ -103,11 +103,10 @@
 
             $passwordlogin = md5($passwordlogin);
             echo "got to password querty";
-
             $query = "SELECT * FROM users WHERE username = '$username' AND password = '$passwordlogin'  ";
-
+            echo $query;
             $results = mysqli_query($db, $query);
-
+            echo $results;
             if (mysqli_num_rows($results) == 1) {
 
                 $_SESSION['username'] = $username;
