@@ -9,6 +9,45 @@ include('server.php');
 
 
 ?>
+<head>
+<style>
+        .wrapper {
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
+        form {
+
+            width: 600px;
+            margin: 0 auto;
+            align-self: center;
+            background: lightblue;
+
+        }
+        ul li  {
+            margin: 4px;
+            list-style-type: none;
+            font-size: 1.2em;
+        }
+        input {
+            font-size: 1.2em;
+        }
+        .button {
+            margin-top: 10px;
+            background: green;
+            color: white;
+            font-size: 1.6em;
+        }
+        .error {
+            margin-top: 10px;
+            text-decoration: underline;
+            padding-left: 10px;
+            color: red;
+            font-weight: bolder;
+            border: 1px solid red;
+        }
+    </style>
+</head>
 <h1>
     Login
 </h1>
@@ -30,6 +69,7 @@ include('server.php');
 
     <button type="submit" class="button" name="login_user"> Login </button>
     <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"> Reset</button>
+
 </fieldset>
 </form>
 <p class="center">
