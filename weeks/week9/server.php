@@ -90,9 +90,8 @@
         $username2 = mysqli_real_escape_string($db, $_POST['username']);
         $passwordlogin = mysqli_real_escape_string($db, $_POST['passwordlogin']);
 
-        echo $_POST['username'] ."\n";
-        echo $_POST['passwordlogin'] . "\n";
-        echo $passwordlogin . "\n";
+        echo  $username2 ."\n";
+
 
         if (empty($username)) {
             array_push($errors,'Please enter your Username');
