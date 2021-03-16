@@ -98,7 +98,7 @@
         }
         if (empty($passwordlogin)) {
             array_push($errors,'Password is Required');
-        
+        }
         if (count($errors) == 0) {
 
             $passwordlogin = md5($passwordlogin);
@@ -120,7 +120,6 @@
                 array_push($error, 'Wrong username password combo');
             } // End else
         }
-    }
 
 
 
