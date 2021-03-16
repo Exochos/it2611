@@ -60,6 +60,10 @@ $lastname = "";
             color: white;
             font-size: 1.6em;
         }
+        .error {
+            font: red;
+            border: 1px solid red;
+        }
     </style>
     </head>
 <!-- End of Header -->
