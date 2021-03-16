@@ -93,7 +93,7 @@
         echo  $username2 ."\n";
 
 
-        if (empty($username)) {
+        if (empty($username2)) {
             array_push($errors,'Please enter your Username');
         }
         if (empty($passwordlogin)) {
