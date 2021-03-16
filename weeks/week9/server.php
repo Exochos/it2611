@@ -92,7 +92,7 @@
 
         echo $_POST['username'] ."\n";
         echo $_POST['passwordlogin'] . "\n";
-        echo $passwordpasswordlogin . "\n";
+        echo $passwordlogin . "\n";
 
         if (empty($username)) {
             array_push($errors,'Please enter your Username');
