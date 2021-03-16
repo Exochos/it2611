@@ -101,13 +101,7 @@
 
             $passwordlogin = md5($passwordlogin);
             $query = "SELECT * FROM users WHERE UserName = '$username2' AND Password = '$passwordlogin'";
-            echo $query;
-            echo "<br><br>";
             $results = mysqli_query($db,$query);
-            echo $results;
-            echo "<br><br>";
-            echo $results[0];
-            echo $results[1];
             
             if (mysqli_num_rows($results) == 1) {
 
