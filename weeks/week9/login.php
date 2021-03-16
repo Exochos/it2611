@@ -49,14 +49,12 @@ include('server.php');
     </style>
 </head>
 <body>
-    <div class="wrapper">
-<h1>
-    Login
-</h1>
+    <div id="wrapper" class="wrapper">
+    <h1> Login </h1>
 
-<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
+    <fieldset>
 
-<fieldset>
     <label>
         Username
     </label>
@@ -70,7 +68,7 @@ include('server.php');
     ?>
 
     <button type="submit" class="button" name="login_user"> Login </button>
-    <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"> Reset</button>
+    <button type="button" class="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"> Reset</button>
 
 </fieldset>
 </form>
