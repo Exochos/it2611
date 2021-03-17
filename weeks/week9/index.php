@@ -1,8 +1,10 @@
 <?php
     session_start();
     //include('');
-    print_r ($_SESSION);
-    echo $_SESSION[0];
+    echo 'Hi Thanks for logging in!';
+    echo '<b> ' . $_SESSION['username'] . '</b><br>';
+    echo ' ';
+
     echo $_SESSION[1];
 //    echo $_SESSION['success'] . '<br>';
   //  echo "Thanks!" . $_SESSION['username'] . " Thanks for joining us!";
