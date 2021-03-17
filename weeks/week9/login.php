@@ -50,25 +50,36 @@ include('server.php');
 </head>
 <body>
     <div id="wrapper" class="wrapper">
-    <h1> Login </h1>
-
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
     <fieldset>
+    <ul>
+    <li>
+        <h1> Login </h1>
+    </li>
 
-    <label>
-        Username
-    </label>
-    <input type="text" name="username" value="<?php if(isset($_POST['username'])) echo htmlspecialchars($_POST['username']);?>">
-    <label>
-        Password
-    </label>
-    <input type="password" name="passwordlogin">
-    <?php
-        include('includes/errors.php');
-    ?>
-
-    <button type="submit" class="button" name="login_user"> Login </button>
-    <button type="button" class="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"> Reset</button>
+    <li>
+        <label>
+            Username
+        </label>
+        <input type="text" name="username" value="<?php if(isset($_POST['username'])) echo htmlspecialchars($_POST['username']);?>">
+    </li>
+    <li>
+        <label>
+            Password
+        </label>
+        <input type="password" name="passwordlogin">
+    </li>
+    <li>
+        <?php
+            include('includes/errors.php');
+        ?>
+    </li>
+    <li>
+        <button type="submit" class="button" name="login_user"> Login </button>
+    </li>
+    <li>
+        <button type="button" class="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"> Reset</button>
+    </li>
 
 </fieldset>
 </form>
