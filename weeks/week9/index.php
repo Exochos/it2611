@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if (!isset($_SESSION)) {
+    if (!isset($_SESSION['username'])) {
         header('Location:register.php');
     }
     else {
@@ -11,7 +11,7 @@
     }
 
  echo '<a href="logout.php" >Logout</a>';
- 
+
 //    echo $_SESSION['success'] . '<br>';
   //  echo "Thanks!" . $_SESSION['username'] . " Thanks for joining us!";
 ?>
