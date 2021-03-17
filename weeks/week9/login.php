@@ -3,11 +3,6 @@
 session_start();
 include('server.php');
 
-
-
-
-
-
 ?>
 <head>
 <style>
