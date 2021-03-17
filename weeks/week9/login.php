@@ -76,10 +76,9 @@ include('server.php');
     </li>
     <li>
         <button type="submit" class="button" name="login_user"> Login </button>
-    </li>
-    <li>
         <button type="button" class="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"> Reset</button>
     </li>
+    </ul>
 
 </fieldset>
 </form>
