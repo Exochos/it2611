@@ -106,7 +106,7 @@
             if (mysqli_num_rows($results) == 1) {
 
                 $_SESSION['username'] = $username2;
-                $_SESSION['success'] = $success;
+                $_SESSION['success'] = "Success!";
                 header('Location:index.php');
 
             } // End if mysqli
