@@ -107,7 +107,6 @@
 
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = $success;
-                echo "got to success";
                 header('Location:index.php');
 
             } // End if mysqli
