@@ -1,11 +1,15 @@
 <?php
     session_start();
-    //include('');
-    echo 'Hi Thanks for logging in!';
-    echo '<b> ' . $_SESSION['username'] . '</b><br>';
-    echo ' ';
+    if (!isset($_SESSION)) {
+        header('Location:register.php');
+    }
+    else {
+        echo 'Hi, <b> ' . $_SESSION['username'] . '</b> Thanks for logging in!';
+        echo '<br>';
+        echo $_SESSION['success'];
+        echo '<br>';
+    }
 
-    echo $_SESSION[1];
 //    echo $_SESSION['success'] . '<br>';
   //  echo "Thanks!" . $_SESSION['username'] . " Thanks for joining us!";
 ?>
