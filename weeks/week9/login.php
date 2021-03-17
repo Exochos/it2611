@@ -78,13 +78,13 @@ include('server.php');
         <button type="submit" class="button" name="login_user"> Login </button>
         <button type="button" class="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"> Reset</button>
     </li>
+    <li>
+        <p class="center">
+            Haven't registered yet? <a href="register.php"> Register Here! </a>
+        </p>
+    </li>
     </ul>
-
 </fieldset>
 </form>
-<p class="center">
-    Haven't registered yet? <a href="register.php"> Register Here! </a>
-</p>
-</p>
 </div>
 </body>
