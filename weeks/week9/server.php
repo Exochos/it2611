@@ -13,7 +13,7 @@
     $email = '';
     $username = '';
     $errors = array();
-    $succcess = 'You are not logged in!';
+    $success = 'You are not logged in!';
 
     // Connect to the database
     $db = mysqli_connect("localhost", $DB_USER,$DB_PASSWORD,$DB_NAME);
