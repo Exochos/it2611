@@ -77,7 +77,7 @@
             mysqli_query($db, $query);
         
             $_SESSION['username'] = $username;
-            $_SESSION['success'] = $succcess;
+            $_SESSION['success'] = $success;
             header('Location:login.php');
         }
     } // End isset //
