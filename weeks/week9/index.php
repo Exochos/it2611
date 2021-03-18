@@ -1,7 +1,7 @@
 <?php
     session_start();
     if (!isset($_SESSION['username'])) {
-        header('Location:register.php');
+        header('Location:login.php');
     }
     else {
         echo 'Hi, <b> ' . $_SESSION['username'] . '</b> Thanks for logging in!';
