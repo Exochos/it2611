@@ -42,7 +42,7 @@
               <a class="nav-link" href="data.php">Homes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="switch.php">Random House</a>
+              <a class="nav-link" href="switch.php">Daily Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>
