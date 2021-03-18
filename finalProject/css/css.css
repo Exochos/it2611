@@ -18,13 +18,9 @@ body {
     line-height: 40px; /* Vertically center the text there */
     background-color: rgb(39, 35, 35);
     color:aliceblue;
+    margin-right: 20px;
 }
-ul li  {
-    margin: 4px;
-    list-style-type: none;
-    font-size: 1.2em;
-}
-  
+
   
   /* Custom page CSS
   -------------------------------------------------- */
@@ -35,7 +31,7 @@ ul li  {
   }
   
   .footer > .container {
-    padding-right: 15px;
+    padding-right: 25px;
     padding-left: 15px;
   }
   
