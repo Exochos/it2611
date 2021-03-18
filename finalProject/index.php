@@ -1,6 +1,5 @@
 <?php 
     //session_start();
-    include('includes/config.php');
     include('includes/header.php');
 
     if (!isset($_SESSION['login'])) {
@@ -9,11 +8,11 @@
         <head>
             <title>Redirecting...</title>
             <meta http-equiv="refresh" 
-        content="5;URL=includes/login.php">
+        content="5;URL=login.php">
         </head>
         <main role="main" class="container">
-        <h1 class="mt-5">             </h1>
-        <p></p>
+        <h2 class="mt-5">Please Log in to continue</h2>
+        <p>Redirecting...</p>
       </main>';
 
     }

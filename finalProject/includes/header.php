@@ -26,7 +26,7 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#"><img src="images/home.png" alt="home icon" height="50px"> Seattles Best Houses </a>
+        <a class="navbar-brand" href="#"><img src="images/home.png" alt="home icon" height="50px"><b> Seattles Best Houses </b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

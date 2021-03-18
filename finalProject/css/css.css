@@ -1,15 +1,15 @@
-/* Sticky footer styles
--------------------------------------------------- */
 html {
     position: relative;
     min-height: 100%;
-  }
-  body {
+}
+
+body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     background-color: #E9A100;
-  }
-  .footer {
+}
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -18,7 +18,12 @@ html {
     line-height: 40px; /* Vertically center the text there */
     background-color: rgb(39, 35, 35);
     color:aliceblue;
-  }
+}
+ul li  {
+    margin: 4px;
+    list-style-type: none;
+    font-size: 1.2em;
+}
   
   
   /* Custom page CSS
