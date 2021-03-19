@@ -1,8 +1,10 @@
 <?php 
-  session_start();
-  include('server.php');
-  include('includes/config.php');
-  include('includes/header.php');
+  session_start();                  // We want session vars
+  ob_start();                       // Prevents header errors.
+  define('DEBUG', 'TRUE');          // we want to see errors.
+  include('server.php');            // server is how we going to process this data
+  include('includes/config.php');   // config is general code
+  include('includes/header.php');   // header gives us our nav bar
   ?>
 
 
