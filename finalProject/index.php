@@ -1,7 +1,7 @@
 <?php 
     session_start();
-      include('server.php');
-  include('includes/config.php');
+    include('server.php');
+    include('includes/config.php');
     include('includes/header.php');
 
     if (!isset($_SESSION['username'])) {
@@ -26,10 +26,10 @@
         <div class="row"><!-- Row -->
           <div class="col-sm-8">';
             echo '<h2>Welcome <b>' . $_SESSION['username'] . '</b><h2></div>';
-          
         echo '
         <div class="col-sm-4">
             <aside>
+            This is the aside text!
           </aside>
         </div>
         </div><!-- Row -->
