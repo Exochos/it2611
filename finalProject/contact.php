@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-sm-8">
                 <div class="form group">
-                <h1>Contact Us!</h1>
+                <h1>Subscribe to the Newletter</h1>
                 <form method="post">
                 <fieldset>
                 <!-- name -->
@@ -66,10 +66,10 @@
 
 
                     <div class="formgroup">
-                    <label><b>Select your favorite house!:</b></label><br>
-                    <select name="fdoggo">
+                    <label><b>Select your income level</b></label><br>
+                    <select name="houseS">
                     <option value="NULL">Select One</option>
-                    <option value="golden" <?php if (isset($_POST['fdoggo']) && $_POST['fdoggo'] == 'golden') echo 'selected'; ?>>Golden</option>
+                    <option value="golden" <?php if (isset($_POST['houseS']) && $_POST['houseS'] == '') echo 'selected'; ?>>Forest House</option>
                     <?php 
                     
                     ?><br>
