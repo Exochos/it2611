@@ -11,12 +11,12 @@
             <div class="col-sm-8">
                 <div class="form group">
                 <h1>Subscribe to the Newletter</h1>
-                <form method="post">
-                <fieldset>
+                <form method="post"><fieldset>
                 <!-- name -->
                 <label><b>First Name</b>
                 <input class="form-control" type="text" name="firstname" value="<?php if (isset($_POST['firstname'])) echo htmlspecialchars($_POST['firstname']);?>"><br>
                 </label><br>
+                <!-- name -->
                 <label ><b>Last Name</b>
                 <input class="form-control" type="text" name="lastname" value="<?php if (isset($_POST['lastname'])) echo htmlspecialchars($_POST['lastname']);?>"><br>
                 </label><br>
@@ -32,8 +32,8 @@
                 <!-- Radio buttons -->
                 <b>Select your Age:</b><br>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="a" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'a') echo 'checked'; ?>>
-                        <label class="form-check-label" for="houseR">18-32</label>
+                      <label class="form-check-label" for="age">18-32</label>
+                      <input class="form-check-input" type="radio" name="age" value="a" <?php if (isset($_POST['age']) && $_POST['age'] == 'a') echo 'checked'; ?>>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="houseR" id="houseR" value="b" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'b') echo 'checked'; ?>>
@@ -54,7 +54,7 @@
                     <div class="form-check">
                         <label class="form-check-label" for="houseC">
                         <input class="form-check-input" type="checkbox" id="houseC" name="houseC" value="houseB" <?php if (isset($_POST['houseC']) && $_POST['houseC'] == 'houseB') echo 'checked="checked"'; ?>>
-                            Forest House
+                            Forest Home
                         </label>
                     </div>
                     <div class="form-check">
@@ -63,8 +63,6 @@
                             City House
                         </label>
                     </div><br>
-
-
                     <div class="formgroup">
                     <label><b>Select your income level</b></label><br>
                     <select name="income">
@@ -87,7 +85,7 @@
                      <?php
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['dogRadio'], $_POST['dogCheck'], $_POST['fdoggo']))  {
+  if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST[''], $_POST[''], $_POST['']))  {
     $name = $_POST['firstname'] . " " . $_POST['lastname'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
@@ -104,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     mail($to, $subject, $body);
     header('Location:thx.php');
-}//end if
+  }//end if
 }// end more if
 else {
   if (empty($_POST['firstname'])) {
@@ -124,13 +122,13 @@ else {
     echo "please enter a valid phone number";    
   }
   if (empty($_POST['houseR'])) {
-    echo '<div style="color:red;">Please select your favorite house!</div><br>';
+    echo '<div style="color:red;">Please select your age range.</div><br>';
     }
   if (empty($_POST['dogCheck'])) {
-    echo '<div style="color:red;">Please select all of your favorite doggies!</div>';
+    echo '<div style="color:red;">Please select you favorite kind of houses.</div>';
   }
   if (empty($_POST['fdoggo'])) {
-    echo '<div style="color:red;">Please select a fdoggo</div>';
+    echo '<div style="color:red;">Please select an income level</div>';
     }
 ?>
                 </p>
