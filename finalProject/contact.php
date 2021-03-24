@@ -67,14 +67,14 @@
 
                     <div class="formgroup">
                     <label><b>Select your income level</b></label><br>
-                    <select name="houseS">
+                    <select name="income">
                     <option value="NULL">Select One</option>
-                    <option value="golden" <?php if (isset($_POST['houseS']) && $_POST['houseS'] == '') echo 'selected'; ?>>Forest House</option>
-                    <?php 
-                    
-                    ?><br>
-                    </select><br></div>
-                    <br>
+                    <option value="0" <?php if (isset($_POST['income']) && $_POST['income'] == '0') echo 'selected'; ?>>$0-$30k</option>
+                    <option value="3" <?php if (isset($_POST['income']) && $_POST['income'] == '3') echo 'selected'; ?>>$30k-$60k</option>
+                    <option value="6" <?php if (isset($_POST['income']) && $_POST['income'] == '6') echo 'selected'; ?>>$60k-$120k</option>
+                    <option value="12" <?php if (isset($_POST['income']) && $_POST['income'] == '12') echo 'selected'; ?>>$120k+</option>
+                    </select><br>
+                    </div><br>
                     <input class="btn btn-primary" type="submit" value="Submit">&nbsp;
                     <a href="" class="btn btn-primary">Reset me</a><br><br><br>
                    
