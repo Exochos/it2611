@@ -30,18 +30,18 @@
                 </label><br><br>
 
                 <!-- Radio buttons -->
-                <b>Select your favorite house!</b><br>
+                <b>Select your Age:</b><br>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house1" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'house1') echo 'checked'; ?>>
-                        <label class="form-check-label" for="houseR">House 1</label>
+                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="a" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'a') echo 'checked'; ?>>
+                        <label class="form-check-label" for="houseR">18-32</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house2" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'house2') echo 'checked'; ?>>
-                        <label class="form-check-label" for="houseR">House 2</label>
+                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="b" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'b') echo 'checked'; ?>>
+                        <label class="form-check-label" for="houseR">32-60</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house3" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'house3') echo 'checked'; ?>>
-                        <label class="form-check-label" for="GoldenR">House 3</label>
+                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="c" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'c') echo 'checked'; ?>>
+                        <label class="form-check-label" for="GoldenR">60+</label>
                     </div><br>
                     <!-- begin checkbox -->
                     <b>Please Select all of your favorite kinds of Houses!</b><br>
