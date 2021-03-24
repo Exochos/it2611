@@ -80,18 +80,7 @@
                     echo '<div style="color:red;">Please select a fdoggo</div>';
                     }
                     ?><br>
-                    </select><br><br></div>
-
-                <!-- Press to Agree -->
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="agree" id="agreeR" <?php if (isset($_POST['agree'])) echo 'checked'; ?>>
-                    <label class="form-check-label" for="agreeR">Please Click to Agree</label>
-                </div>
-                <?php 
-                    if (empty($_POST['agree'])) {
-                        echo '<div style="color:red;">Please Agree</div><br>';
-                    }
-                ?>
+                    </select><br></div>
                     <br>
                     <input class="btn btn-primary" type="submit" value="Submit">&nbsp;
                     <a href="" class="btn btn-primary">Reset me</a><br><br><br>
