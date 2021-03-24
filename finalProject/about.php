@@ -12,6 +12,10 @@ include('includes/header.php');
           <div class="col-sm-8">
           <h3>Seattles Best Houses</h3>
           <p> Seattles best houses was founded in 1993 when the late Hiro Protaganist founded the site.</p>
+          <h4> Mission Statement </h4>
+          <p>Seattles Best Home's mission is to modernize and progress the experience of buying and selling real estate by cultivating a spirit of collaboration, innovation, and integrity.<br>
+We strive to foster a culture of partnership in which all clients and listings are represented in a cooperative environment by all its agents, thereby ensuring its clients and listings have the competitive edge.” <b>Hiro Protaganist, CEO and co-founder.</b><BR>
+“Leveraging the most emergent technologies and social media strategies, The Agency envisions itself as more than just a real estate brokerage; it is a lifestyle company committed to informing and connecting global communities.” Billy Rose, President and co-founder.</p>
           </div> <!-- End COL SM 8 -->
         <div class="col-sm-4">
             <aside>
