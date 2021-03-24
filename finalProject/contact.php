@@ -83,7 +83,7 @@
                 <p> 
                      <!-- Parse the data and email -->
                      <?php
-checkForm();
+checkForm($_POST);
             ?>
 ?>
                 </p>
