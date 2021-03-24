@@ -21,27 +21,13 @@
                 <label ><b>Last Name</b>
                 <input class="form-control" type="text" name="lastname" value="<?php if (isset($_POST['lastname'])) echo htmlspecialchars($_POST['lastname']);?>"><br>
                 </label><br>
-
                 <!-- email -->
                 <label><b>Email</b>
                     <input class="form-control" type="email" name="email" id="email" value="<?php if (isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>"><br>
-                    <?php 
-                        if (empty($_POST['email'])) {
-                            echo '<div style="color:red;">Please enter your email address</div>'; }
-                    ?>
                 </label><br>
-
                 <!-- Phone number -->
                 <label><b>Phone Number</b>
                     <input class="form-control" type="phone" name="phone" value="<?php if (isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']);?>"><br>
-                    <?php 
-                        if (empty($_POST['phone'])) { echo '<div style="color:red;">Please enter your phone number</div>'; }
-                            // this is magic //
-                        elseif (!(preg_match('/(\+?\(?[0-9]{2,3}\)?)([ -]?[0-9]{2,4}){3}/', $_POST['phone']))) {
-                            echo "please enter a valid phone number";    
-                        }
-                        
-                        ?>
                 </label><br><br>
 
                 <!-- Radio buttons -->
@@ -163,12 +149,20 @@
                     else {
                       if (empty($_POST['firstname'])) {
                           echo '<div style="color:red;">Please fill out your First Name</div>';
-                      }
+                      } // Endif
                       if (empty($_POST['lastname'])) {
                           echo '<div style="color:red;">Please fill out your Last Name</div>';
                       } // Endif
+                      if (empty($_POST['email'])) {
+                        echo '<div style="color:red;">Please enter your email address</div>'; 
+                      } // Endif
                     } // End Else Block
-
+                      if (empty($_POST['phone'])) { echo '<div style="color:red;">Please enter your phone number</div>'; 
+                      }
+                        // this is magic //
+                      elseif (!(preg_match('/(\+?\(?[0-9]{2,3}\)?)([ -]?[0-9]{2,4}){3}/', $_POST['phone']))) {
+                        echo "please enter a valid phone number";    
+                      }
                     ?>
                         </fieldset><br><br>
             </div></div>
