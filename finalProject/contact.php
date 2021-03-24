@@ -121,13 +121,13 @@ else {
   elseif (!(preg_match('/(\+?\(?[0-9]{2,3}\)?)([ -]?[0-9]{2,4}){3}/', $_POST['phone']))) {
     echo "please enter a valid phone number";    
   }
-  if (empty($_POST['houseR'])) {
+  if (empty($_POST['age'])) {
     echo '<div style="color:red;">Please select your age range.</div><br>';
     }
-  if (empty($_POST['dogCheck'])) {
+  if (empty($_POST['house'])) {
     echo '<div style="color:red;">Please select you favorite kind of houses.</div>';
   }
-  if (empty($_POST['fdoggo'])) {
+  if (empty($_POST['income'])) {
     echo '<div style="color:red;">Please select an income level</div>';
     }
 ?>
