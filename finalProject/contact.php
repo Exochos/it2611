@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $body .= 'Your dog checkbox selection is: '.$dogC ."\n";
 
     mail($to, $subject, $body);
-    header('Location:thx.php');
+    header('Location:about.php');
   }//end if
 }// end if post
 
