@@ -36,20 +36,13 @@
                         <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house1" <?php if (isset($_POST['houseR']) && $_POST['dogRadio'] == 'house1') echo 'checked'; ?>>
                         <label class="form-check-label" for="GoldenR">House 1</label>
                     </div>
-
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dogRadio" id="labR" value="lab" <?php if (isset($_POST['dogRadio']) && $_POST['dogRadio'] == 'lab') echo 'checked'; ?>>
-                        <label class="form-check-label" for="labR">Labrador</label>
+                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house2" <?php if (isset($_POST['houseR']) && $_POST['dogRadio'] == 'house2') echo 'checked'; ?>>
+                        <label class="form-check-label" for="GoldenR">House 1</label>
                     </div>
-
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dogRadio" id="corgiR" value="corgie" <?php if (isset($_POST['dogRadio']) && $_POST['dogRadio'] == 'corgie') echo 'checked'; ?>>
-                        <label class="form-check-label" for="corgieR">Corgie</label>
-                    </div>
-
-                    <div class="form-check">
-                    <input class="form-check-input" type="radio" name="dogRadio" id="dalmR" value="dalmation" <?php if (isset($_POST['dogRadio']) && $_POST['dogRadio'] == 'dalmation') echo 'checked'; ?>>
-                    <label class="form-check-label" for="dalR">Dalmation</label>
+                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house3" <?php if (isset($_POST['houseR']) && $_POST['dogRadio'] == 'house3') echo 'checked'; ?>>
+                        <label class="form-check-label" for="GoldenR">House 1</label>
                     </div>
 
                     <?php 
