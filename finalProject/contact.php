@@ -17,10 +17,10 @@
                 <!-- name -->
                 <label><b>First Name</b>
                 <input class="form-control" type="text" name="firstname" value="<?php if (isset($_POST['firstname'])) echo htmlspecialchars($_POST['firstname']);?>"><br>
-                </label><br>
+                </label>
                 <label ><b>Last Name</b>
                 <input class="form-control" type="text" name="lastname" value="<?php if (isset($_POST['lastname'])) echo htmlspecialchars($_POST['lastname']);?>"><br>
-                </label><br>
+                </label>
                 <!-- email -->
                 <label><b>Email</b>
                     <input class="form-control" type="email" name="email" id="email" value="<?php if (isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>"><br>
@@ -38,11 +38,11 @@
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house2" <?php if (isset($_POST['houseR']) && $_POST['dogRadio'] == 'house2') echo 'checked'; ?>>
-                        <label class="form-check-label" for="GoldenR">House 1</label>
+                        <label class="form-check-label" for="GoldenR">House 2</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house3" <?php if (isset($_POST['houseR']) && $_POST['dogRadio'] == 'house3') echo 'checked'; ?>>
-                        <label class="form-check-label" for="GoldenR">House 1</label>
+                        <label class="form-check-label" for="GoldenR">House 3</label>
                     </div>
 
                     <?php 
