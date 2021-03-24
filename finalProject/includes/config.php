@@ -36,13 +36,22 @@ case "Wednesday":
         break;
 case "Thursday":
         $pic = 'h4';
-        $alt = '';
-        $p = '';
+        $alt = 'Elegant and stylish home by Boehm Design';
+        $p = '
+        Elegant and stylish home by Boehm Design created for the most discerning buyer in desirable Canterbury. Details throughout reflect the thoughtfulness in creating a home for comfort & sophistication. No detail was overlooked. Spacious & open floor plan. Incredible kitchen w/ Thermador appls for master chefs & eating bar for informal dining. Living Rm w/ fireplace, Dining Rm, Family Rm, 2 Master BR Ensuites are luxurious & relaxing, 2 BR Ensuites & Bonus Rm. Soaring ceilings, crown molding, motorized blinds, elevator, Carrara marble, hardwd floors, heated floors, french doors, night lights along stairwell, built-in speakers, security system, gas heat, central a/c, patio & level yard. Shops, restaurants, parks and Lake are minutes away.
+        <br><a href="https://www.luxuryportfolio.com/Property/seattle-properties/UFAG">Find out more</a>
+        ';
         break;
 case "Friday":
         $pic = 'h5';
-        $alt = '';
-        $p = "";
+        $alt = 'QUINTESSENTIAL NORTHWEST HOME ON COVETED ALKI POINT';
+        $p = 'A quintessential Northwest home located at the quiet end of Admiral on coveted Alki Point.
+
+        Located above Alki Lighthouse, the view is a showstopper, with a 270-degree vista of the Puget Sound, Olympic Mountains, ferry traffic, and marine life. One of the rare properties in Seattle where you can enjoy both sunrise and sunsets.
+        
+        The heart of the home is in the gorgeously remodeled kitchen, where beauty and function combine to create an entertainers delight. The primary suite occupies the upper level with unstoppable views, a luxurious spa bath, and dual dressing rooms.
+        <br><a href="https://www.luxuryportfolio.com/Property/seattle-properties-quintessential-northwest-home-on-coveted-alki-point/COIS">Find out more</a>
+        ';
         break;
 case "Saturday":
         $pic = 'h6';
