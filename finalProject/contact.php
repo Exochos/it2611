@@ -31,10 +31,10 @@
                 </label><br><br>
 
                 <!-- Radio buttons -->
-                <b>Select your favorite dog!</b><br>
+                <b>Select your favorite house!</b><br>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dogRadio" id="goldenR" value="golden" <?php if (isset($_POST['dogRadio']) && $_POST['dogRadio'] == 'golden') echo 'checked'; ?>>
-                        <label class="form-check-label" for="GoldenR">Golden Retriever</label>
+                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house1" <?php if (isset($_POST['houseR']) && $_POST['dogRadio'] == 'house1') echo 'checked'; ?>>
+                        <label class="form-check-label" for="GoldenR">House 1</label>
                     </div>
 
                     <div class="form-check">
@@ -53,9 +53,7 @@
                     </div>
 
                     <?php 
-                        if (empty($_POST['dogRadio'])) {
-                        echo '<div style="color:red;">Please select your favorite doggos</div><br>';
-                        }
+
                     ?><br><!--End Radio -->
 
                     <!-- begin checkbox -->
@@ -156,13 +154,16 @@
                       if (empty($_POST['email'])) {
                         echo '<div style="color:red;">Please enter your email address</div>'; 
                       } // Endif
-                    } // End Else Block
+                       } // End Else Block
                       if (empty($_POST['phone'])) { echo '<div style="color:red;">Please enter your phone number</div>'; 
                       }
                         // this is magic //
                       elseif (!(preg_match('/(\+?\(?[0-9]{2,3}\)?)([ -]?[0-9]{2,4}){3}/', $_POST['phone']))) {
                         echo "please enter a valid phone number";    
                       }
+                      if (empty($_POST['houseR'])) {
+                        echo '<div style="color:red;">Please select your favorite house!</div><br>';
+                        }
                     ?>
                         </fieldset><br><br>
             </div></div>
