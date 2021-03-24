@@ -19,10 +19,11 @@ switch ($day) {
         break;
     case "Tuesday":
         $pic = 'h2';
-        $alt = '$45 million ultra-modern mansion';
+        $alt = 'INCOMPARABLE WATERFRONT ESTATE';
         $p = '
-        This Beautiful
-        <a href="here">Here</a> Blah Blah
+        Incomparable waterfront estate. Quietude and wonder. Inspiration and awe. A once-in-a-lifetime opportunity to experience Pacific Northwest coastal island living, mere minutes from one of the most rapidly appreciating cities on the planet.
+        Live in the daily luxury of nature, with expansive views of outer islands and the Olympics. Kayak, paddle board and take long tidal beach walks with unparalleled privacy. A signature investment with endless possibility. Absolutely sublime.
+        <a href="https://www.luxuryportfolio.com/Property/seattle-properties-incomparable-waterfront-estate/JCKF">Find out more</a>
         ';
         break;
 case "Wednesday":
@@ -46,9 +47,7 @@ case "Friday":
         $pic = 'h5';
         $alt = 'QUINTESSENTIAL NORTHWEST HOME ON COVETED ALKI POINT';
         $p = 'A quintessential Northwest home located at the quiet end of Admiral on coveted Alki Point.
-
         Located above Alki Lighthouse, the view is a showstopper, with a 270-degree vista of the Puget Sound, Olympic Mountains, ferry traffic, and marine life. One of the rare properties in Seattle where you can enjoy both sunrise and sunsets.
-        
         The heart of the home is in the gorgeously remodeled kitchen, where beauty and function combine to create an entertainers delight. The primary suite occupies the upper level with unstoppable views, a luxurious spa bath, and dual dressing rooms.
         <br><a href="https://www.luxuryportfolio.com/Property/seattle-properties-quintessential-northwest-home-on-coveted-alki-point/COIS">Find out more</a>
         ';
