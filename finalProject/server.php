@@ -49,7 +49,7 @@
 
         // Check to see if there is a username and email //
         $user_check_query = "SELECT * FROM users WHERE username = '$username' OR email = '$email' LIMIT 1";
-        //$result = mysqli_query($db, $user_check_query) or die(myError(__FILE__,__LINE__,mysqli_connect_error($db)));
+        $result = mysqli_query($db, $user_check_query) or die(myError(__FILE__,__LINE__,mysqli_connect_error($db)));
         $user = mysqli_fetch_assoc($result);
 
         if ($user) {
