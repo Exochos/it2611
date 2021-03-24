@@ -27,7 +27,7 @@
                 <!-- Phone number -->
                 <label><b>Phone Number</b>
                     <input class="form-control" type="phone" name="phone" value="<?php if (isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']);?>"><br>
-                </label><br><br>
+                </label><br>
 
                 <!-- Radio buttons -->
                 <b>Select your Age:</b><br>
@@ -40,8 +40,8 @@
                         <label class="form-check-label" for="age">32-60</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="c" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'c') echo 'checked'; ?>>
-                        <label class="form-check-label" for="GoldenR">60+</label>
+                        <input class="form-check-input" type="radio" name="age" id="houseR" value="c" <?php if (isset($_POST['age']) && $_POST['age'] == 'c') echo 'checked'; ?>>
+                        <label class="form-check-label" for="age">60+</label>
                     </div><br>
                     <!-- begin checkbox -->
                     <b>Please Select all of your favorite kinds of Houses!</b><br>
