@@ -1,8 +1,10 @@
 <?php 
+  //session_start();
   session_start();
   include('server.php');
   include('includes/config.php');
   include('includes/header.php');
+
   ?>
 
 
@@ -17,19 +19,19 @@
                             <h3 class="text-center text-dark">Login</h3>
                             <div class="form-group">
                                 <label for="username" class="text-dark">Username:</label><br>
-                                <input type="text" name="userName" id="username" class="form-control" value="<?php if(isset($_POST['userName'])) echo htmlspecialchars($_POST['userName']);?>">
+                                <input type="text" name="username" id="username" class="form-control" value="<?php if(isset($_POST['userName'])) echo htmlspecialchars($_POST['userName']);?>">
                             </div>
                             <div class="form-group">
                                 <label for="password" class="text-dark">Password:</label><br>
-                                <input type="text" name="password" id="password" class="form-control">
+                                <input type="password" name="passwordlogin" id="password" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="remember-me" class="text-dark"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                                <input type="submit" name="submit" class="btn btn-light btn-lg" value="submit">
-                                <button type="button" class="btn btn-light btn-lg" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"> reset</button>
+                                <input type="submit" name="login_user" class="btn btn-light btn-lg" value="Submit">
+                                <button type="button" class="btn btn-light btn-lg" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"> Reset </button>
                             </div>
                             <div id="register-link" class="text-right">
-                                <a href="register.php" class="text-dark">Register here</a>
+                                <a href="register.php" class="text-dark">Not Registered? - <b> Register Here! </b></a>
                             </div>
                             <?php
                               include('includes/errors.php');

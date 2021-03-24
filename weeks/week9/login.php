@@ -75,7 +75,7 @@ include('server.php');
     </li>
     <li>
         <p class="center">
-            Haven't registered yet? <a href="register.php"> Register Here! </a>
+            Haven't registered yet? <a href="register.php"><b> Register Here! </b></a>
         </p>
     </li>
     </ul>

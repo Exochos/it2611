@@ -1,10 +1,16 @@
 <?php 
+
   session_start();                  // We want session vars
   ob_start();                       // Prevents header errors.
   define('DEBUG', 'TRUE');          // we want to see errors.
   include('server.php');            // server is how we going to process this data
   include('includes/config.php');   // config is general code
-  include('includes/header.php');   // header gives us our nav bar
+  include('includes/header.php');   // header gives us our nav bar and general code
+
+    // Lets declare some variables //
+    $firstname = "";
+    $lastname = "";
+
   ?>
 
 
@@ -20,11 +26,11 @@
                             <h3 class="text-center text-dark">Register</h3>
                             <div class="form-group">
                                 <label for="firstname" class="text-dark">First Name</label>
-                                    <input type="text" class="form-control" name="firstName" value="<?php if(isset($_POST['firstName'])) echo htmlspecialchars($_POST['firstName']);?>"></input>
+                                    <input type="text" class="form-control" name="firstname" value="<?php if(isset($_POST['firstName'])) echo htmlspecialchars($_POST['firstName']);?>"></input>
                             </div>
                             <div class="form-group">
                                 <label for="lastName" class="text-dark">Last Name</label>
-                                <input type="text" class="form-control" name="lastName" value="<?php if(isset($_POST['lastName'])) echo htmlspecialchars($_POST['lastName']);?>"></input>
+                                <input type="text" class="form-control" name="lastname" value="<?php if(isset($_POST['lastName'])) echo htmlspecialchars($_POST['lastName']);?>"></input>
                             </div>
                             <div class="form-group">
                                 <label for="email" class="text-dark">Email</label>
@@ -32,20 +38,20 @@
                             </div>
                             <div class="form-group">
                                 <label for="username" class="text-dark">Username:</label><br>
-                                <input type="text" name="userName" id="username" class="form-control" value="<?php if(isset($_POST['userName'])) echo htmlspecialchars($_POST['userName']);?>">
+                                <input type="text" name="username" id="username" class="form-control" value="<?php if(isset($_POST['userName'])) echo htmlspecialchars($_POST['userName']);?>">
                             </div>
                             <div class="form-group">
                                 <label for="password" class="text-dark">Password:</label><br>
-                                <input type="text" name="password" id="password" class="form-control">
+                                <input type="text" name="password_1" id="password" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="password" class="text-dark">Password Confirm:</label><br>
-                                <input type="text" name="password" id="password" class="form-control">
+                                <input type="text" name="password_2" id="password" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="remember-me" class="text-dark"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                                <input type="submit" name="submit" class="btn btn-light btn-lg" value="register">
-                                <button type="button" class="btn btn-light btn-lg" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">reset</button>
+                                <input type="submit" name="reg_user" class="btn btn-light btn-lg" value="Register">
+                                <button type="button" class="btn btn-light btn-lg" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">Reset</button>
                             </div>
                             <div class="form-group">
                                 <?php include('includes/errors.php'); ?>

@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once 'database.php';
+    require_once 'includes/credentials.php';
 
     $firstname = '';
     $lastname = '';
@@ -16,10 +16,10 @@
 
         // Get data //
 
-        $firstname = mysqli_real_escape_string($db, $_POST['firstName']);
-        $lastname = mysqli_real_escape_string($db, $_POST['lastName']);
+        $firstname = mysqli_real_escape_string($db, $_POST['firstname']);
+        $lastname = mysqli_real_escape_string($db, $_POST['lastname']);
         $email = mysqli_real_escape_string($db, $_POST['email']);
-        $username = mysqli_real_escape_string($db, $_POST['userName']);
+        $username = mysqli_real_escape_string($db, $_POST['username']);
         $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
         $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
 
@@ -49,7 +49,7 @@
 
         // Check to see if there is a username and email //
         $user_check_query = "SELECT * FROM users WHERE username = '$username' OR email = '$email' LIMIT 1";
-        $result = mysqli_query($db, $user_check_query) or die(myError(__FILE__,__LINE__,mysqli_connect_error($db)));
+        //$result = mysqli_query($db, $user_check_query) or die(myError(__FILE__,__LINE__,mysqli_connect_error($db)));
         $user = mysqli_fetch_assoc($result);
 
         if ($user) {
@@ -80,7 +80,7 @@
 
     if (isset($_POST['login_user'])) {
         // Get data //
-
+        //echo 'GOt to isset Loginuser';
         $username2 = mysqli_real_escape_string($db, $_POST['username']);
         $passwordlogin = mysqli_real_escape_string($db, $_POST['passwordlogin']);
 

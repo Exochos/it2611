@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+    //session_start();
     if (count($errors) > 0):?>
 <div class="text-danger">
 <?php 
