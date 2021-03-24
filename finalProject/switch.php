@@ -6,9 +6,9 @@
 <main role="main" class="container"><!-- Container -->
   <div class="row"><!-- Row -->
     <div class="col-sm-8">
-      <h2><b><?php echo $alt ?></b></h2> 
+      <h2><?php echo $alt; ?></h2>
       <img src="<?php echo "images/" . $pic; ?>.jpg" alt="" style="width:100%">    
-          <p><?php echo $p ?></p><br>
+      <p><?php echo $p ?></p><br>
     </div>
       
   <div class="col-sm-4">
