@@ -25,7 +25,7 @@
         echo '<main role="main" class="container"><!-- Container -->
         <div class="row"><!-- Row -->
           <div class="col-sm-8">';
-            echo ' Welcome ' . $_SESSION['username'] . '</div>';
+            echo '<h2>Welcome <b>' . $_SESSION['username'] . '</b><h2></div>';
           
         echo '
         <div class="col-sm-4">
