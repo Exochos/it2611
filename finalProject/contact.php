@@ -120,7 +120,7 @@ if (empty($_POST['age'])) {
 if (empty($_POST['house'])) {
   echo '<div style="color:red;">Please select you favorite kind of houses.</div>';
 }
-if (empty($_POST['income'])) {
+if ($_POST['income'] == "NULL") {
   echo '<div style="color:red;">Please select an income level</div>';
 }
 if (empty($_POST['phone'])) { 
