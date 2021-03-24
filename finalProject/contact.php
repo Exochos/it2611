@@ -148,21 +148,21 @@
                     <?php
 
                     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                    if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['dogRadio'], $_POST['dogCheck'], $_POST['fdoggo'], $_POST['agree']))  {
-                    $name = $_POST['firstname'] . " " . $_POST['lastname'];
-                    $email = $_POST['email'];
-                    $phone = $_POST['phone'];
-                    $dogR = $_POST['dogRadio'];
-                    $dogC = $_POST['dogCheck'];
-                    $fdoggo = $_POST['fdoggo'];
+                      if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['dogRadio'], $_POST['dogCheck'], $_POST['fdoggo'], $_POST['agree']))  {
+                        $name = $_POST['firstname'] . " " . $_POST['lastname'];
+                        $email = $_POST['email'];
+                        $phone = $_POST['phone'];
+                        $dogR = $_POST['dogRadio'];
+                        $dogC = $_POST['dogCheck'];
+                        $fdoggo = $_POST['fdoggo'];
 
-                    $to = 'exochos@gmail.com';
-                    $subject = 'Doggo Quiz email for my contact page ' .date('m/d/y') .'';
-                    $body  = 'Hello '. $name . ', thanks for taking our quiz' . "\n";
-                    $body .= 'your email address is:'.$email."\n";
-                    $body .= 'Your Phone Number is: ' . $phone . "\n";
-                    $body .= 'Your doggo Radio selection is: '.$dogR."\n";
-                    $body .= 'Your dog checkbox selection is: '.$dogC ."\n";
+                        $to = 'exochos@gmail.com';
+                        $subject = 'Doggo Quiz email for my contact page ' .date('m/d/y') .'';
+                        $body  = 'Hello '. $name . ', thanks for taking our quiz' . "\n";
+                        $body .= 'your email address is:'.$email."\n";
+                        $body .= 'Your Phone Number is: ' . $phone . "\n";
+                        $body .= 'Your doggo Radio selection is: '.$dogR."\n";
+                        $body .= 'Your dog checkbox selection is: '.$dogC ."\n";
 
                     mail($to, $subject, $body);
                     header('Location:thx.php');
