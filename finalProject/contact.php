@@ -17,10 +17,6 @@
                 <!-- name -->
                 <label><b>First Name</b>
                 <input class="form-control" type="text" name="firstname" value="<?php if (isset($_POST['firstname'])) echo htmlspecialchars($_POST['firstname']);?>"><br>
-                <?php 
-                    if (empty($_POST['firstname'])) {
-                        echo '<div style="color:red;">Please fill out your First Name</div>';
-                    }?>
                 </label><br>
                 <label ><b>Last Name</b>
                 <input class="form-control" type="text" name="lastname" value="<?php if (isset($_POST['lastname'])) echo htmlspecialchars($_POST['lastname']);?>"><br>
@@ -155,7 +151,6 @@
                         $dogR = $_POST['dogRadio'];
                         $dogC = $_POST['dogCheck'];
                         $fdoggo = $_POST['fdoggo'];
-
                         $to = 'exochos@gmail.com';
                         $subject = 'Doggo Quiz email for my contact page ' .date('m/d/y') .'';
                         $body  = 'Hello '. $name . ', thanks for taking our quiz' . "\n";
@@ -164,11 +159,15 @@
                         $body .= 'Your doggo Radio selection is: '.$dogR."\n";
                         $body .= 'Your dog checkbox selection is: '.$dogC ."\n";
 
-                    mail($to, $subject, $body);
-                    header('Location:thx.php');
-
+                        mail($to, $subject, $body);
+                        header('Location:thx.php');
                     }//end if
                     }// end more if
+                    else {
+                      if (empty($_POST['firstname'])) {
+                          echo '<div style="color:red;">Please fill out your First Name</div>';
+                      } // Endif
+                    } // End Else Block
 
                     ?>
                         </fieldset><br><br>
