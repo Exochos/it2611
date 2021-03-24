@@ -129,7 +129,6 @@ if (empty($_POST['phone'])) {
     echo "please enter a valid phone number";    
   }
             ?>
-?>
                 </p>
             </div>
         </div>
