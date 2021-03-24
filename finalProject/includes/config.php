@@ -23,7 +23,7 @@ switch ($day) {
         $p = '
         Incomparable waterfront estate. Quietude and wonder. Inspiration and awe. A once-in-a-lifetime opportunity to experience Pacific Northwest coastal island living, mere minutes from one of the most rapidly appreciating cities on the planet.
         Live in the daily luxury of nature, with expansive views of outer islands and the Olympics. Kayak, paddle board and take long tidal beach walks with unparalleled privacy. A signature investment with endless possibility. Absolutely sublime.
-        <a href="https://www.luxuryportfolio.com/Property/seattle-properties-incomparable-waterfront-estate/JCKF">Find out more</a>
+        <br><a href="https://www.luxuryportfolio.com/Property/seattle-properties-incomparable-waterfront-estate/JCKF">Find out more</a>
         ';
         break;
 case "Wednesday":
