@@ -1,5 +1,7 @@
 <?php 
     session_start();
+      include('server.php');
+  include('includes/config.php');
     include('includes/header.php');
 
     if (!isset($_SESSION['username'])) {
@@ -14,6 +16,8 @@
         <h2 class="mt-5">Please Log in to continue</h2>
         <p>Redirecting...</p>
       </main>';
+      echo $_SESSION['username'];
+      echo $_SESSION['success'];
 
     }
     else {
