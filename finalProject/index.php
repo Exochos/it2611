@@ -25,7 +25,7 @@
         echo '<main role="main" class="container"><!-- Container -->
         <div class="row"><!-- Row -->
           <div class="col-sm-8">';
-            echo '<h2>Welcome <b>' . $_SESSION['username'] .'</b> to Seattles Best Houses.</h2><br><p><a href="">Click here to logout</a></p></div>';
+            echo '<h2>Welcome <b>' . $_SESSION['username'] .'</b> to Seattles Best Houses.</h2><br><p><a href="logout.php">Click here to logout</a></p></div>';
         echo '
         <div class="col-sm-4">
             <aside>
