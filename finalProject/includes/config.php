@@ -50,8 +50,10 @@ case "Saturday":
         break;
 case "Sunday":
         $pic = 'h7';
-        $alt = '';
-        $p = '';
+        $alt = 'The lakefront retreat combines the best of indoor-outdoor living and technology.';
+        $p = 'Waterfront living in Seattle is all about maximizing the spectacular views, and this seven-bedroom, six-and-a-half-bath retreat on Lake Washington does just that. Designed by architect Craig Stillwell and built in 2008 in the city’s sought-after Laurelhurst neighborhood, the house features clean lines, large windows, and plenty of terraces, plus Fleetwood doors that open from the family room to maximize indoor-outdoor living. At $13.25 million, the 11,800-square-foot home is also the city’s priciest listing. Located on just under an acre of land, it includes 145 feet of lakefront property. The interior has plenty of entertaining space as well, including a party room, a home theater, and a 1,200-bottle wine cellar on the lower level. And because this is one of the most tech-savvy cities in the country, the home features an elevator, NetStream touch panels and keypads for the audio/video system, a Lutron HomeWorks lighting system, and in-wall and in-ceiling Phase Technology speakers and subwoofers.
+        <a href="https://www.architecturaldigest.com/gallery/most-expensive-house-seattle">Find out more</a>
+        ';
         break;
 default: 
     echo "Something Bad Happened";
