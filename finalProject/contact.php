@@ -1,4 +1,8 @@
-<?php include('includes/header.php')?>
+<?php 
+  include('includes/header.php')
+
+
+?>
 
 
     <!-- Begin page content -->
@@ -8,10 +12,8 @@
         <div class="row">
             <div class="col-sm-8">
                 <div class="form group">
-                <h3>Jeremy's Pupper Questionair</h3>
                 <form method="post">
                 <fieldset>
-
                 <!-- name -->
                 <label><b>First Name</b>
                 <input class="form-control" type="text" name="firstname" value="<?php if (isset($_POST['firstname'])) echo htmlspecialchars($_POST['firstname']);?>"><br>
@@ -172,10 +174,9 @@
                         </fieldset><br><br>
             </div></div>
             <div class="col-sm-4">
-                <h3>Contact form</h3>
+                <h3>Contact form aside</h3>
                 <p> 
-                    There is lots to learn about forms and bootstrap <br>
-                    I found lots of helpful stuff here: <a href="https://getbootstrap.com/docs/4.0/components/forms/">https://getbootstrap.com/docs/4.0/components/forms/</a>
+                    This is where we would put more information about things.
                 </p>
             </div>
         </div>
