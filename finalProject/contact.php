@@ -78,62 +78,62 @@
                     <br>
                     <input class="btn btn-primary" type="submit" value="Submit">&nbsp;
                     <a href="" class="btn btn-primary">Reset me</a><br><br><br>
-                    <!-- Parse the data and email -->
-                    <?php
-
-                    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                      if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['dogRadio'], $_POST['dogCheck'], $_POST['fdoggo']))  {
-                        $name = $_POST['firstname'] . " " . $_POST['lastname'];
-                        $email = $_POST['email'];
-                        $phone = $_POST['phone'];
-                        $dogR = $_POST['dogRadio'];
-                        $dogC = $_POST['dogCheck'];
-                        $fdoggo = $_POST['fdoggo'];
-                        $to = 'exochos@gmail.com';
-                        $subject = 'Doggo Quiz email for my contact page ' .date('m/d/y') .'';
-                        $body  = 'Hello '. $name . ', thanks for taking our quiz' . "\n";
-                        $body .= 'your email address is:'.$email."\n";
-                        $body .= 'Your Phone Number is: ' . $phone . "\n";
-                        $body .= 'Your doggo Radio selection is: '.$dogR."\n";
-                        $body .= 'Your dog checkbox selection is: '.$dogC ."\n";
-
-                        mail($to, $subject, $body);
-                        header('Location:thx.php');
-                    }//end if
-                    }// end more if
-                    else {
-                      if (empty($_POST['firstname'])) {
-                          echo '<div style="color:red;">Please fill out your First Name</div>';
-                      } // Endif
-                      if (empty($_POST['lastname'])) {
-                          echo '<div style="color:red;">Please fill out your Last Name</div>';
-                      } // Endif
-                      if (empty($_POST['email'])) {
-                        echo '<div style="color:red;">Please enter your email address</div>'; 
-                      } // Endif
-                       } // End Else Block
-                      if (empty($_POST['phone'])) { echo '<div style="color:red;">Please enter your phone number</div>'; 
-                      }
-                        // this is magic //
-                      elseif (!(preg_match('/(\+?\(?[0-9]{2,3}\)?)([ -]?[0-9]{2,4}){3}/', $_POST['phone']))) {
-                        echo "please enter a valid phone number";    
-                      }
-                      if (empty($_POST['houseR'])) {
-                        echo '<div style="color:red;">Please select your favorite house!</div><br>';
-                        }
-                      if (empty($_POST['dogCheck'])) {
-                        echo '<div style="color:red;">Please select all of your favorite doggies!</div>';
-                      }
-                      if (empty($_POST['fdoggo'])) {
-                        echo '<div style="color:red;">Please select a fdoggo</div>';
-                        }
-                    ?>
+                   
                         </fieldset><br><br>
             </div></div>
             <div class="col-sm-4">
                 <h3>Contact form aside</h3>
                 <p> 
-                    This is where we would put more information about things.
+                     <!-- Parse the data and email -->
+                     <?php
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['dogRadio'], $_POST['dogCheck'], $_POST['fdoggo']))  {
+    $name = $_POST['firstname'] . " " . $_POST['lastname'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $dogR = $_POST['dogRadio'];
+    $dogC = $_POST['dogCheck'];
+    $fdoggo = $_POST['fdoggo'];
+    $to = 'exochos@gmail.com';
+    $subject = 'Doggo Quiz email for my contact page ' .date('m/d/y') .'';
+    $body  = 'Hello '. $name . ', thanks for taking our quiz' . "\n";
+    $body .= 'your email address is:'.$email."\n";
+    $body .= 'Your Phone Number is: ' . $phone . "\n";
+    $body .= 'Your doggo Radio selection is: '.$dogR."\n";
+    $body .= 'Your dog checkbox selection is: '.$dogC ."\n";
+
+    mail($to, $subject, $body);
+    header('Location:thx.php');
+}//end if
+}// end more if
+else {
+  if (empty($_POST['firstname'])) {
+      echo '<div style="color:red;">Please fill out your First Name</div>';
+  } // Endif
+  if (empty($_POST['lastname'])) {
+      echo '<div style="color:red;">Please fill out your Last Name</div>';
+  } // Endif
+  if (empty($_POST['email'])) {
+    echo '<div style="color:red;">Please enter your email address</div>'; 
+  } // Endif
+   } // End Else Block
+  if (empty($_POST['phone'])) { echo '<div style="color:red;">Please enter your phone number</div>'; 
+  }
+    // this is magic //
+  elseif (!(preg_match('/(\+?\(?[0-9]{2,3}\)?)([ -]?[0-9]{2,4}){3}/', $_POST['phone']))) {
+    echo "please enter a valid phone number";    
+  }
+  if (empty($_POST['houseR'])) {
+    echo '<div style="color:red;">Please select your favorite house!</div><br>';
+    }
+  if (empty($_POST['dogCheck'])) {
+    echo '<div style="color:red;">Please select all of your favorite doggies!</div>';
+  }
+  if (empty($_POST['fdoggo'])) {
+    echo '<div style="color:red;">Please select a fdoggo</div>';
+    }
+?>
                 </p>
             </div>
         </div>
