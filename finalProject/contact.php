@@ -20,10 +20,7 @@
                 </label><br>
                 <label ><b>Last Name</b>
                 <input class="form-control" type="text" name="lastname" value="<?php if (isset($_POST['lastname'])) echo htmlspecialchars($_POST['lastname']);?>"><br>
-                <?php 
-                    if (empty($_POST['lastname'])) {
-                    echo '<div style="color:red;">Please fill out your Last Name</div>';
-                    }?></label><br>
+                </label><br>
 
                 <!-- email -->
                 <label><b>Email</b>
@@ -166,6 +163,9 @@
                     else {
                       if (empty($_POST['firstname'])) {
                           echo '<div style="color:red;">Please fill out your First Name</div>';
+                      }
+                      if (empty($_POST['lastname'])) {
+                          echo '<div style="color:red;">Please fill out your Last Name</div>';
                       } // Endif
                     } // End Else Block
 
