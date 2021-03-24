@@ -32,12 +32,12 @@
                 <!-- Radio buttons -->
                 <b>Select your Age:</b><br>
                     <div class="form-check">
-                      <label class="form-check-label" for="age">18-32</label>
                       <input class="form-check-input" type="radio" name="age" value="a" <?php if (isset($_POST['age']) && $_POST['age'] == 'a') echo 'checked'; ?>>
+                      <label class="form-check-label" for="age">18-32</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="b" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'b') echo 'checked'; ?>>
-                        <label class="form-check-label" for="houseR">32-60</label>
+                        <input class="form-check-input" type="radio" name="age" value="b" <?php if (isset($_POST['age']) && $_POST['age'] == 'b') echo 'checked'; ?>>
+                        <label class="form-check-label" for="age">32-60</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="houseR" id="houseR" value="c" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'c') echo 'checked'; ?>>
