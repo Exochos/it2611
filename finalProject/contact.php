@@ -17,10 +17,10 @@
                 <!-- name -->
                 <label><b>First Name</b>
                 <input class="form-control" type="text" name="firstname" value="<?php if (isset($_POST['firstname'])) echo htmlspecialchars($_POST['firstname']);?>"><br>
-                </label>
+                </label><br>
                 <label ><b>Last Name</b>
                 <input class="form-control" type="text" name="lastname" value="<?php if (isset($_POST['lastname'])) echo htmlspecialchars($_POST['lastname']);?>"><br>
-                </label>
+                </label><br>
                 <!-- email -->
                 <label><b>Email</b>
                     <input class="form-control" type="email" name="email" id="email" value="<?php if (isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>"><br>
@@ -33,28 +33,24 @@
                 <!-- Radio buttons -->
                 <b>Select your favorite house!</b><br>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house1" <?php if (isset($_POST['houseR']) && $_POST['dogRadio'] == 'house1') echo 'checked'; ?>>
+                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house1" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'house1') echo 'checked'; ?>>
                         <label class="form-check-label" for="GoldenR">House 1</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house2" <?php if (isset($_POST['houseR']) && $_POST['dogRadio'] == 'house2') echo 'checked'; ?>>
+                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house2" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'house2') echo 'checked'; ?>>
                         <label class="form-check-label" for="GoldenR">House 2</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house3" <?php if (isset($_POST['houseR']) && $_POST['dogRadio'] == 'house3') echo 'checked'; ?>>
+                        <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house3" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'house3') echo 'checked'; ?>>
                         <label class="form-check-label" for="GoldenR">House 3</label>
                     </div>
 
-                    <?php 
-
-                    ?><br><!--End Radio -->
-
                     <!-- begin checkbox -->
-                    <b>Please Select all of your favorite kinds of dogs!</b><br>
+                    <b>Please Select all of your favorite kinds of Houses!</b><br>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="goldenC" name="dogCheck" value="golden" <?php if (isset($_POST['dogCheck']) && $_POST['dogCheck'] == 'golden') echo 'checked="checked"'; ?>>
-                        <label class="form-check-label" for="GoldenC">
-                            Golden Retriever
+                        <label class="form-check-label" for="houseC">
+                        <input class="form-check-input" type="checkbox" id="houseB" name="houseC" value="houseB" <?php if (isset($_POST['houseC']) && $_POST['houseC'] == 'houseB') echo 'checked="checked"'; ?>>
+                            House Boat
                         </label>
                     </div>
 
