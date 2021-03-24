@@ -80,11 +80,13 @@
 
     if (isset($_POST['login_user'])) {
         // Get data //
-        //echo 'GOt to isset Loginuser';
+        echo 'GOt to isset Loginuser';
         $username2 = mysqli_real_escape_string($db, $_POST['username']);
         $passwordlogin = mysqli_real_escape_string($db, $_POST['passwordlogin']);
 
-
+        echo $username2;
+        echo $passwordlogin;
+        
         if (empty($username2)) {
             array_push($errors,'Please enter your Username');
         }
