@@ -10,10 +10,11 @@
 switch ($day) {
     case "Monday":
         $pic = 'h1';
-        $alt = '';
+        $alt = 'A Queen Anne Mansion in the Heart of Downtown Seattle';
         $p = '
-        This Beautiful
-        <a href="here">Here</a> Blah Blah
+        Situated on a hilltop in the Queen Anne neighborhood, the Riddle-Irwin House offers views of the Space Needle, the Seattle skyline and Puget Sound from virtually every room.
+        "It defines the word jaw-dropping," said listing agent Jeri P. Smith. Picture windows throughout the home and three balconies allow the sights outside the apartment to take central focus.
+        <br><a href="https://www.mansionglobal.com/articles/a-queen-anne-mansion-in-the-heart-of-downtown-seattle-72871">Find out more</a>
         ';
         break;
     case "Tuesday":
