@@ -43,42 +43,27 @@
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house3" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'house3') echo 'checked'; ?>>
                         <label class="form-check-label" for="GoldenR">House 3</label>
-                    </div>
-
+                    </div><br>
                     <!-- begin checkbox -->
                     <b>Please Select all of your favorite kinds of Houses!</b><br>
                     <div class="form-check">
                         <label class="form-check-label" for="houseC">
-                        <input class="form-check-input" type="checkbox" id="houseB" name="houseC" value="houseB" <?php if (isset($_POST['houseC']) && $_POST['houseC'] == 'houseB') echo 'checked="checked"'; ?>>
+                        <input class="form-check-input" type="checkbox" id="houseC" name="houseC" value="houseA" <?php if (isset($_POST['houseC']) && $_POST['houseC'] == 'houseA') echo 'checked="checked"'; ?>>
                             House Boat
                         </label>
                     </div>
-
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="labC" name="dogCheck[]" value="lab" <?php if (isset($_POST['dogCheck']) && $_POST['dogCheck'] == 'lab') echo 'checked'; ?>>
-                        <label class="form-check-label" for="labC">
-                            Labrador Retriever
+                        <label class="form-check-label" for="houseC">
+                        <input class="form-check-input" type="checkbox" id="houseC" name="houseC" value="houseB" <?php if (isset($_POST['houseC']) && $_POST['houseC'] == 'houseB') echo 'checked="checked"'; ?>>
+                            Forest House
                         </label>
                     </div>
-
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="doodleC" name="dogCheck[]" value="doodle" <?php if (isset($_POST['dogCheck']) && $_POST['dogCheck'] == 'doodle') echo 'checked'; ?>>
-                        <label class="form-check-label" for="doodleC">
-                            Doodle
+                        <label class="form-check-label" for="houseC">
+                        <input class="form-check-input" type="checkbox" id="houseC" name="houseC" value="houseC" <?php if (isset($_POST['houseC']) && $_POST['houseC'] == 'houseC') echo 'checked="checked"'; ?>>
+                            City House
                         </label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="corgieC" name="dogCheck[]" value="corgie" <?php if (isset($_POST['dogCheck']) && $_POST['dogCheck'] == 'corgie') echo 'checked'; ?>>
-                        <label class="form-check-label" for="corgieC">
-                            Corgie
-                        </label>
-                    </div>
-                    <?php 
-                        if (empty($_POST['dogCheck'])) {
-                        echo '<div style="color:red;">Please select all of your favorite doggies!</div>';
-                        }
-                        ?><br>
+                    </div><br>
 
 
                     <div class="formgroup">
@@ -153,6 +138,9 @@
                       if (empty($_POST['houseR'])) {
                         echo '<div style="color:red;">Please select your favorite house!</div><br>';
                         }
+                      if (empty($_POST['dogCheck'])) {
+                        echo '<div style="color:red;">Please select all of your favorite doggies!</div>';
+                      }
                     ?>
                         </fieldset><br><br>
             </div></div>
