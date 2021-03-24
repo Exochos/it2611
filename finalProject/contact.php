@@ -7,7 +7,6 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <p>
         <h1 class="mt-5">Contact Us!</h1>
         <div class="row">
             <div class="col-sm-8">
@@ -138,7 +137,6 @@ else {
             </div>
         </div>
     </div>
-      </p>
     </main>
 
 <?php include('includes/footer.php'); ?>
