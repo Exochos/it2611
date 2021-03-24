@@ -34,11 +34,11 @@
                 <b>Select your favorite house!</b><br>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house1" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'house1') echo 'checked'; ?>>
-                        <label class="form-check-label" for="GoldenR">House 1</label>
+                        <label class="form-check-label" for="houseR">House 1</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house2" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'house2') echo 'checked'; ?>>
-                        <label class="form-check-label" for="GoldenR">House 2</label>
+                        <label class="form-check-label" for="houseR">House 2</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="houseR" id="houseR" value="house3" <?php if (isset($_POST['houseR']) && $_POST['houseR'] == 'house3') echo 'checked'; ?>>
@@ -67,18 +67,12 @@
 
 
                     <div class="formgroup">
-                    <label><b>Select a friendly doggo!:</b></label><br>
+                    <label><b>Select your favorite house!:</b></label><br>
                     <select name="fdoggo">
                     <option value="NULL">Select One</option>
                     <option value="golden" <?php if (isset($_POST['fdoggo']) && $_POST['fdoggo'] == 'golden') echo 'selected'; ?>>Golden</option>
-                    <option value="lab" <?php if (isset($_POST['fdoggo']) && $_POST['fdoggo'] == 'lab') echo 'selected'; ?>>Lab</option>
-                    <option value="doodle" <?php if (isset($_POST['fdoggo']) && $_POST['fdoggo'] == 'doodle') echo 'selected'; ?>>Doodle</option>
-                    <option value="corgi" <?php if (isset($_POST['fdoggo']) && $_POST['fdoggo'] == 'corgi') echo 'selected'; ?>>Corgie</option>
-                    <option value="dalmation" <?php if (isset($_POST['fdoggo']) && $_POST['fdoggo'] == 'dalmation') echo 'selected'; ?>>Dalmation</option><br>
                     <?php 
-                    if (empty($_POST['fdoggo'])) {
-                    echo '<div style="color:red;">Please select a fdoggo</div>';
-                    }
+                    
                     ?><br>
                     </select><br></div>
                     <br>
@@ -88,7 +82,7 @@
                     <?php
 
                     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                      if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['dogRadio'], $_POST['dogCheck'], $_POST['fdoggo'], $_POST['agree']))  {
+                      if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['dogRadio'], $_POST['dogCheck'], $_POST['fdoggo']))  {
                         $name = $_POST['firstname'] . " " . $_POST['lastname'];
                         $email = $_POST['email'];
                         $phone = $_POST['phone'];
@@ -130,6 +124,9 @@
                       if (empty($_POST['dogCheck'])) {
                         echo '<div style="color:red;">Please select all of your favorite doggies!</div>';
                       }
+                      if (empty($_POST['fdoggo'])) {
+                        echo '<div style="color:red;">Please select a fdoggo</div>';
+                        }
                     ?>
                         </fieldset><br><br>
             </div></div>
