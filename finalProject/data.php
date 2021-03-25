@@ -10,8 +10,6 @@
   $results = mysqli_query($db,$query);
   $rows = [];
 
-  while($row = mysqli_fetch_assoc($results)) {
-    $rows[] = $row;
 }
 ?>
 
