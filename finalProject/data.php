@@ -22,8 +22,8 @@
               <h1 class="mt-5">Houses in our Database:</h1>
               <?php
                 echo $rows['homeid'];
-                echo $rows[0];
-                echo $rows[1];
+                echo $rows[0][0];
+                echo $rows[1][1];
               ?>
             <table class="table table-bordered table-condensed">
                 <thead>
