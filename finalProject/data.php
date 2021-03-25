@@ -2,7 +2,7 @@
 <?php   
   require_once 'includes/credentials.php';
   $db = mysqli_connect("localhost", $DB_USER,$DB_PASSWORD,$DB_NAME);
-  $query = "SELECT * FROM users";
+  $query = "SELECT * FROM homes";
   $results = mysqli_query($db,$query);
 ?>
 
