@@ -17,7 +17,7 @@
               <h1 class="mt-5">Houses in our Database:</h1>
               <?php
                 print_r($results);
-                echo $results[0];
+                echo $results[0][0];
               ?>
         
             <h1>People I barely know</h1>
