@@ -2,6 +2,10 @@
 <?php   
   require_once 'includes/credentials.php';
   $db = mysqli_connect("localhost", $DB_USER,$DB_PASSWORD,$DB_NAME);
+  if(mysqli_connect_errno()){
+    echo mysqli_connect_error();
+  }
+  
   $query = "SELECT * FROM homes";
   $results = mysqli_query($db,$query);
 ?>
@@ -13,9 +17,6 @@
               <h1 class="mt-5">Houses in our Database:</h1>
               <?php
                 print_r($results);
-                for($i=0; $i < 5; $i++) {
-                  echo $results[$i];
-                }
               ?>
         
             <h1>People I barely know</h1>
