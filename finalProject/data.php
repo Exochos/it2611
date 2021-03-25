@@ -13,6 +13,9 @@
               <h1 class="mt-5">Houses in our Database:</h1>
               <?php
                 print_r($results);
+                for($i=0; $i < count($results); $i++) {
+                  $results[$i];
+                }
               ?>
         
             <h1>People I barely know</h1>
