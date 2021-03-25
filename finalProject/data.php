@@ -17,7 +17,7 @@
             <div class="col-sm-8">
               <h1 class="mt-5">Houses in our Database:</h1>
               <?php
-                print_r($results);
+                //print_r($results);
                 echo count($results);
               ?>
             <table class="table table-bordered table-condensed">
