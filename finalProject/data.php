@@ -29,7 +29,11 @@
                       <tr>
                         <td><a href="view.php?id=<?php echo htmlspecialchars($row['homeid']); ?>"><?php echo htmlspecialchars($row['homeid']); ?></a></td>
                         <td><?php echo htmlspecialchars($row['hometitle']) ?></td>
-                        <td><?php echo htmlspecialchars($row['homeprice']); ?></td>
+                        <td>$<?php echo htmlspecialchars($row['homeprice']); ?></td>
+                      </tr>
+                      <tr class="hider">
+                        <td><?php echo htmlspecialchars($row['description']) ?></td>
+                        <td><img src="<?php echo htmlspecialchars($row['homeimg']) ?>.jpg" alt="home"></td>
                       </tr>
                       <?php endwhile; ?>
                 </tbody>

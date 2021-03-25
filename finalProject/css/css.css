@@ -20,10 +20,6 @@ body {
     color:aliceblue;
     margin-right: 20px;
 }
-  /* Custom page CSS
-  -------------------------------------------------- */
-  /* Not required for template or sticky footer method. */
-  
   body > .container {
     padding: 60px 15px 0;
   }
@@ -35,3 +31,6 @@ body {
   code {
     font-size: 80%;
   }
+.hider {
+  display: none;
+}
