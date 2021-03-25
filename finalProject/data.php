@@ -1,18 +1,9 @@
 <?php include('includes/header.php')?>
-<?php require_once 'includes/credentials.php';
-              try {
-                $pdo = new PDO("mysql:host='localhost';dbname='users', $DB_USER, $DB_PASSWORD");
-                $sql = 'SELECT lastname,
-                                firstname,
-                                phone
-                           FROM myTable
-                          ORDER BY lastname';
-            
-                $q = $pdo->query($sql);
-                $q->setFetchMode(PDO::FETCH_ASSOC);
-            } catch (PDOException $e) {
-                die("Could not connect to the database $dbname :" . $e->getMessage());
-            }
+<?php   
+  require_once 'includes/credentials.php';
+  $db = mysqli_connect("localhost", $DB_USER,$DB_PASSWORD,$DB_NAME);
+  $query = "SELECT * FROM users";
+  $results = mysqli_query($db,$query);
 ?>
 
     <!-- Begin page content -->
@@ -20,7 +11,9 @@
     <div class="row">
             <div class="col-sm-8">
               <h1 class="mt-5">Houses in our Database:</h1>
-
+              <?php
+                print_r($results);
+              ?>
         
             <h1>People I barely know</h1>
             <table class="table table-bordered table-condensed">
@@ -32,13 +25,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php while ($row = $q->fetch()): ?>
                         <tr>
-                            <td><?php echo htmlspecialchars($row['lastname']) ?></td>
-                            <td><?php echo htmlspecialchars($row['firstname']); ?></td>
-                            <td><?php echo htmlspecialchars($row['phone']); ?></td>
                         </tr>
-                    <?php endwhile; ?>
                 </tbody>
             </table>
 
