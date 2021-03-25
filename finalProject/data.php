@@ -8,7 +8,12 @@
   
   $query = "SELECT * FROM users";
   $results = mysqli_query($db,$query);
-  $result->fetch_all(MYSQLI_ASSOC);
+  $rows = [];
+
+  while($row = mysqli_fetch_assoc($results)) {
+    $rows[] = $row;
+    echo $rows;
+}
 ?>
 
     <!-- Begin page content -->
