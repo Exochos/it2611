@@ -9,8 +9,6 @@
   $query = "SELECT * FROM homes";
   $results = mysqli_query($db,$query);
   $rows = [];
-
-}
 ?>
 
     <!-- Begin page content -->
