@@ -6,7 +6,7 @@
     echo mysqli_connect_error();
   }
   
-  $query = "SELECT * FROM homes";
+  $query = "SELECT * FROM users";
   $results = mysqli_query($db,$query);
 
 ?>
