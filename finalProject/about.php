@@ -21,8 +21,8 @@ include('includes/header.php');
             <aside>
             <h2> About us:</h2>
             <ul>
-              <li><h3>Hiro Protaganist, CEO and co-founder</h3></li>
-              <li><h3>Billy Rose CFO and co-founder</h3></li>
+              <li><b>Hiro Protaganist, CEO and co-founder</b></li>
+              <li><b>Billy Rose CFO and co-founder</b></li>
               <li>Tucker Ferdinand</li>
               <li>Marissa Coultier</li>
               <li>Fredruck Mustifar</li>
