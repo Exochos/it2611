@@ -31,25 +31,12 @@
                         <td><?php echo htmlspecialchars($row['hometitle']) ?></td>
                         <td>$<?php echo htmlspecialchars($row['homeprice']); ?></td>
                       </tr>
-                      <tr class="hider">
-                        <td><?php echo htmlspecialchars($row['description']) ?></td>
-                        <td><img src="images/<?php echo htmlspecialchars($row['homeimg']) ?>.jpg" alt="home"></td>
-                      </tr>
                       <?php endwhile; ?>
                 </tbody>
             </table>
-
-
-
-
             </div>
     <div class="col-sm-4">
     <p><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1h5_4gqWHkpTqzYYgb317Y7BuOV5Oid-m" width="640" height="480"></iframe></p>
     </div>
     </main>
-    <script>
-    $( "#1" ).click(function() {
-      $("#hider").toggle();
-    });
-    </script>
 <?php include('includes/footer.php'); ?>
