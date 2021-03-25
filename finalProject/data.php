@@ -8,7 +8,7 @@
   
   $query = "SELECT * FROM users";
   $results = mysqli_query($db,$query);
-
+  $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
     <!-- Begin page content -->
