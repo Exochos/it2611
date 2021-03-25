@@ -1,7 +1,7 @@
 <?php include('includes/header.php')?>
 <?php require_once 'includes/credentials.php';
               try {
-                $pdo = new PDO("mysql:host='localhost';dbname=$DB_NAME", $DB_USER, $DB_PASSWORD);
+                $pdo = new PDO("mysql:host='localhost';dbname=$DB_NAME, $DB_USER, $DB_PASSWORD");
                 $sql = 'SELECT lastname,
                                 firstname,
                                 phone
