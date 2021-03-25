@@ -14,7 +14,7 @@
               <?php
                 print_r($results);
                 for($i=0; $i < count($results); $i++) {
-                  $results[$i];
+                  echo $results[$i];
                 }
               ?>
         
