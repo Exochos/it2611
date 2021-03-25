@@ -13,7 +13,7 @@
               <h1 class="mt-5">Houses in our Database:</h1>
               <?php
                 print_r($results);
-                for($i=0; $i < count($results); $i++) {
+                for($i=0; $i < 6; $i++) {
                   echo $results[$i];
                 }
               ?>
