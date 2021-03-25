@@ -6,9 +6,9 @@
     echo mysqli_connect_error();
   }
   
-  $query = "SELECT * FROM homes WHERE homeid = '1'";
+  $query = "SELECT * FROM homes WHERE";
   $results = mysqli_query($db,$query);
-  echo ($sql->query("SELECT * FROM homes")->fetch_all(MYSQLI_ASSOC));
+
 ?>
 
     <!-- Begin page content -->
@@ -18,6 +18,7 @@
               <h1 class="mt-5">Houses in our Database:</h1>
               <?php
                 print_r($results);
+                echo $results;
               ?>
         
             <h1>People I barely know</h1>
