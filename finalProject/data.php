@@ -33,7 +33,7 @@
                       </tr>
                       <tr class="hider">
                         <td><?php echo htmlspecialchars($row['description']) ?></td>
-                        <td><img src="<?php echo htmlspecialchars($row['homeimg']) ?>.jpg" alt="home"></td>
+                        <td><img src="images/<?php echo htmlspecialchars($row['homeimg']) ?>.jpg" alt="home"></td>
                       </tr>
                       <?php endwhile; ?>
                 </tbody>
