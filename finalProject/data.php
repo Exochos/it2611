@@ -21,8 +21,9 @@
             <div class="col-sm-8">
               <h1 class="mt-5">Houses in our Database:</h1>
               <?php
+                echo count($rows);
                 echo $rows['homeid'];
-                echo $rows[0][0];
+                echo $rows['homeid'][0];
                 echo $rows[1][1];
               ?>
             <table class="table table-bordered table-condensed">
