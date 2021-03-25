@@ -16,27 +16,26 @@
     <div class="row">
             <div class="col-sm-8">
               <h1 class="mt-5">Houses in our Database:</h1>
-              <?php while($row = mysqli_fetch_assoc($results)): ?>
+              <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>Home ID</th>
+                        <th>Home Title</th>
+                        <th>Home Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php while($row = mysqli_fetch_assoc($results)): ?>
                       <tr>
                         <td><a href="view.php?id=<?php echo htmlspecialchars($row['homeid']); ?>"><?php echo htmlspecialchars($row['homeid']); ?></a></td>
                         <td><?php echo htmlspecialchars($row['hometitle']) ?></td>
                         <td><?php echo htmlspecialchars($row['homeprice']); ?></td>
-                        <td><?php echo htmlspecialchars($row['homeimg']); ?></td>
                       </tr>
                       <?php endwhile; ?>
-            <table class="table table-bordered table-condensed">
-                <thead>
-                    <tr>
-                        <th>Last Name</th>
-                        <th>First Name</th>
-                        <th>Job Title</th>
-                    </tr>
-                </thead>
-                <tbody>
-                        <tr>
-                        </tr>
                 </tbody>
             </table>
+
+
 
 
             </div>
