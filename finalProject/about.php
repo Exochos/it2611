@@ -10,8 +10,8 @@ include('includes/header.php');
 <main class="container"><!-- Container -->
         <div class="row"><!-- Row -->
           <div class="col-sm-8">
-          <h3>Seattles Best Houses</h3>
-          <p> Seattles best houses was founded in 1993 when the late Hiro Protaganist founded the site.</p>
+          <h3>Seattle's Best Houses</h3>
+          <p> Seattle's Best Houses was founded in 1993 when the late Hiro Protaganist founded the site.</p>
           <h4> Mission Statement </h4>
           <p>Seattles Best Home's mission is to modernize and progress the experience of buying and selling real estate by cultivating a spirit of collaboration, innovation, and integrity.<br>
             We strive to foster a culture of partnership in which all clients and listings are represented in a cooperative environment by all its agents, thereby ensuring its clients and listings have the competitive edge.” <b>Hiro Protaganist, CEO and co-founder.</b><BR>
@@ -20,7 +20,13 @@ include('includes/header.php');
         <div class="col-sm-4">
             <aside>
             <h2> About us:</h2>
-            <h4>Hiro Protaganist, CEO and co-founder. Billy Rose CFO and co-founder, Tucker Ferdinand, Fredruck Mustifar, Dustin Moskovitz, Leon Black & Stanley Kroenke</h4>
+            <ul>
+              <li><h3>Hiro Protaganist, CEO and co-founder</h3></li>
+              <li><h3>Billy Rose CFO and co-founder</h3></li>
+              <li>Tucker Ferdinand</li>
+              <li>Marissa Coultier</li>
+              <li>Fredruck Mustifar</li>
+            </ul>
             <img src="https://www.businesstimes.com.sg/sites/default/files/styles/article_img/public/image/2019/10/25/BT20191025_ENTERTAINMENT.jpg?itok=t8tAipdi" alt="Rich White People">
           </aside>
         </div>
