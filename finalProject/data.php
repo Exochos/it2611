@@ -8,6 +8,7 @@
   
   $query = "SELECT * FROM homes WHERE homeid = '1'";
   $results = mysqli_query($db,$query);
+  echo ($sql->query("SELECT * FROM homes")->fetch_all(MYSQLI_ASSOC));
 ?>
 
     <!-- Begin page content -->
