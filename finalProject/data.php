@@ -20,12 +20,14 @@
     <div class="row">
             <div class="col-sm-8">
               <h1 class="mt-5">Houses in our Database:</h1>
-              <?php
-                echo count($rows);
-                echo $rows['homeid'];
-                echo $rows['homeid'][0];
-                echo $rows[1][1];
-              ?>
+              <?php while($row = mysqli_fetch_assoc($results)): ?>
+                      <tr>
+                        <td><a href="view.php?id=<?php echo htmlspecialchars($row['homeid']); ?>"><?php echo htmlspecialchars($row['homeid']); ?></a></td>
+                        <td><?php echo htmlspecialchars($row['hometitle']) ?></td>
+                        <td><?php echo htmlspecialchars($row['homeprice']); ?></td>
+                        <td><?php echo htmlspecialchars($row['homeimg']); ?></td>
+                      </tr>
+                      <?php endwhile; ?>
             <table class="table table-bordered table-condensed">
                 <thead>
                     <tr>
