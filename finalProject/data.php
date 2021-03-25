@@ -6,7 +6,7 @@
     echo mysqli_connect_error();
   }
   
-  $query = "SELECT * FROM homes WHERE";
+  $query = "SELECT * FROM homes";
   $results = mysqli_query($db,$query);
 
 ?>
@@ -18,10 +18,8 @@
               <h1 class="mt-5">Houses in our Database:</h1>
               <?php
                 print_r($results);
-                echo $results;
+                echo count($results);
               ?>
-        
-            <h1>People I barely know</h1>
             <table class="table table-bordered table-condensed">
                 <thead>
                     <tr>
