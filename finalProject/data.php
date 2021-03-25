@@ -27,7 +27,7 @@
                 <tbody>
                 <?php while($row = mysqli_fetch_assoc($results)): ?>
                       <tr>
-                        <td><a id="<?php echo htmlspecialchars($row['homeid']); ?>" href="view.php?id=<?php echo htmlspecialchars($row['homeid']); ?>"><?php echo htmlspecialchars($row['homeid']); ?></a></td>
+                        <td><a id="<?php echo htmlspecialchars($row['homeid']); ?>" href=""><?php echo htmlspecialchars($row['homeid']); ?></a></td>
                         <td><?php echo htmlspecialchars($row['hometitle']) ?></td>
                         <td>$<?php echo htmlspecialchars($row['homeprice']); ?></td>
                       </tr>
