@@ -38,9 +38,9 @@
           <ul class="navbar-nav mr-auto">
           <?php
             if (isset($_SESSION['username'])) {
-              echo "<li> Welcome ";
+              echo '<li><p class="text-right text-primary">Welcome ';
               echo $_SESSION['username'];
-              echo "</li>";
+              echo "</p></li>";
             }
           ?>
         </div>
