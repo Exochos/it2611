@@ -1,5 +1,6 @@
 <?php
     error_reporting(E_ALL);
+    session_start();
 ?>
 <?php include('includes/config.php'); ?>
 <?php include('includes/header.php')?>
