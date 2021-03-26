@@ -85,7 +85,6 @@
                 <p> 
                      <!-- Parse the data and email -->
                      <?php
-                     if ()
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['age'], $_POST['house'], $_POST['income']))  {
             $name = $_POST['firstname'] . " " . $_POST['lastname'];
@@ -129,9 +128,6 @@
             elseif (!(preg_match('/(\+?\(?[0-9]{2,3}\)?)([ -]?[0-9]{2,4}){3}/', $_POST['phone']))) { // this is magic //
               echo "please enter a valid phone number";    
             }
-        
-        
-        
         }// end if post
 
 
