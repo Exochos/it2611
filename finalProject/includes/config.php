@@ -67,5 +67,34 @@ case "Sunday":
         break;
 default: 
     echo "Something Bad Happened";
-}
+} // End Switch Statement
+
+//
+// Nav Array
+//
+define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
+$nav['index.php'] = 'Home';
+$nav['about.php'] = 'About';
+$nav['data.php'] = 'Daily Homes';
+$nav['people.php'] = 'Homes';
+$nav['contact.php'] = 'Contact';
+//
+// Make Link Funtion
+//
+function makeLinks($nav) {
+    $myReturn ='';
+    foreach($nav as $key => $value) { //Begin foreach loop
+        if(THIS_PAGE == $key) {
+            $myReturn .= '<li><a class="active" href="'.$key.'">'.$value.'</a></li>';
+        } // End If
+        else {
+            $myReturn .= '<li><a href="'.$key.'">'.$value.'</a></li>';
+        }//End Else
+    }// End foreach
+    return $myReturn;
+} // End Function
+
+
+
+
 ?>
