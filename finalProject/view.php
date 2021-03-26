@@ -14,11 +14,17 @@ $results = mysqli_query($db,$query);
 <div class="container" style="margin:0 auto;">
 <table>
 <?php while($row = mysqli_fetch_assoc($results)): ?>
-                      <tr>
+                    <tr>
                         <td><a href="view.php?id=<?php echo htmlspecialchars($row['homeid']); ?> ?>"><?php echo htmlspecialchars($row['homeid']); ?></a></td>
                         <td><?php echo htmlspecialchars($row['hometitle']) ?></td>
                         <td>$<?php echo htmlspecialchars($row['homeprice']); ?></td>
                       </tr>
+                    <tr>
+                        <td><img src="images/<?php echo htmlspecialchars($row['homeimg']); ?>" alt="Homes"></td>
+                    </td>
+                    <tr>
+                        <td><?php echo htmlspecialchars($row['description']); ?></td>
+                    </td>
                       <?php endwhile; ?>
 
 </table>
