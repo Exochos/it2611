@@ -1,4 +1,6 @@
 <?php include('includes/header.php')?>
+<?php include('includes/config.php'); ?>
+
 <?php   
   require_once 'includes/credentials.php';
   $db = mysqli_connect("localhost", $DB_USER,$DB_PASSWORD,$DB_NAME);
