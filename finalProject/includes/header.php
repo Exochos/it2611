@@ -33,7 +33,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <?php makeLinks($nav); ?>
+          <?php makeLinks($nav); ?>
           </ul>
         </div>
       </nav>
