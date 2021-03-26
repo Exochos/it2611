@@ -81,7 +81,7 @@
                         </fieldset><br><br>
             </div></div>
             <div class="col-sm-4">
-                <h3>Contact form aside</h3>
+                <h3>Contact form errors</h3>
                 <p> 
                      <!-- Parse the data and email -->
                      <?php
