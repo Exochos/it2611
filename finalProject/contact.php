@@ -85,6 +85,7 @@
                 <p> 
                      <!-- Parse the data and email -->
                      <?php
+                     if ()
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['age'], $_POST['house'], $_POST['income']))  {
             $name = $_POST['firstname'] . " " . $_POST['lastname'];
@@ -104,32 +105,36 @@
             mail($to, $subject, $body);
             header('Location:about.php');
           }//end if
+          if (empty($_POST['firstname'])) {
+            echo '<div style="color:red;">Please fill out your First Name</div>';
+          } // Endif
+          if (empty($_POST['lastname'])) {
+            echo '<div style="color:red;">Please fill out your Last Name</div>';
+          } // Endif
+          if (empty($_POST['email'])) {
+            echo '<div style="color:red;">Please enter your email address</div>'; 
+          } // Endif
+          if (empty($_POST['age'])) {
+              echo '<div style="color:red;">Please select your age range.</div>';
+          }
+          if (empty($_POST['house'])) {
+            echo '<div style="color:red;">Please select you favorite kind of houses.</div>';
+          }
+          if ($_POST['income'] === NULL) {
+            echo '<div style="color:red;">Please select an income level</div>';
+          }
+          if (empty($_POST['phone'])) { 
+            echo '<div style="color:red;">Please enter your phone number</div>'; 
+          }
+            elseif (!(preg_match('/(\+?\(?[0-9]{2,3}\)?)([ -]?[0-9]{2,4}){3}/', $_POST['phone']))) { // this is magic //
+              echo "please enter a valid phone number";    
+            }
+        
+        
+        
         }// end if post
 
-if (empty($_POST['firstname'])) {
-  echo '<div style="color:red;">Please fill out your First Name</div>';
-} // Endif
-if (empty($_POST['lastname'])) {
-  echo '<div style="color:red;">Please fill out your Last Name</div>';
-} // Endif
-if (empty($_POST['email'])) {
-  echo '<div style="color:red;">Please enter your email address</div>'; 
-} // Endif
-if (empty($_POST['age'])) {
-    echo '<div style="color:red;">Please select your age range.</div>';
-}
-if (empty($_POST['house'])) {
-  echo '<div style="color:red;">Please select you favorite kind of houses.</div>';
-}
-if ($_POST['income'] === NULL) {
-  echo '<div style="color:red;">Please select an income level</div>';
-}
-if (empty($_POST['phone'])) { 
-  echo '<div style="color:red;">Please enter your phone number</div>'; 
-}
-  elseif (!(preg_match('/(\+?\(?[0-9]{2,3}\)?)([ -]?[0-9]{2,4}){3}/', $_POST['phone']))) { // this is magic //
-    echo "please enter a valid phone number";    
-  }
+
             ?>
                 </p>
             </div>
