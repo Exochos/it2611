@@ -1,3 +1,4 @@
+<?php include('includes/config.php'); ?>
 <?php include('includes/header.php')?>
 <?php
 require_once 'includes/credentials.php';

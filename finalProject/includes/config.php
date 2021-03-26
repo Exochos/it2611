@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     if (isset($_GET['today'])) {
         $day = $_GET['today'];
     }
@@ -81,18 +82,18 @@ $nav['contact.php'] = 'Contact';
 //
 // Make Link Funtion
 //
-function makeLinks($nav) {
-    $myReturn ='';
-    foreach($nav as $key => $value) { //Begin foreach loop
-        if(THIS_PAGE == $key) {
-            $myReturn .= '<li><a class="active" href="'.$key.'">'.$value.'</a></li>';
-        } // End If
-        else {
-            $myReturn .= '<li><a href="'.$key.'">'.$value.'</a></li>';
-        }//End Else
-    }// End foreach
-    return $myReturn;
-} // End Function
+function makeLinks($linkArray) {
+    $myReturn = '';
+    foreach($linkArray as $url => $text) {
+        if($url == THIS_PAGE)
+        {//selected page - add class reference
+            $myReturn .= '<a class="nav-item nav-link active" href="' . $url . '">'.$text.'<span class="sr-only">(current)</span></a>' . PHP_EOL;
+    	}else{
+            $myReturn .= '<a class="nav-item nav-link" href="'. $url . '">' . $text . '</a>' . PHP_EOL;
+    	}    
+    }
+    return $myReturn;    
+}
 
 
 
