@@ -16,11 +16,14 @@ $results = mysqli_query($db,$query);
                 <tbody>
                 <?php while($row = mysqli_fetch_assoc($results)): ?>
                     <tr>
+                        <td><h2><?php echo htmlspecialchars($row['hometitle']) ?></h2></td>
+                    </tr>
+                    <tr>
                         <td><img src="images/<?php echo htmlspecialchars($row['homeimg']); ?>.jpg" alt="Homes"></td>
                     </td>
                     </tr>
+
                     <tr>
-                        <td><?php echo htmlspecialchars($row['hometitle']) ?></td>
                         <td>$<?php echo htmlspecialchars($row['homeprice']); ?></td>
                     </tr>
                     <tr>
