@@ -8,7 +8,7 @@
     $nav['index.php'] = 'Home';
     $nav['about.php'] = 'About';
     $nav['data.php'] = 'Daily Homes';
-    $nav['people.php'] = 'Homes';
+    $nav['data.php'] = 'Homes';
     $nav['contact.php'] = 'Contact';
 
 
