@@ -37,7 +37,7 @@ try {
                 <tbody>
                     <?php while ($row = $q->fetch()): ?>
                         <tr>
-                            
+                        <td><a href="view.php?id=<?php echo htmlspecialchars($row['dogID']); ?>"><?php echo htmlspecialchars($row['dogName']); ?></a></td>
                             <td><a href="view.php?id=<?php echo htmlspecialchars($row['dogID']); ?>"><?php echo htmlspecialchars($row['dogName']); ?></a></td>
                             <td><?php echo htmlspecialchars($row['dogBreed']) ?></td>
                             <td><?php echo htmlspecialchars($row['dogAge']); ?></td>
