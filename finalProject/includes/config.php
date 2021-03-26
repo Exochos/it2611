@@ -4,7 +4,7 @@
     //
     // Nav Array
     //
-    define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
+    //define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
     $nav['index.php'] = 'Home';
     $nav['about.php'] = 'About';
     $nav['data.php'] = 'Daily Homes';
@@ -99,7 +99,7 @@ function makeLinks($linkArray) {
     foreach($linkArray as $url => $text) {
         if($url == THIS_PAGE)
         {//selected page - add class reference
-            $myReturn .= '<a class="nav-item nav-link active" href="' . $url . '">'.$text.'<span class="sr-only">(current)</span></a>' . PHP_EOL;
+            $myReturn .= '<li><a class="nav-item nav-link active" href="' . $url . '">'.$text.'<span class="sr-only">(current)</span></a></li>' . PHP_EOL;
     	}else{
             $myReturn .= '<a class="nav-item nav-link" href="'. $url . '">' . $text . '</a>' . PHP_EOL;
     	}    
