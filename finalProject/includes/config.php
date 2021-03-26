@@ -4,7 +4,7 @@
     //
     // Nav Array
     //
-    //define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
+    define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
     $nav['index.php'] = 'Home';
     $nav['about.php'] = 'About';
     $nav['data.php'] = 'Daily Homes';
