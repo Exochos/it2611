@@ -1,3 +1,6 @@
+<?php
+    error_reporting(E_ALL);
+?>
 <?php include('includes/config.php'); ?>
 <?php include('includes/header.php')?>
 <?php   
