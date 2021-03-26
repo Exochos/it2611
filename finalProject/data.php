@@ -1,13 +1,11 @@
-<?php include('includes/header.php')?>
 <?php include('includes/config.php'); ?>
-
+<?php include('includes/header.php')?>
 <?php   
   require_once 'includes/credentials.php';
   $db = mysqli_connect("localhost", $DB_USER,$DB_PASSWORD,$DB_NAME);
   if(mysqli_connect_errno()){
     echo mysqli_connect_error();
   }
-  
   $query = "SELECT * FROM homes";
   $results = mysqli_query($db,$query);
   $rows = [];
