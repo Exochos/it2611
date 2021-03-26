@@ -20,7 +20,7 @@ $results = mysqli_query($db,$query);
                         <td>$<?php echo htmlspecialchars($row['homeprice']); ?></td>
                       </tr>
                     <tr>
-                        <td><img src="images/<?php echo htmlspecialchars($row['homeimg']); ?>" alt="Homes"></td>
+                        <td><img src="images/<?php echo htmlspecialchars($row['homeimg']); ?>.jpg" alt="Homes"></td>
                     </td>
                     <tr>
                         <td><?php echo htmlspecialchars($row['description']); ?></td>
