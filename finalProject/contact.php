@@ -83,26 +83,26 @@
                 <p> 
                      <!-- Parse the data and email -->
                      <?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['age'], $_POST['house'], $_POST['income']))  {
-    $name = $_POST['firstname'] . " " . $_POST['lastname'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $age = $_POST['$age'];
-    $house = $_POST['house'];
-    $income = $_POST['income'];
-    $to = 'exochos@gmail.com';
-    $subject = 'Thanks for visiting Seattles Best Houses ' .date('m/d/y') .'';
-    $body  = 'Hello '. $name . ', thanks for joining our newsletter.' . "\n";
-    $body .= 'your email address is:'.$email."\n";
-    $body .= 'Your Phone Number is: ' . $phone . "\n";
-    $body .= 'Your age range is: '.$age.'';
-    $body .= 'Your dog checkbox selection is: '.$dogC ."\n";
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+          if (isset($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['age'], $_POST['house'], $_POST['income']))  {
+            $name = $_POST['firstname'] . " " . $_POST['lastname'];
+            $email = $_POST['email'];
+            $phone = $_POST['phone'];
+            $age = $_POST['$age'];
+            $house = $_POST['house'];
+            $income = $_POST['income'];
+            $to = 'szemeo@mystudentswa.com';
+            $subject = 'Thanks for visiting Seattles Best Houses ' .date('m/d/y') .'';
+            $body  = 'Hello '. $name . ', thanks for joining our newsletter.' . "\n";
+            $body .= 'your email address is:'.$email."\n";
+            $body .= 'Your Phone Number is: ' . $phone . "\n";
+            $body .= 'Your age range is: '.$age.'';
+            $body .= 'Your income selection is: '.$income ."\n";
 
-    mail($to, $subject, $body);
-    header('Location:about.php');
-  }//end if
-}// end if post
+            mail($to, $subject, $body);
+            header('Location:about.php');
+          }//end if
+        }// end if post
 
 if (empty($_POST['firstname'])) {
   echo '<div style="color:red;">Please fill out your First Name</div>';
