@@ -19,7 +19,7 @@ $results = mysqli_query($db,$query);
                         <td><h2><?php echo htmlspecialchars($row['hometitle']) ?></h2></td>
                     </tr>
                     <tr>
-                        <td><img src="images/<?php echo htmlspecialchars($row['homeimg']); ?>.jpg" alt="Homes"></td>
+                        <td><img src="images/<?php echo htmlspecialchars($row['homeimg']); ?>.jpg" alt="Homes" width="600" height="600"></td>
                     </td>
                     </tr>
 
