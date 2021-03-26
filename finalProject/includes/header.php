@@ -35,6 +35,14 @@
           <ul class="navbar-nav mr-auto">
           <?=makeLinks($nav)?>  
           </ul>
+          <ul class="navbar-nav mr-auto">
+          <?php
+            if (isset($_SESSION['username'])) {
+              echo "<li> Welcome ";
+              echo $_SESSION['username'];
+              echo "</li>";
+            }
+          ?>
         </div>
       </nav>
     </header>
